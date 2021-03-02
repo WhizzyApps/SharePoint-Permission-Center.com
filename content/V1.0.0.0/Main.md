@@ -138,6 +138,13 @@ Features
 - Showing permission levels in brackets
 - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
+
+
+
+
+
+
+
 1. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
 
 - Showing hidden SharePoint groups that are created by SharePoint and their members
@@ -187,6 +194,13 @@ Features
   - To manage members of &quot;Access given directly&quot;, click to open classic permission page
   - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
+
+
+
+
+
+
+
 1. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
 
 - Access to 6 particular pages of classic admin center:
@@ -224,6 +238,13 @@ Configuration based on permissions
   - If you are Site owner, you will see the changes you make for the configuration of &quot;Site owners&quot; in the web part immediately.
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
+
+
+
+
+
+
+
 
 - Off: <img src="/V1.0.0.0/Images/16 Configuration 2.png" style="width:250; float:right"/>
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
