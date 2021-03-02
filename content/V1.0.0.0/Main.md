@@ -56,11 +56,11 @@ Currently we see 3 commonly used types of SharePoint sites:
 
 The problem is that both navigation and management of permissions is different depending on the type of site.
 
-<img src="/V1.0.0.0/Images/2%20Problem%20Statment%201.png" width="150" height="100" style="float:right"/>
+<img src="/V1.0.0.0/Images/2%20Problem%20Statment%201.png" alt="Propblem Statement 1" title="Propblem Statement 1" style="width:auto;max-width:500"/>
 
 In modern group-connected sites (left) the site settings page no longer contains &quot;People and groups&quot; and &quot;Site permissions&quot;.
 
-![](/V1.0.0.0/Images/3%20Problem%20Statment%202.png)
+![Propblem Statement 2](/V1.0.0.0/Images/3%20Problem%20Statment%202.png)
 
 In SharePoint sites without a group-connection (2. and 3.) you see the &quot;Share&quot; option on the top right of every page while in group-connected sites (1.) this is replaced by the &quot;Members&quot; option. The &quot;Members&quot; option will only show you the members of the M365 group. If other users have been added to classic SharePoint groups they will not show up here despite having access. Also in the M365 group the concept of the visitor is missing.
 
