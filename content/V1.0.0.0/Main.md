@@ -94,7 +94,8 @@ Navigate to your App Catalog site. If you don&#39;t know the URL of your App Cat
 
 Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center \&gt; Show all \&gt; SharePoint \&gt; Sites \&gt; Active sites or use this link: https://[YOUR\_TENANT]-admin.sharepoint.com/\_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
 
-![](RackMultipart20210301-4-y1hube_html_841e800e36c1b18d.png)
+<img src="/V1.0.0.0/Images/4 Deployment 1.png" style="width:auto;max-width:800"/>
+
 
 Some tenants do not have
 
