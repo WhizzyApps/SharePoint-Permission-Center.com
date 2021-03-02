@@ -56,7 +56,7 @@ Currently we see 3 commonly used types of SharePoint sites:
 
 The problem is that both navigation and management of permissions is different depending on the type of site.
 
-<img src="/V1.0.0.0/Images/2%20Problem%20Statment%201.png" width="150" height="100" />
+<img src="/V1.0.0.0/Images/2%20Problem%20Statment%201.png" width="150" height="100" style="float:right"/>
 
 In modern group-connected sites (left) the site settings page no longer contains &quot;People and groups&quot; and &quot;Site permissions&quot;.
 
