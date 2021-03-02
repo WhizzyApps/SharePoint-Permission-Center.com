@@ -88,7 +88,7 @@ Do not rename the file. The filename has to match the package name.
 **B) Or an existing site collection app catalog (as Site collection admin).**
  In this case the web part can only be used in this particular site collection and nowhere else. This is useful if you want to install a specific version of the web part for testing and verification.
 
-## 2A) Deployment to the global app catalog
+### 2A) Deployment to the global app catalog
 
 Navigate to your App Catalog site. If you don&#39;t know the URL of your App Catalog site, follow these steps:
 
@@ -107,7 +107,7 @@ After the deployment, make sure the file is checked in. If you see an icon with 
 
 <img src="/V1.0.0.0/Images/6 Deployment 3.png" style="width:auto;max-width:800"/>
 
-**2B) Deployment to a site collection app catalog**
+### 2B) Deployment to a site collection app catalog
 
 Navigate
 
