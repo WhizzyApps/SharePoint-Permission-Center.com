@@ -27,7 +27,7 @@ The web part makes it easier for site owners and users to answer the following q
 - What other (hidden) groups do exist without any assigned permission level?
 - How can I navigate to the classic SharePoint pages to manage groups and permissions?
 
-![Introduction](/V1.0.0.0/Images/1 Introduction.png)
+![Introduction](/V1.0.0.0/Images/1%20Introduction.png)
 
 It also gives site owners simple means to quickly change the group membership or users.
 
