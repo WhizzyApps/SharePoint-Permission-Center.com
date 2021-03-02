@@ -3,12 +3,7 @@ title: "Documentation for PermissionCenter web part version 1.0.0.0"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
-
-# SharePoint Permission Center Web Part
-
-Version 1.0.0.0
-
-Karsten Held, 2020-12-30
+Karsten Held
 
 ## Introduction
 
