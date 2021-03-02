@@ -101,11 +101,11 @@ Some tenants do not have
 
 In the App Catalog Site click on &quot;Apps for SharePoint&quot; \&gt; New \&gt; Choose Files \&gt; select the downloaded _permission-center-webpart.sppkg_ file \&gt; OK \&gt; then click &quot;Deploy&quot;.
 
-![](RackMultipart20210301-4-y1hube_html_ed8604a9141b4d6b.jpg)
+<img src="/V1.0.0.0/Images/5 Deployment 2.png" style="width:auto;max-width:800"/>
 
 After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file \&gt; … \&gt; Advanced \&gt; Check In \&gt; OK
 
-![](RackMultipart20210301-4-y1hube_html_4f62aba7eb0ad87c.jpg)
+<img src="/V1.0.0.0/Images/6 Deployment 3.png" style="width:auto;max-width:800"/>
 
 **2B) Deployment to a site collection app catalog**
 
@@ -115,7 +115,7 @@ Navigate
 
 Features
 
-1. ![](RackMultipart20210301-4-y1hube_html_286f05ecb30db67f.png)&quot; **Groups&quot; tab**
+1. &quot; **Groups&quot; tab** <img src="/V1.0.0.0/Images/7 Description 1.png" style="width:300; float:right"/>
 
 - Showing groups
   - &quot;Site Admins&quot; (not a particular SharePoint group)
