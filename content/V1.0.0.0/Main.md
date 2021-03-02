@@ -117,110 +117,110 @@ Features
 
 1. &quot; **Groups&quot; tab** <img src="/V1.0.0.0/Images/7 Description 1.png" style="width:300; float:right"/>
 
-- Showing groups
-  - &quot;Site Admins&quot; (not a particular SharePoint group)
-  - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
-  - custom SharePoint groups: &quot;Dolani special&quot;
-  - &quot;Access given directly&quot; (not a particular SharePoint group)
-- Showing permission levels in brackets
-  - f groups. To manage permissions of a particular permission level, click to open classic page
-  - f each member with direct access
-- Expand/Collapse group members: click on icon on the left
-- Manage groups:
-  - Icons on the right with tooltip
-  - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
-  - For SharePoint groups expand group card. See section &quot;Group card&quot;.
-- Manage users: Click on username to open user card. See section &quot;User card&quot;.
+  - Showing groups
+    - &quot;Site Admins&quot; (not a particular SharePoint group)
+    - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
+    - custom SharePoint groups: &quot;Dolani special&quot;
+    - &quot;Access given directly&quot; (not a particular SharePoint group)
+  - Showing permission levels in brackets
+    - f groups. To manage permissions of a particular permission level, click to open classic page
+    - f each member with direct access
+  - Expand/Collapse group members: click on icon on the left
+  - Manage groups:
+    - Icons on the right with tooltip
+    - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
+    - For SharePoint groups expand group card. See section &quot;Group card&quot;.
+  - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 2. &quot; **Users&quot; tab** <img src="/V1.0.0.0/Images/8 Description 2.png" style="width:300; float:right"/>
 
-- Showing all users of site in Alphabetical order
-- Showing permission levels in brackets
-- Manage users: Click on username to open user card. See section &quot;User card&quot;.
+  - Showing all users of site in Alphabetical order
+  - Showing permission levels in brackets
+  - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 
 3. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
 
-- Showing hidden SharePoint groups that are created by SharePoint and their members
-- &quot;Limited Access System Group&quot;
-- Sharing groups
-  - are created when an item is shared
-  - Sharing: \&lt;Item name\&gt; \&lt;SharePoint group name\&gt;
-  - Link to open item
-  - Link to open classic permissions page of item
-  - Showing permissions in brackets
-- Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
-- Manage users: Click on username opens user card. See section &quot;User card&quot;.
+  - Showing hidden SharePoint groups that are created by SharePoint and their members
+  - &quot;Limited Access System Group&quot;
+  - Sharing groups
+    - are created when an item is shared
+    - Sharing: \&lt;Item name\&gt; \&lt;SharePoint group name\&gt;
+    - Link to open item
+    - Link to open classic permissions page of item
+    - Showing permissions in brackets
+  - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
+  - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
 
 4. **Group card** <img src="/V1.0.0.0/Images/10 Description 4.png" style="width:300; float:right"/>
 
-- Click on edit icon expands group card
-- Showing details
-  - Name, Type
-  - If it is set as a default group
-  - Group owner
-  - Permission levels
-- Action buttons
-  - &quot;Edit group&quot; opens classic group settings page
-  - &quot;delete group&quot; removes group from SharePoint
-  - &quot;Show group in SharePoint&quot; opens classic group page
-  - &quot;Edit group permissions&quot; opens classic permissions page of group
+  - Click on edit icon expands group card
+  - Showing details
+    - Name, Type
+    - If it is set as a default group
+    - Group owner
+    - Permission levels
+  - Action buttons
+    - &quot;Edit group&quot; opens classic group settings page
+    - &quot;delete group&quot; removes group from SharePoint
+    - &quot;Show group in SharePoint&quot; opens classic group page
+    - &quot;Edit group permissions&quot; opens classic permissions page of group
 
 
 5. **User Card** <img src="/V1.0.0.0/Images/11 Description 5.png" style="width:300; float:right"/>
 
-- Click on username opens user card.
-- Showing details
-  - User photo
-  - Email address
-  - Permission levels
-- Membership in all groups
-  - SharePoint group and permission level: Click opens classic group page
-  - Nested Azure groups (Type, name): Click opens group in Azure portal
-  - Username: Click opens user in Azure portal
-- Action buttons:
-  - &quot;Change membership&quot; opens dialog to add or remove the user to/from a group. See section &quot;Change membership&quot;
-  - &quot;Delete user from site&quot; removes user from all SharePoint groups of the site and deletes its SharePoint profile
-  - &quot;Classic property page&quot; opens classic user property page
-- Change membership <img src="/V1.0.0.0/Images/12 Description 6.png" style="width:400; float:right"/>
-  - List of all Sharepoint groups of site, including hidden groups and &quot;Access given directly&quot;
-  - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
-  - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
-  - To manage members of &quot;Access given directly&quot;, click to open classic permission page
-  - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
+  - Click on username opens user card.
+  - Showing details
+    - User photo
+    - Email address
+    - Permission levels
+  - Membership in all groups
+    - SharePoint group and permission level: Click opens classic group page
+    - Nested Azure groups (Type, name): Click opens group in Azure portal
+    - Username: Click opens user in Azure portal
+  - Action buttons:
+    - &quot;Change membership&quot; opens dialog to add or remove the user to/from a group. See section &quot;Change membership&quot;
+    - &quot;Delete user from site&quot; removes user from all SharePoint groups of the site and deletes its SharePoint profile
+    - &quot;Classic property page&quot; opens classic user property page
+  - Change membership <img src="/V1.0.0.0/Images/12 Description 6.png" style="width:400; float:right"/>
+    - List of all Sharepoint groups of site, including hidden groups and &quot;Access given directly&quot;
+    - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
+    - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
+    - To manage members of &quot;Access given directly&quot;, click to open classic permission page
+    - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 
 6. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
 
-- Access to 6 particular pages of classic admin center:
-- &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
-- &quot;Classic permissions level page&quot; opens page of all permission levels of site
-- &quot;Classic groups page&quot; opens &quot;../groups.aspx&quot;
-- &quot;Classic default groups page&quot; opens &quot;../permsetup.aspx&quot;
-- &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
-- &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
+  - Access to 6 particular pages of classic admin center:
+  - &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
+  - &quot;Classic permissions level page&quot; opens page of all permission levels of site
+  - &quot;Classic groups page&quot; opens &quot;../groups.aspx&quot;
+  - &quot;Classic default groups page&quot; opens &quot;../permsetup.aspx&quot;
+  - &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
+  - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
 7. **Reload button** <img src="/V1.0.0.0/Images/14 Description 8.png" style="width:300; float:right"/>
 
-- Reloads webpart with updated data from the Api without reloading the web page
+  - Reloads webpart with updated data from the Api without reloading the web page
 
 # Web part configuration 
 <img src="/V1.0.0.0/Images/15 Configuration 1.png" style="width:250; float:right"/>
