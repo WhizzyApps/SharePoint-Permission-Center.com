@@ -1,14 +1,9 @@
 ---
-title: "V1.0.1.0"
+title: "Documentation for PermissionCenter web part version 1.0.1.0"
 date: 2021-03-01T14:39:08-06:00
 draft: false
 ---
-
-# SharePoint Permission Center Web Part
-
-Version 1.0.1.0
-
-Samuel Gross, 2021-03-01
+Samuel Gross
 
 # Release notes
 
