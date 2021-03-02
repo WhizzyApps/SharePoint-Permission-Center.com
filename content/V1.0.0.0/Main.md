@@ -159,6 +159,10 @@ Features
 - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
 - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
+<br/>
+<br/>
+<br/>
+
 4. **Group card** <img src="/V1.0.0.0/Images/10 Description 4.png" style="width:300; float:right"/>
 
 - Click on edit icon expands group card
@@ -196,12 +200,13 @@ Features
   - To manage members of &quot;Access given directly&quot;, click to open classic permission page
   - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
-
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 6. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
 
