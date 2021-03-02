@@ -259,6 +259,10 @@ Configuration based on permissions
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
 
+<br/>
+<br/>
+<br/>
+
 - Security Note
   - For both (&quot;Configuration based on permissions&quot; enabled or disabled), features that are restricted by SharePoint for the current user, will not be shown or will be empty.
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
