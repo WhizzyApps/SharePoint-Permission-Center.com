@@ -115,7 +115,6 @@ Navigate
 
 Features
 
-<div>
 1. &quot; **Groups&quot; tab** <img src="/V1.0.0.0/Images/7 Description 1.png" style="width:300; float:right"/>
 
 - Showing groups
@@ -138,7 +137,14 @@ Features
 - Showing all users of site in Alphabetical order
 - Showing permission levels in brackets
 - Manage users: Click on username to open user card. See section &quot;User card&quot;.
-</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 3. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
 
@@ -167,7 +173,7 @@ Features
   - &quot;Show group in SharePoint&quot; opens classic group page
   - &quot;Edit group permissions&quot; opens classic permissions page of group
 
-<div>
+
 5. **User Card** <img src="/V1.0.0.0/Images/11 Description 5.png" style="width:300; float:right"/>
 
 - Click on username opens user card.
@@ -189,7 +195,13 @@ Features
   - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
   - To manage members of &quot;Access given directly&quot;, click to open classic permission page
   - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
-</div>
+
+
+
+
+
+
+
 
 6. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
 
@@ -218,7 +230,6 @@ About the web part
 
 Note: You need to be site owner or site admin to be able to configure the web part, otherwise no options will be shown.
 
-<div>
 Configuration based on permissions
 
 - On (by default):
@@ -229,7 +240,13 @@ Configuration based on permissions
   - If you are Site owner, you will see the changes you make for the configuration of &quot;Site owners&quot; in the web part immediately.
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
-</div>
+
+
+
+
+
+
+
 
 - Off: <img src="/V1.0.0.0/Images/16 Configuration 2.png" style="width:250; float:right"/>
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
