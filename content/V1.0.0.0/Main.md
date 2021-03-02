@@ -246,12 +246,13 @@ Configuration based on permissions
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
 
-
-
-
-
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 - Off: <img src="/V1.0.0.0/Images/16 Configuration 2.png" style="width:250; float:right"/>
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
