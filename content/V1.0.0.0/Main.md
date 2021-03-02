@@ -319,9 +319,9 @@ With this option, only invited people can access the item. The name of the creat
 
 <img src="/V1.0.0.0/Images/21 Special behaviors 5.png" style="width:600;"/>
 
-Where does the data come from?
+## Where does the data come from?
 
-SharePoint API endpoints:
+### SharePoint API endpoints:
 
 Get current user permissions
 
@@ -402,7 +402,7 @@ Delete user from site: post with header: &#39;X-HTTP-Method&#39;: &#39;DELETE&#3
 
 - {site url}/\_api/web/GetUserById({userSpId})
 
-Graph API endpoints:
+### Graph API endpoints:
 
 Get members of Azure groups:
 
