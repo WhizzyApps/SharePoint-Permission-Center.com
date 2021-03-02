@@ -264,7 +264,13 @@ Configuration based on permissions
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
   - So the web part will only display information the user has access to based on the user permissions controlled through SharePoint itself.
 
-Special behaviors: Hidden groups
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+# Special behaviors: Hidden groups
 
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
@@ -276,7 +282,8 @@ Examples of hidden groups: <img src="/V1.0.0.0/Images/17 Special behaviors 1.png
 - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
 - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
-Information about Sharing groups <img src="/V1.0.0.0/Images/18 Special behaviors 2.png" style="width:250; float:right"/>
+## Information about Sharing groups 
+<img src="/V1.0.0.0/Images/18 Special behaviors 2.png" style="width:250; float:right"/>
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
 
