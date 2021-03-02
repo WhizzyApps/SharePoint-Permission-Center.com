@@ -172,6 +172,7 @@ Features
   - &quot;Show group in SharePoint&quot; opens classic group page
   - &quot;Edit group permissions&quot; opens classic permissions page of group
 
+<div>
 5. **User Card** <img src="/V1.0.0.0/Images/11 Description 5.png" style="width:300; float:right"/>
 
 - Click on username opens user card.
@@ -193,7 +194,7 @@ Features
   - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
   - To manage members of &quot;Access given directly&quot;, click to open classic permission page
   - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
-
+</div>
 
 
 
