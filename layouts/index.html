@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>{{ .Title }}</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
   <body>
-    <h1>Nice. It's looking good already.</h1>
+    <h1>{{ .Title }}</h1>
+    <p class="date">{{ .Date }}</p>
+    <p class="description">{{ .Params.description }}</p>
+    <article class="content">
+      {{ .Content }}
+    </article>
   </body>
 </html>
