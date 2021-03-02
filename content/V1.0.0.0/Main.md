@@ -132,7 +132,7 @@ Features
   - For SharePoint groups expand group card. See section &quot;Group card&quot;.
 - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-1. &quot; **Users&quot; tab** <img src="/V1.0.0.0/Images/8 Description 2.png" style="width:300; float:right"/>
+2. &quot; **Users&quot; tab** <img src="/V1.0.0.0/Images/8 Description 2.png" style="width:300; float:right"/>
 
 - Showing all users of site in Alphabetical order
 - Showing permission levels in brackets
@@ -145,7 +145,7 @@ Features
 
 
 
-1. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
+3. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
 
 - Showing hidden SharePoint groups that are created by SharePoint and their members
 - &quot;Limited Access System Group&quot;
@@ -158,7 +158,7 @@ Features
 - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
 - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
-1. **Group card** <img src="/V1.0.0.0/Images/10 Description 4.png" style="width:300; float:right"/>
+4. **Group card** <img src="/V1.0.0.0/Images/10 Description 4.png" style="width:300; float:right"/>
 
 - Click on edit icon expands group card
 - Showing details
@@ -172,7 +172,7 @@ Features
   - &quot;Show group in SharePoint&quot; opens classic group page
   - &quot;Edit group permissions&quot; opens classic permissions page of group
 
-1. **User Card** <img src="/V1.0.0.0/Images/11 Description 5.png" style="width:300; float:right"/>
+5. **User Card** <img src="/V1.0.0.0/Images/11 Description 5.png" style="width:300; float:right"/>
 
 - Click on username opens user card.
 - Showing details
@@ -201,7 +201,7 @@ Features
 
 
 
-1. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
+6. **SharePoint menu** <img src="/V1.0.0.0/Images/13 Description 7.png" style="width:400; float:right"/>
 
 - Access to 6 particular pages of classic admin center:
 - &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
@@ -211,7 +211,7 @@ Features
 - &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
 - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
-1. **Reload button** <img src="/V1.0.0.0/Images/14 Description 8.png" style="width:300; float:right"/>
+7. **Reload button** <img src="/V1.0.0.0/Images/14 Description 8.png" style="width:300; float:right"/>
 
 - Reloads webpart with updated data from the Api without reloading the web page
 
