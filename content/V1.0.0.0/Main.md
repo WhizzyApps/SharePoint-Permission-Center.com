@@ -10,7 +10,7 @@ Version 1.0.0.0
 
 Karsten Held, 2020-12-30
 
-# Introduction
+## Introduction
 
 The &quot;SharePoint Permission Center web part&quot; is a modern SharePoint web part for SharePoint Online, released as open source under the [MIT License](https://choosealicense.com/licenses/mit/) by the company WhizzyApps GmbH.
 
@@ -31,7 +31,7 @@ The web part makes it easier for site owners and users to answer the following q
 
 It also gives site owners simple means to quickly change the group membership or users.
 
-# Problem statement
+## Problem statement
 
 With the introduction of a new type of Azure group - the &quot;Office 365 group&quot; (now called &quot;Microsoft 365 group&quot; or &quot;M365 group&quot;) - Microsoft changed the way we manage access to SharePoint sites. The M365 group allows the management of access to many apps in one single place:
 
@@ -74,7 +74,7 @@ Another category of problem is that site owners cannot easily see what documents
 
 The Permission Center web part solves these problems by providing a unified and exhaustive user interface to review and manage all users and groups that have access to a site. It also gives access to all classic SharePoint pages for permission management via the &quot;SharePoint&quot; menu.
 
-# Deployment instructions
+## Deployment instructions
 
 1) Download the web part package file _permission-center-webpart.sppkg_ from
 [https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases)
@@ -111,40 +111,40 @@ After the deployment, make sure the file is checked in. If you see an icon with 
 
 Navigate
 
-# Web part description
+## Web part description
 
 Features
 
 1. &quot; **Groups&quot; tab** <img src="/V1.0.0.0/Images/7 Description 1.png" style="width:300; float:right"/>
 
-  - Showing groups
-    - &quot;Site Admins&quot; (not a particular SharePoint group)
-    - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
-    - custom SharePoint groups: &quot;Dolani special&quot;
-    - &quot;Access given directly&quot; (not a particular SharePoint group)
-  - Showing permission levels in brackets
-    - f groups. To manage permissions of a particular permission level, click to open classic page
-    - f each member with direct access
-  - Expand/Collapse group members: click on icon on the left
-  - Manage groups:
-    - Icons on the right with tooltip
-    - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
-    - For SharePoint groups expand group card. See section &quot;Group card&quot;.
-  - Manage users: Click on username to open user card. See section &quot;User card&quot;.
+      - Showing groups
+        - &quot;Site Admins&quot; (not a particular SharePoint group)
+        - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
+        - custom SharePoint groups: &quot;Dolani special&quot;
+        - &quot;Access given directly&quot; (not a particular SharePoint group)
+      - Showing permission levels in brackets
+        - f groups. To manage permissions of a particular permission level, click to open classic page
+        - f each member with direct access
+      - Expand/Collapse group members: click on icon on the left
+      - Manage groups:
+        - Icons on the right with tooltip
+        - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
+        - For SharePoint groups expand group card. See section &quot;Group card&quot;.
+      - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 2. &quot; **Users&quot; tab** <img src="/V1.0.0.0/Images/8 Description 2.png" style="width:300; float:right"/>
 
-  - Showing all users of site in Alphabetical order
-  - Showing permission levels in brackets
-  - Manage users: Click on username to open user card. See section &quot;User card&quot;.
+      - Showing all users of site in Alphabetical order
+      - Showing permission levels in brackets
+      - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
 3. &quot; **Hidden groups&quot; tab** <img src="/V1.0.0.0/Images/9 Description 3.png" style="width:300; float:right"/>
 
@@ -222,7 +222,7 @@ Features
 
   - Reloads webpart with updated data from the Api without reloading the web page
 
-# Web part configuration 
+## Web part configuration 
 <img src="/V1.0.0.0/Images/15 Configuration 1.png" style="width:250; float:right"/>
 
 To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right.
@@ -270,7 +270,7 @@ Configuration based on permissions
 <br/>
 <br/>
 
-# Special behaviors: Hidden groups
+## Special behaviors: Hidden groups
 
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
@@ -282,7 +282,7 @@ Examples of hidden groups: <img src="/V1.0.0.0/Images/17 Special behaviors 1.png
 - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
 - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
-## Information about Sharing groups 
+### Information about Sharing groups 
 <img src="/V1.0.0.0/Images/18 Special behaviors 2.png" style="width:250; float:right"/>
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
@@ -420,7 +420,3 @@ Get name of organization of tenant to display it in tooltip for sharing groups
 Get azure properties for user
 
 - /users/{userPrincipalName}
-
-![](RackMultipart20210301-4-y1hube_html_6a354e01d9b36d34.gif)
-
-Confidentiality: C2 - Internal
