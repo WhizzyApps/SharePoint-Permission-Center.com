@@ -82,7 +82,10 @@ Karsten Held, 01.03.2021
         - &quot;delete group&quot; removes group from SharePoint
         - &quot;Show group in SharePoint&quot; opens classic group page
         - &quot;Edit group permissions&quot; opens classic permissions page of group
-
+      
+      <br/>
+      <br/>
+      <br/>
 
 5. **User Card** 
 <img src="/images/11 Description 5.png" style="width:300; float:right"/>
@@ -107,6 +110,9 @@ Karsten Held, 01.03.2021
         - To manage members of &quot;Access given directly&quot;, click to open classic permission page
         - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
+      <br/>
+      <br/>
+      <br/>
       <br/>
       <br/>
       <br/>
