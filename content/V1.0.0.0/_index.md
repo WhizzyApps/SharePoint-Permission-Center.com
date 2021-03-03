@@ -10,7 +10,7 @@ Samuel Gross, 10.02.2021
 ### Features
 
 1. &quot; **Groups&quot; tab** 
-<img src="/images/7 Description 1.png" style="width:300px; float:right"/>
+<img src="/images/7%20Description%201.png" style="width:300px; float:right"/>
 
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
@@ -27,7 +27,6 @@ Samuel Gross, 10.02.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-***
 
 2. &quot; **Users&quot; tab** 
 <img src="/images/8 Description 2.png" style="width:300px; float:right"/>
