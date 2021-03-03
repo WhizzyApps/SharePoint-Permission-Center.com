@@ -3,7 +3,7 @@ title: "Version 1.0.0.0"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
-Karsten Held, 01.03.2021
+Samuel Gross, 10.02.2021
 
 ## Web part description
 
