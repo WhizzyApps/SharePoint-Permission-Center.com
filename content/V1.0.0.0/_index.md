@@ -9,7 +9,8 @@ Karsten Held, 01.03.2021
 
 ### Features
 
-1. &quot; **Groups&quot; tab** <img src="/images/7 Description 1.png" style="width:300; float:right"/>
+1. &quot; **Groups&quot; tab** 
+<img src="/images/7 Description 1.png" style="width:300; float:right"/>
 
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
@@ -26,7 +27,11 @@ Karsten Held, 01.03.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-2. &quot; **Users&quot; tab** <img src="/images/8 Description 2.png" style="width:300; float:right"/>
+      <br/>
+      <br/>
+
+2. &quot; **Users&quot; tab** 
+<img src="/images/8 Description 2.png" style="width:300; float:right"/>
 
       - Showing all users of site in Alphabetical order
       - Showing permission levels in brackets
@@ -40,7 +45,8 @@ Karsten Held, 01.03.2021
       <br/>
       <br/>
 
-3. &quot; **Hidden groups&quot; tab** <img src="/images/9 Description 3.png" style="width:300; float:right"/>
+3. &quot; **Hidden groups&quot; tab** 
+<img src="/images/9 Description 3.png" style="width:300; float:right"/>
 
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
@@ -57,7 +63,8 @@ Karsten Held, 01.03.2021
       <br/>
       <br/>
 
-4. **Group card** <img src="/images/10 Description 4.png" style="width:300; float:right"/>
+4. **Group card** 
+<img src="/images/10 Description 4.png" style="width:300; float:right"/>
 
       - Click on edit icon expands group card
       - Showing details
@@ -72,7 +79,8 @@ Karsten Held, 01.03.2021
         - &quot;Edit group permissions&quot; opens classic permissions page of group
 
 
-5. **User Card** <img src="/images/11 Description 5.png" style="width:300; float:right"/>
+5. **User Card** 
+<img src="/images/11 Description 5.png" style="width:300; float:right"/>
 
       - Click on username opens user card.
       - Showing details
@@ -102,7 +110,8 @@ Karsten Held, 01.03.2021
       <br/>
       <br/>
 
-6. **SharePoint menu** <img src="/images/13 Description 7.png" style="width:400; float:right"/>
+6. **SharePoint menu** 
+<img src="/images/13 Description 7.png" style="width:400; float:right"/>
 
       - Access to 6 particular pages of classic admin center:
       - &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
@@ -112,7 +121,8 @@ Karsten Held, 01.03.2021
       - &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
       - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
-7. **Reload button** <img src="/images/14 Description 8.png" style="width:300; float:right"/>
+7. **Reload button** 
+<img src="/images/14 Description 8.png" style="width:300; float:right"/>
 
       - Reloads webpart with updated data from the Api without reloading the web page
 
