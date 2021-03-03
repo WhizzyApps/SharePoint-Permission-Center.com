@@ -27,8 +27,10 @@ Karsten Held, 01.03.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-      <br/>
-      <br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 2. &quot; **Users&quot; tab** 
 <img src="/images/8 Description 2.png" style="width:300; float:right"/>
@@ -109,6 +111,9 @@ Karsten Held, 01.03.2021
       <br/>
       <br/>
       <br/>
+      <br/>
+      <br/>
+      <br/>
 
 6. **SharePoint menu** 
 <img src="/images/13 Description 7.png" style="width:400; float:right"/>
@@ -126,6 +131,10 @@ Karsten Held, 01.03.2021
 
       - Reloads webpart with updated data from the Api without reloading the web page
 
+      <br/>
+      <br/>
+      <br/>
+      
 ## Web part configuration 
 <img src="/images/15 Configuration 1.png" style="width:250; float:right"/>
 
