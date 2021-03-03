@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "PermissionCenterWebpart Documentation"
 theme = "Learn"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
