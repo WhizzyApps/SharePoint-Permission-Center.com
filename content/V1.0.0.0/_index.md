@@ -1,8 +1,10 @@
-<hr>
-<p>title: &quot;Version 1.0.0.0&quot;
-date: 2021-03-01T14:38:53-06:00</p>
-<h2 id="draft-false">draft: false</h2>
-<p>Samuel Gross, 10.02.2021</p>
+---
+title: "Version 1.0.0.0"
+date: 2021-03-01T14:38:53-06:00
+draft: false
+---
+Samuel Gross, 10.02.2021
+
 <h2 id="web-part-description">Web part description</h2>
 <h3 id="features">Features</h3>
 <ol>
@@ -252,15 +254,15 @@ date: 2021-03-01T14:38:53-06:00</p>
 <p>You can choose if user can read or edit the item.</p>
 <p><strong>Anyone with the link</strong></p>
 <p>This option needs to be enabled in the Admin center. The name of the created group contains &quot;Anonymous&quot;, because anyone can access the item, and &quot;Edit&quot; for the edit permission.</p>
-<p style="text-align: left;"><img src="/images/19 Special behaviors 3.png" style="width:600;"/></p>
+<p><img src="/images/19 Special behaviors 3.png" style="width:600;"/></p>
 <p><strong>People in your Organization with the link</strong></p>
 <p>The name of the created group contains &quot;Organization&quot;, because only people in your organization can access the item, and &quot;view&quot; for the read permission.</p>
-<p style="text-align: left;"><img src="/images/20 Special behaviors 4.png" style="width:600;"/></p>
+<p><img src="/images/20 Special behaviors 4.png" style="width:600;"/></p>
 <p><strong>People with existing access</strong></p>
 <p>This option is just to send a link to specified user. No SharePoint group is created.</p>
 <p><strong>Specific people</strong></p>
 <p>With this option, only invited people can access the item. The name of the created group contains &quot;Flexible&quot;, because you can change the permissions of this group to view or read.</p>
-<p style="text-align: left;"><img src="/images/21 Special behaviors 5.png" style="width:600;"/></p>
+<p><img src="/images/21 Special behaviors 5.png" style="width:600;"/></p>
 <h2 id="where-does-the-data-come-from-">Where does the data come from?</h2>
 <h3 id="sharepoint-api-endpoints-">SharePoint API endpoints:</h3>
 <p>Get current user permissions</p>
