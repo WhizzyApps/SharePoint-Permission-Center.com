@@ -3,9 +3,11 @@ title: "Version 1.0.0.0"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
-Karsten Held
+Karsten Held, 01.03.2021
 
-## Features
+## Web part description
+
+### Features
 
 1. &quot; **Groups&quot; tab** <img src="/Images/7 Description 1.png" style="width:300; float:right"/>
 

@@ -104,5 +104,3 @@ After the deployment, make sure the file is checked in. If you see an icon with 
 ### 2B) Deployment to a site collection app catalog
 
 Navigate
-
-## Web part description
