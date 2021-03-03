@@ -18,8 +18,8 @@ Samuel Gross, 10.02.2021
         - custom SharePoint groups: &quot;Dolani special&quot;
         - &quot;Access given directly&quot; (not a particular SharePoint group)
       - Showing permission levels in brackets
-        - f groups. To manage permissions of a particular permission level, click to open classic page
-        - f each member with direct access
+        - for groups. To manage permissions of a particular permission level, click to open classic page
+        - for each member with direct access
       - Expand/Collapse group members: click on icon on the left
       - Manage groups:
         - Icons on the right with tooltip
