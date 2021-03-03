@@ -234,13 +234,13 @@ You can choose if user can read or edit the item.
 
 This option needs to be enabled in the Admin center. The name of the created group contains &quot;Anonymous&quot;, because anyone can access the item, and &quot;Edit&quot; for the edit permission.
 
-<img src="/images/19 Special behaviors 3.png" style="width:600; float:left"/>
+<img src="/images/19 Special behaviors 3.png" style="width:600; align:left"/>
 
 **People in your Organization with the link**
 
 The name of the created group contains &quot;Organization&quot;, because only people in your organization can access the item, and &quot;view&quot; for the read permission.
 
-<img src="/images/20 Special behaviors 4.png" style="width:600; float:left"/>
+<img src="/images/20 Special behaviors 4.png" style="width:600; align:left"/>
 
 **People with existing access**
 
@@ -250,7 +250,7 @@ This option is just to send a link to specified user. No SharePoint group is cre
 
 With this option, only invited people can access the item. The name of the created group contains &quot;Flexible&quot;, because you can change the permissions of this group to view or read.
 
-<img src="/images/21 Special behaviors 5.png" style="width:600; float:left"/>
+<img src="/images/21 Special behaviors 5.png" style="width:600; align:left"/>
 
 ## Where does the data come from?
 
