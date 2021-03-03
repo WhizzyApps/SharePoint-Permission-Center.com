@@ -67,6 +67,9 @@ Karsten Held, 01.03.2021
       <br/>
       <br/>
       <br/>
+      <br/>
+      <br/>
+      <br/>
 
 4. **Group card** 
 <img src="/images/10 Description 4.png" style="width:300; float:right"/>
@@ -135,6 +138,10 @@ Karsten Held, 01.03.2021
       - &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
       - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
+      <br/>
+      <br/>
+      <br/>
+      
 7. **Reload button** 
 <img src="/images/14 Description 8.png" style="width:300; float:right"/>
 
