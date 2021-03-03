@@ -17,7 +17,7 @@ Samuel Gross, 04.03.2021
 ## Web part description
 
 ### Configuration page 1/2
-<img src="/images/15 Configuration 1 v1.0.1.0.png" style="width:250px; float:right"/>
+<img src="/images/15 Configuration 1 v1.0.1.0.png" style="width:250px;"/>
 
 ### Configuration page 2/2
 <img src="/images/16.1 Configuration 3 v1.0.1.0.png" style="width:250px; float:right"/>
