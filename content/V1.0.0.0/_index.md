@@ -27,6 +27,10 @@ Samuel Gross, 10.02.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
 2. &quot; **Users&quot; tab** 
 <img src="/images/8 Description 2.png" style="width:300px; float:right"/>
