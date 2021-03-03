@@ -99,7 +99,7 @@ In the App Catalog Site click on &quot;Apps for SharePoint&quot; \&gt; New \&gt;
 
 <img src="/Images/5 Deployment 2.png" style="width:auto;max-width:800"/>
 
-After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file \&gt; … \&gt; Advanced \&gt; Check In \&gt; OK
+After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (...) icon of the file \&gt; ... \&gt; Advanced \&gt; Check In \&gt; OK
 
 <img src="/Images/6 Deployment 3.png" style="width:auto;max-width:800"/>
 
