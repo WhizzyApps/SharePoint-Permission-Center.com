@@ -3,5 +3,8 @@ languageCode = "en-us"
 title = "PermissionCenterWebpart Documentation"
 theme = "Learn"
 
+[params]
+  themeVariant = "whizzy"
+
 [outputs]
     home = [ "HTML", "RSS", "JSON"]
