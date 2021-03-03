@@ -58,7 +58,7 @@ body #chapter h1 {
     }
 }
 a {
-    color: #00bdf3;
+    color: #3A9CFF;
 }
 a:hover {
     color: #0082a7;
@@ -100,14 +100,14 @@ textarea:hover, input[type="email"]:hover, input[type="number"]:hover, input[typ
     border-color: #c4c4c4;
 }
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
-    border-color: #00bdf3;
+    border-color: #3A9CFF;
     box-shadow: inset 0 1px 3px rgba(0,0,0,.06),0 0 5px rgba(0,169,218,.7)
 }
 #header-wrapper {
     background: #005AB4;
     color: #fff;
     text-align: center;
-    border-bottom: 4px solid #1C90F3;
+    border-bottom: 4px solid #3A9CFF;
     padding: 1rem;
 }
 #header a {
@@ -123,7 +123,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 .searchbox {
     margin-top: 1rem;
     position: relative;
-    border: 1px solid #1C90F3;
+    border: 1px solid #3A9CFF;
     background: #005AB4;
     border-radius: 4px;
 }
@@ -1086,7 +1086,7 @@ pre .copy-to-clipboard {
     border-radius: 2px;
 }
 pre .copy-to-clipboard:hover {
-    background-color: #00bdf3;
+    background-color: #3A9CFF;
     color: #fff;
 }
 .parent-element {
@@ -1119,7 +1119,7 @@ pre .copy-to-clipboard:hover {
     text-align: right;
 }
 #sidebar ul li.visited > a .read-icon {
-    color: #00bdf3;
+    color: #3A9CFF;
     display: inline;
 }
 
@@ -1134,7 +1134,7 @@ pre .copy-to-clipboard:hover {
   background-color: #005AB4;
   color: #fff;
   padding: 7px 0;
-  border-bottom: 4px solid #1C90F3;
+  border-bottom: 4px solid #3A9CFF;
 }
 
 #searchResults {
