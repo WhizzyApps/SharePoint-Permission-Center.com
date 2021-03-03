@@ -10,8 +10,7 @@ Karsten Held, 10.02.2021
 
 The &quot;SharePoint Permission Center web part&quot; is a modern SharePoint web part for SharePoint Online, released as open source under the [MIT License](https://choosealicense.com/licenses/mit/) by the company WhizzyApps GmbH.
 
-Sourcecode on GitHub: [https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part)
- Documentation: [https://sharepoint-permission-center.com/](https://sharepoint-permission-center.com/)
+[Sourcecode on GitHub](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part)
 
 The web part makes it easier for site owners and users to answer the following questions:
 
@@ -23,7 +22,7 @@ The web part makes it easier for site owners and users to answer the following q
 - What other (hidden) groups do exist without any assigned permission level?
 - How can I navigate to the classic SharePoint pages to manage groups and permissions?
 
-![](/images/1 Introduction.png)
+![](/images/1%20Introduction.png)
 
 It also gives site owners simple means to quickly change the group membership or users.
 
