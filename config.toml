@@ -1,4 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "PermissionCenterWebpart Documentation"
-theme = "GA"
+theme = "Learn"
