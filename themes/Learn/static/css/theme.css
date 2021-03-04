@@ -3,7 +3,7 @@
 /* Tags */
 @import "tags.css";
 
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 #top-github-link, #body #breadcrumbs {
     position: relative;
@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 200;
 } */
-@font-face {
+/* @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
@@ -39,7 +39,7 @@
     font-style: normal;
     font-weight: 500;
     src: url("../fonts/OpenSans-Regular.ttf") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
-}
+} */
 body {
     background: #fff;
     color: #777;
@@ -1143,4 +1143,12 @@ pre .copy-to-clipboard:hover {
 
 option {
     color: initial;
+}
+img[src*='#right300'] {
+    float: right;
+    width:300px;
+    margin-bottom: 1rem;
+}
+li {
+    overflow: auto;
 }

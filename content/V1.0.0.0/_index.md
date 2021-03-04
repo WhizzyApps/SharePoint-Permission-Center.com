@@ -10,7 +10,7 @@ Samuel Gross, 10.02.2021
 ### Features
 
 1. &quot; **Groups&quot; tab** 
-<img src="/images/7%20Description%201.png" style="width:300px; float:right"/>
+      ![](/images/7%20Description%201.png#right300)
 
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
@@ -26,16 +26,18 @@ Samuel Gross, 10.02.2021
         - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
+      
+      
 
 2. &quot; **Users&quot; tab** 
-<img src="/images/8 Description 2.png" style="width:300px; float:right"/>
+      ![](/images/8%20Description%202.png#right300)
 
       - Showing all users of site in Alphabetical order
       - Showing permission levels in brackets
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 3. &quot; **Hidden groups&quot; tab** 
-<img src="/images/9 Description 3.png" style="width:300px; float:right"/>
+      ![](/images/9%20Description%203.png#right300)
 
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
