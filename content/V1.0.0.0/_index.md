@@ -27,28 +27,12 @@ Samuel Gross, 10.02.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-
 2. &quot; **Users&quot; tab** 
 <img src="/images/8 Description 2.png" style="width:300px; float:right"/>
 
       - Showing all users of site in Alphabetical order
       - Showing permission levels in brackets
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
 
 3. &quot; **Hidden groups&quot; tab** 
 <img src="/images/9 Description 3.png" style="width:300px; float:right"/>
@@ -63,13 +47,6 @@ Samuel Gross, 10.02.2021
         - Showing permissions in brackets
       - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
 
 4. **Group card** 
 <img src="/images/10 Description 4.png" style="width:300px; float:right"/>
