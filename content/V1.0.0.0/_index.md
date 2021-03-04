@@ -9,7 +9,7 @@ Samuel Gross, 10.02.2021
 
 ### Features
 
-1. &quot; **Groups&quot; tab** 
+1. **Groups tab** 
       ![](/images/7%20Description%201.png#right300)
 
       - Showing groups
@@ -29,28 +29,28 @@ Samuel Gross, 10.02.2021
       
       
 
-2. &quot; **Users&quot; tab** 
+2. **Users tab** 
       ![](/images/8%20Description%202.png#right300)
 
       - Showing all users of site in Alphabetical order
       - Showing permission levels in brackets
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
-3. &quot; **Hidden groups&quot; tab** 
+3. **Hidden groups tab** 
       ![](/images/9%20Description%203.png#right300)
 
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
       - Sharing groups
         - are created when an item is shared
-        - Sharing: \&lt;Item name\&gt; \&lt;SharePoint group name\&gt;
+        - Sharing: [Item name] [SharePoint group name]
         - Link to open item
         - Link to open classic permissions page of item
         - Showing permissions in brackets
       - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
-4. **Group card** 
+4. ***Group card*** 
 <img src="/images/10 Description 4.png" style="width:300px; float:right"/>
 
       - Click on edit icon expands group card
@@ -65,11 +65,8 @@ Samuel Gross, 10.02.2021
         - &quot;Show group in SharePoint&quot; opens classic group page
         - &quot;Edit group permissions&quot; opens classic permissions page of group
       
-      <br/>
-      <br/>
-      <br/>
 
-5. **User Card** 
+5. ***User Card***
 <img src="/images/11 Description 5.png" style="width:300px; float:right"/>
 
       - Click on username opens user card.
@@ -93,20 +90,6 @@ Samuel Gross, 10.02.2021
         - To manage members of &quot;Access given directly&quot;, click to open classic permission page
         - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-
 6. **SharePoint menu** 
 <img src="/images/13 Description 7.png" style="width:400px; float:right"/>
 
@@ -117,10 +100,6 @@ Samuel Gross, 10.02.2021
       - &quot;Classic default groups page&quot; opens &quot;../permsetup.aspx&quot;
       - &quot;Classic all site users page&quot; opens &quot;../people.aspx?MembershipGroupId=0&quot;
       - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
-
-      <br/>
-      <br/>
-      <br/>
 
 7. **Reload button** 
 <img src="/images/14 Description 8.png" style="width:300px; float:right"/>
@@ -151,36 +130,15 @@ Configuration based on permissions
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 - Off: <img src="/images/16 Configuration 2.png" style="width:250px; float:right"/>
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
 
-<br/>
-<br/>
-<br/>
-
 - Security Note
   - For both (&quot;Configuration based on permissions&quot; enabled or disabled), features that are restricted by SharePoint for the current user, will not be shown or will be empty.
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
   - So the web part will only display information the user has access to based on the user permissions controlled through SharePoint itself.
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 ## Special behaviors: Hidden groups
 
