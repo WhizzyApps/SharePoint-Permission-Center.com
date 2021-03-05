@@ -6,6 +6,13 @@ draft: false
 # Permission Center web part
 Karsten Held, 10.02.2021
 
+## Overview
+
+![](/images/00_Overview.png)
+![](/images/00_Overview.gif)
+
+
+
 ## Introduction
 
 The &quot;SharePoint Permission Center web part&quot; is a modern SharePoint web part for SharePoint Online, released as open source under the [MIT License](https://choosealicense.com/licenses/mit/) by the company WhizzyApps GmbH.
