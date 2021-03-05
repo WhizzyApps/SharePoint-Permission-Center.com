@@ -17,11 +17,11 @@ Samuel Gross, 10.02.2021
         - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
         - custom SharePoint groups: &quot;Dolani special&quot;
         - &quot;Access given directly&quot; (not a particular SharePoint group)
-      - Showing permission levels in brackets
+      - Showing permission levels in parentheses
         - for groups. To manage permissions of a particular permission level, click to open classic page
         - for each member with direct access
       - Expand/Collapse group members: click on icon on the left
-      - Manage groups:
+      - Manage groups
         - Icons on the right with tooltip
         - For &quot;Site Admins&quot; and &quot;Access given directly&quot; open &quot;classic permissions page&quot;
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
@@ -33,7 +33,7 @@ Samuel Gross, 10.02.2021
       ![](/images/8%20Description%202.png#right300)
 
       - Showing all users of site in Alphabetical order
-      - Showing permission levels in brackets
+      - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 3. **Hidden groups tab** 
@@ -46,7 +46,7 @@ Samuel Gross, 10.02.2021
         - Sharing: [Item name] [SharePoint group name]
         - Link to open item
         - Link to open classic permissions page of item
-        - Showing permissions in brackets
+        - Showing permissions in parentheses
       - Manage groups: Click on edit icon on the right expands group card. See section &quot;Group card&quot;.
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
@@ -148,7 +148,7 @@ Examples of hidden groups: <img src="/images/17 Special behaviors 1.png" style="
 
 - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
 - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level &quot;Limited Access&quot;.
-- **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn&#39;t have a site permission level, it is a hidden group. The permission level shown in brackets is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name &quot;Document1&quot; and in the tooltip the link type.
+- **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn&#39;t have a site permission level, it is a hidden group. The permission level shown in parentheses is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name &quot;Document1&quot; and in the tooltip the link type.
 - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
 - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 

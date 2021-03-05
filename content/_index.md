@@ -1,9 +1,9 @@
 ---
-title: "PermissionCenter web part"
+title: "Permission Center web part"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
-# PermissionCenter web part
+# Permission Center web part
 Karsten Held, 10.02.2021
 
 ## Introduction
