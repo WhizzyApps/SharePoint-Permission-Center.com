@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hugo-netlifycms-test-site.netlify.app/"
 languageCode = "en-us"
 title = "PermissionCenterWebpart Documentation"
 theme = "Learn"
