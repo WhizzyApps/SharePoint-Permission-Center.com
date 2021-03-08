@@ -52,7 +52,7 @@ Samuel Gross, 10.02.2021
 
 4. ***Group card*** 
 <img src="/images/10 Description 4.png" style="width:300px; float:right"/>
-
+<div>Hallo</div>
       - Click on edit icon expands group card
       - Showing details
         - Name, Type
