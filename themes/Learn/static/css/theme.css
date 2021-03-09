@@ -581,10 +581,10 @@ h1 {
     font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 @media only screen and (max-width: 1200px) {
-    .home-header .h1 {
+    .home-header h1 {
         font-size: 2.5rem;
     }   
-    .home-header .h4 {
+    .home-header h4 {
         font-size: 1rem;
     }   
 }
