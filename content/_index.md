@@ -6,49 +6,44 @@ layout: list
 ---
 <!-- header -->
 {{< rawhtml >}}
-<div style="display:flex;">
-    <div style="text-align:center;">
-        <h3>Overview</h3>
-        <img class="myImg" onClick="openImage(event)" src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
+    <div style="display:flex;">
+        <div style="text-align:center;">
+            <h3>Overview</h3>
+            <img class="myImg" onClick="openImage(event)" src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
+        </div>
+        <div style="text-align:center;">
+            <h3>Demo</h3>
+            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" style="flex-shrink:1;"/>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
     </div>
-    <div style="text-align:center;">
-        <h3>Demo</h3>
-        <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" style="flex-shrink:1;"/>
-    </div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-</div>
-<script>
-    //add eventlistener to all images
-    const openImage = (event) => {
-        console.log(event.target);
-        modal.style.display = "block";
-        modalImg.src = event.target.src;
+    <script>
+        //add eventlistener to all images
+        const openImage = (event) => {
+            console.log(event.target);
+            modal.style.display = "block";
+            modalImg.src = event.target.src;
+            }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+        modal.style.display = "none";
         }
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-    modal.style.display = "none";
-    }
-</script>
-{{</rawhtml >}}
-
-
-### The web part makes it easier for site owners and users to answer the following questions:
-
-{{< rawhtml >}}
+    </script>
     <hr>
+    <h2>The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>Who has access to a site collection and with what permission level?</h2>
