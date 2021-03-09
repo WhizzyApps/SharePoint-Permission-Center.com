@@ -15,13 +15,15 @@
   }
 @media only screen and (max-width: 1200px) {
     .imageTextContainer {
-      display: block;
-    }
-  }
+        display: block;
+    }   
+}
+.imageText {
+    padding-right: 1rem;
+}
 
 /* modal to open image */
     .myImg {
-        border-radius: 5px;
         cursor: pointer;
         transition: 0.3s;
     }

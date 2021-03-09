@@ -13,7 +13,7 @@ layout: list
         </div>
         <div style="text-align:center;">
             <h3>Demo</h3>
-            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" style="flex-shrink:1;"/>
+            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
         </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -45,7 +45,7 @@ layout: list
     <hr>
     <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
-        <div style="flex-shrink:1;">
+        <div class="imageText">
             <h2>Who has access to a site collection and with what permission level?</h2>
             <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
         </div>
@@ -55,7 +55,7 @@ layout: list
     </div>
     <hr>
     <div class="imageTextContainer">
-        <div style="flex-shrink:1;">
+        <div class="imageText">
             <h2>Why is a person member of a particular group?</h2>
             <h2>What is the group nesting hierarchy of SharePoint and Azure groups?</h2>
         </div>
@@ -65,7 +65,7 @@ layout: list
     </div>
     <hr>
     <div class="imageTextContainer">
-        <div style="flex-shrink:1;">
+        <div class="imageText">
             <h2>What (hidden) groups do exist from shared documents and folders in the site?</h2>
             <h2>What other (hidden) groups do exist without any assigned permission level?</h2>
         </div>
@@ -75,7 +75,7 @@ layout: list
     </div>
     <hr>
     <div class="imageTextContainer">
-        <div style="flex-shrink:1;">
+        <div class="imageText">
             <h2>How can I navigate to the classic SharePoint pages to manage groups and permissions?</h2>
         </div>
         <div style="flex-shrink:0;">
@@ -84,7 +84,7 @@ layout: list
     </div>
     <hr>
     <div class="imageTextContainer">
-        <div style="flex-shrink:1;">
+        <div class="imageText">
             <h2>How can I quickly change the group membership of users?</h2>
         </div>
         <div style="flex-shrink:0;">
