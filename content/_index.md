@@ -49,7 +49,7 @@ layout: list
 
 {{< rawhtml >}}
     <div style="display:flex;">
-        <div style="flex-shrink:1;">
+        <div style="flex-shrink:2;">
             <h2>Who has access to a site collection and with what permission level?</h2>
             <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
         </div>
