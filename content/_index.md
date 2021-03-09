@@ -57,24 +57,38 @@ layout: list
             <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
         </div>
     </div>
+    <div class="imageTextContainer">
+        <div style="flex-shrink:1;">
+            <h2>Why is a person member of a particular group?</h2>
+            <h2>What is the group nesting hierarchy of SharePoint and Azure groups?</h2>
+        </div>
+        <div style="flex-shrink:0;">
+            <img class="myImg" onClick="openImage(event)" src="/images/02.png" />
+        </div>
+    </div>
+    <div class="imageTextContainer">
+        <div style="flex-shrink:1;">
+            <h2>What (hidden) groups do exist from shared documents and folders in the site?</h2>
+            <h2>What other (hidden) groups do exist without any assigned permission level?</h2>
+        </div>
+        <div style="flex-shrink:0;">
+            <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
+        </div>
+    </div>
+    <div class="imageTextContainer">
+        <div style="flex-shrink:1;">
+            <h2>How can I navigate to the classic SharePoint pages to manage groups and permissions?</h2>
+        </div>
+        <div style="flex-shrink:0;">
+            <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
+        </div>
+    </div>
+    <div class="imageTextContainer">
+        <div style="flex-shrink:1;">
+            <h2>How can I quickly change the group membership of users?</h2>
+        </div>
+        <div style="flex-shrink:0;">
+            <img class="myImg" onClick="openImage(event)" src="/images/05.png" />
+        </div>
+    </div>
 {{</rawhtml >}}
-
-![](/images/02.png#right300)
-
-# Why is a person member of a particular group?
-
-# What is the group nesting hierarchy of SharePoint and Azure groups?
-
-![](/images/03.png#right300)
-
-# What (hidden) groups do exist from shared documents and folders in the site?
-
-# What other (hidden) groups do exist without any assigned permission level?
-
-![](/images/04.png#right300)
-
-# How can I navigate to the classic SharePoint pages to manage groups and permissions?
-
-![](/images/05.png#right300)
-
-# How can I quickly change the group membership of users?
