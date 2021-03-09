@@ -43,7 +43,7 @@ layout: list
         }
     </script>
     <hr>
-    <h2 style="background-color:#F0F2F4;">The web part makes it easier for site owners and users to answer the following questions:</h2>
+    <h2 style="background-color:#F0F2F4;padding:0.5rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>Who has access to a site collection and with what permission level?</h2>
