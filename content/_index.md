@@ -47,28 +47,28 @@ layout: list
 
 ### The web part makes it easier for site owners and users to answer the following questions:
 
-![](/images/01.png)
+![](/images/01.png#right300)
 
 # Who has access to a site collection and with what permission level?
 
 # What are the members of a SharePoint group including members of nested Azure groups?
 
-![](RackMultipart20210308-4-1g1t57u_html_692e1f946e6255d4.png)
+![](/images/02.png#right300)
 
 # Why is a person member of a particular group?
 
 # What is the group nesting hierarchy of SharePoint and Azure groups?
 
-![](RackMultipart20210308-4-1g1t57u_html_8f6fb8e4f7954901.png)
+![](/images/03.png#right300)
 
 # What (hidden) groups do exist from shared documents and folders in the site?
 
 # What other (hidden) groups do exist without any assigned permission level?
 
-![](RackMultipart20210308-4-1g1t57u_html_318951f014f93cd.png)
+![](/images/04.png#right300)
 
 # How can I navigate to the classic SharePoint pages to manage groups and permissions?
 
-![](RackMultipart20210308-4-1g1t57u_html_65b25f705e268312.png)
+![](/images/05.png#right300)
 
 # How can I quickly change the group membership of users?
