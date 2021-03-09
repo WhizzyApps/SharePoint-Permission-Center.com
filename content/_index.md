@@ -4,12 +4,17 @@ date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
 
-# Permission Center web part
+{{< rawhtml >}}
+<div class="home-header">
 
-<div>Hallo</div>
-An app to easily display and manage Microsoft SharePoint online permissions
+    <h2> Permission Center web part </h2>
 
-# Getting started
+    <div>An app to easily display and manage Microsoft SharePoint online permissions</div>
+
+    <button type="button" onclick="alert('Hello world!')" style="background-color:aqua; margin: 1rem; padding: 0.5rem 1rem; color: black;" >Getting started</button>
+
+</div>
+{{< /rawhtml >}}
 
 # (Background image) (link to deployment page)
 

@@ -5,6 +5,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+.home-header {
+    text-align: center;
+    background-color: #005AB4;
+    color: white;
+    
+}
+.home-header h2 {
+    padding: 1rem;
+    color: white;
+}
+
 #top-github-link, #body #breadcrumbs {
     position: relative;
     top: 50%;
