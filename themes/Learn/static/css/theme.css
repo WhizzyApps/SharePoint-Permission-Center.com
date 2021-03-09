@@ -9,6 +9,8 @@
     text-align: center;
     background-color: #005AB4;
     color: white;
+    padding-right: 1rem;
+    height: 255px;
 }
 .imageTextContainer {
     display: flex;
@@ -211,6 +213,13 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     text-align: center;
     border-bottom: 4px solid #3A9CFF;
     padding: 1rem;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    border-right: 4px solid #322A38;
+}
+#header {
+    margin: auto;
 }
 #header a {
     display: inline-block;
@@ -223,11 +232,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     fill: #fff;
 }
 .searchbox {
-    margin-top: 1rem;
+    margin: auto;
     position: relative;
     border: 1px solid #3A9CFF;
     background: #005AB4;
-    border-radius: 4px;
 }
 .searchbox label {
     color: rgba(255, 255, 255, 0.8);
