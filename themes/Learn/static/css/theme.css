@@ -211,7 +211,6 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     background: #005AB4;
     color: #fff;
     text-align: center;
-    border-bottom: 4px solid #3A9CFF;
     padding: 1rem;
     height: 255px;
     display: flex;
@@ -581,6 +580,15 @@ h2, h3, h4, h5, h6 {
 h1 {
     font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
+@media only screen and (max-width: 1200px) {
+    .home-header .h1 {
+        font-size: 2.5rem;
+    }   
+    .home-header .h4 {
+        font-size: 1rem;
+    }   
+}
+
 blockquote {
     border-left: 10px solid #F0F2F4;
 }
@@ -1241,10 +1249,10 @@ pre .copy-to-clipboard:hover {
 }
 
 #homelinks {
-  background-color: #005AB4;
+  
   color: #fff;
   padding: 7px 0;
-  border-bottom: 4px solid #3A9CFF;
+  
 }
 
 #searchResults {
