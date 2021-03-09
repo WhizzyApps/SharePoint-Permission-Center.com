@@ -48,7 +48,7 @@ layout: list
 ### The web part makes it easier for site owners and users to answer the following questions:
 
 {{< rawhtml >}}
-    <div class="imageTextContainer" style="display:flex;">
+    <div class="imageTextContainer">
         <div style="flex-shrink:2;">
             <h2>Who has access to a site collection and with what permission level?</h2>
             <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
