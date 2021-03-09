@@ -93,7 +93,7 @@ layout: list
             <h2>How can I quickly change the group membership of users?</h2>
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/05.png" />
+            <img class="myImg" onClick="openImage(event)" src="/images/05.png" style="max-width:600px"/>
         </div>
     </div>
 {{</rawhtml >}}
