@@ -48,6 +48,7 @@ layout: list
 ### The web part makes it easier for site owners and users to answer the following questions:
 
 {{< rawhtml >}}
+    <hr>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>Who has access to a site collection and with what permission level?</h2>
