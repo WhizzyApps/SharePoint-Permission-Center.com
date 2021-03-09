@@ -583,6 +583,7 @@ h1 {
 @media only screen and (max-width: 1200px) {
     .home-header h1 {
         font-size: 4vw;
+        padding-top: 2vw;
     }   
     .home-header h4 {
         font-size: 1rem;
