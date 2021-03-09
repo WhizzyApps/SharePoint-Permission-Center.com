@@ -49,11 +49,11 @@ layout: list
 
 {{< rawhtml >}}
     <div class="imageTextContainer">
-        <div >
+        <div style="flex-shrink:0;">
             <h2>Who has access to a site collection and with what permission level?</h2>
             <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
         </div>
-        <div >
+        <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
         </div>
     </div>
