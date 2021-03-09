@@ -57,6 +57,7 @@ layout: list
             <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
         </div>
     </div>
+    <hr>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>Why is a person member of a particular group?</h2>
@@ -66,6 +67,7 @@ layout: list
             <img class="myImg" onClick="openImage(event)" src="/images/02.png" />
         </div>
     </div>
+    <hr>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>What (hidden) groups do exist from shared documents and folders in the site?</h2>
@@ -75,6 +77,7 @@ layout: list
             <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
         </div>
     </div>
+    <hr>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>How can I navigate to the classic SharePoint pages to manage groups and permissions?</h2>
@@ -83,6 +86,7 @@ layout: list
             <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
         </div>
     </div>
+    <hr>
     <div class="imageTextContainer">
         <div style="flex-shrink:1;">
             <h2>How can I quickly change the group membership of users?</h2>
