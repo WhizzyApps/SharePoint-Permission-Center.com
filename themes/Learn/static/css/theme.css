@@ -5,6 +5,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/aileron-regular-webfont.ttf") format("embedded-opentype"), url("../fonts/aileron-regular-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 300;
+    src: url("../fonts/aileron-italic-webfont.ttf") format("embedded-opentype"), url("../fonts/aileron-italic-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: 'Aileron';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/aileron-bold-webfont.ttf") format("embedded-opentype"), url("../fonts/aileron-bold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: 'Aileron';
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/aileron-bolditalic-webfont.ttf") format("embedded-opentype"), url("../fonts/aileron-bolditalic-webfont.woff") format("woff");
+}
+
 .home-header {
     text-align: center;
     background-color: #005AB4;
@@ -125,25 +150,7 @@
 .button:active, .button-secondary:active {
     margin: 2px 0 -2px 0;
 }
-/* @font-face {
-    font-family: 'Novacento Sans Wide';
-    src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
-    src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-UltraLight-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight") format("svg");
-    font-style: normal;
-    font-weight: 200;
-} */
-/* @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/OpenSans-light.ttf") format("embedded-opentype"), url("../fonts/Work_Sans_300.woff") format("woff"), url("../fonts/Work_Sans_300.woff2") format("woff2"), url("../fonts/Work_Sans_300.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_300.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/OpenSans-Regular.ttf") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
-} */
+
 body {
     background: #fff;
     color: #777;
@@ -542,7 +549,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     max-width: 80%;
 }
 #chapter h3 {
-    font-family: "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     text-align: center;
 }
@@ -566,19 +573,19 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin: 0;
 }
 body {
-    font-family: "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1.6;
     font-size: 18px !important;
 }
 h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
     font-weight: 400;
     letter-spacing: -1px;
 }
 h1 {
-    font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 @media only screen and (max-width: 1200px) {
     .home-header h1 {
@@ -932,7 +939,7 @@ td {
     z-index: 1000000;
     display: none;
     padding: 5px 8px;
-    font: normal normal 11px/1.5 "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font: normal normal 11px/1.5 "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1250,7 +1257,7 @@ pre .copy-to-clipboard:hover {
 }
 
 #sidebar #shortcuts h3 {
-    font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     color: white ;
     margin-top:1rem;
     padding-left: 1rem;
