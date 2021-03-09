@@ -9,7 +9,6 @@
     text-align: center;
     background-color: #005AB4;
     color: white;
-    
 }
 
 /* modal to open image */
@@ -558,13 +557,14 @@ body {
 h2, h3, h4, h5, h6 {
     font-family: "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
-    
     font-weight: 400;
     letter-spacing: -1px;
 }
 h1 {
     font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    
+}
+h2 {
+    font-size: 3vw;
 }
 blockquote {
     border-left: 10px solid #F0F2F4;

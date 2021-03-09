@@ -48,15 +48,15 @@ layout: list
 ### The web part makes it easier for site owners and users to answer the following questions:
 
 {{< rawhtml >}}
-<div style="display:flex;">
-    <div style="flex-shrink:1;">
-        <h2>Who has access to a site collection and with what permission level?</h2>
-        <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
+    <div style="display:flex;">
+        <div style="flex-shrink:1;">
+            <h2>Who has access to a site collection and with what permission level?</h2>
+            <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
+        </div>
+        <div style="flex-shrink:1;">
+            <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
+        </div>
     </div>
-    <div style="flex-shrink:1;">
-        <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
-    </div>
-</div>
 {{</rawhtml >}}
 
 ![](/images/02.png#right300)
