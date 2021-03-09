@@ -11,10 +11,6 @@
     color: white;
     
 }
-.home-header h2 {
-    padding: 1rem;
-    color: white;
-}
 
 #top-github-link, #body #breadcrumbs {
     position: relative;
@@ -359,7 +355,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     border: 1px solid #ccc;
 }
 #body .padding {
-    padding: 3rem 6rem;
+    padding: 0 4rem;
 }
 @media only all and (max-width: 59.938em) {
     #body .padding {
@@ -369,7 +365,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 @media only all and (max-width: 47.938em) {
     #body .padding {
-        padding: 5px 1rem;
+        padding: 0;
     }
 }
 #body h1 + hr {
@@ -428,6 +424,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-bottom: 5rem;
     word-wrap: break-word;
 }
+#body-inner-home {
+    margin: 0 4rem 5rem 4rem;
+    word-wrap: break-word;
+}
 #chapter {
     display: flex;
     align-items: center;
@@ -472,13 +472,13 @@ body {
 h2, h3, h4, h5, h6 {
     font-family: "Open Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
-    color: #5e5e5e;
+    
     font-weight: 400;
     letter-spacing: -1px;
 }
 h1 {
     font-family: "Open Sans", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    color: #222;
+    
 }
 blockquote {
     border-left: 10px solid #F0F2F4;
@@ -915,7 +915,7 @@ td {
     border-right-color: rgba(0, 0, 0, 0.8);
 }
 .highlightable {
-    padding: 1rem 0 1rem;
+    padding: 0;
     overflow: auto;
     position: relative;
 }
@@ -1023,7 +1023,6 @@ td {
     text-overflow: ellipsis;
     width: 70%;
     display: inline-block;
-    /* float: left; */
 }
 #body #breadcrumbs span {
     padding: 0 0.1rem;

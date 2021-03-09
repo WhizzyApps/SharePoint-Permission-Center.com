@@ -5,7 +5,7 @@ draft: false
 ---
 Samuel Gross, 10.02.2021
 
-## Web part description
+# Web part description
 
 ### Features
 

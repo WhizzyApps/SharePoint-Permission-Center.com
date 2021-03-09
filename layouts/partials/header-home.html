@@ -45,7 +45,7 @@
     {{ partial "menu.html" . }}
         <section id="body">
         <div id="overlay"></div>
-        <div class="padding highlightable">
+        <div class="highlightable">
               {{if not .IsHome}}
               <div>
                 <div id="top-bar">
@@ -86,14 +86,24 @@
               </div>
             </div>
             {{ end }}
-
+<!-- 
         <div id="head-tags">
-        {{ partial "tags.html" . }}
+        {{ partial "tags.html" . }} -->
         </div>
         {{ if .Params.chapter }}
           <div id="chapter">
         {{ end }}
-        <div id="body-inner">
+        <div class="home-header">
+
+          <h1> Permission Center web part </h1>
+      
+          <h4>An app to easily display and manage Microsoft SharePoint online permissions</h4>
+      
+          <button type="button" onclick="alert('link to deployment page')" style="background-color:#3A9CFF; margin: 2rem; padding: 0.5rem 1rem; color: white;" >Getting started</button>
+      
+        </div>
+
+        <div id="body-inner-home">
           <!-- {{if and (not .IsHome) (not .Params.chapter) }}
             <h1>
               {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}

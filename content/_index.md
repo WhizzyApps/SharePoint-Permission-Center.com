@@ -2,27 +2,26 @@
 title: "Permission Center web part"
 date: 2021-03-01T14:38:53-06:00
 draft: false
+layout: list
 ---
 
 {{< rawhtml >}}
-<div class="home-header">
-
-    <h1> Permission Center web part </h1>
-
-    <div>An app to easily display and manage Microsoft SharePoint online permissions</div>
-
-    <button type="button" onclick="alert('link to deployment page')" style="background-color:aqua; margin: 1rem; padding: 0.5rem 1rem; color: black;" >Getting started</button>
-
+<div style="display:flex;">
+    <div style="text-align:center;">
+        <h3>Overview</h3>
+        <img src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
+    </div>
+    <div style="text-align:center;">
+        <h3>Demo</h3>
+        <img src="/images/Overview.gif" style="flex-shrink:1;"/>
+    </div>
 </div>
-{{< /rawhtml >}}
+{{</rawhtml >}}
 
-# Overview: (click to open image) Demo: (click to start animated gif)
-
-![](RackMultipart20210308-4-1g1t57u_html_95b53d75851af56a.png) ![](RackMultipart20210308-4-1g1t57u_html_6802c065f1f4b288.gif)
 
 ## The web part makes it easier for site owners and users to answer the following questions:
 
-![](RackMultipart20210308-4-1g1t57u_html_44309cacfe104a57.png)
+![](/images/01.png)
 
 # Who has access to a site collection and with what permission level?
 
