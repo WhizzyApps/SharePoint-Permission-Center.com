@@ -7,16 +7,14 @@ draft: false
 {{< rawhtml >}}
 <div class="home-header">
 
-    <h2> Permission Center web part </h2>
+    <h1> Permission Center web part </h1>
 
     <div>An app to easily display and manage Microsoft SharePoint online permissions</div>
 
-    <button type="button" onclick="alert('Hello world!')" style="background-color:aqua; margin: 1rem; padding: 0.5rem 1rem; color: black;" >Getting started</button>
+    <button type="button" onclick="alert('link to deployment page')" style="background-color:aqua; margin: 1rem; padding: 0.5rem 1rem; color: black;" >Getting started</button>
 
 </div>
 {{< /rawhtml >}}
-
-# (Background image) (link to deployment page)
 
 # Overview: (click to open image) Demo: (click to start animated gif)
 

@@ -1023,7 +1023,7 @@ td {
     text-overflow: ellipsis;
     width: 70%;
     display: inline-block;
-    float: left;
+    /* float: left; */
 }
 #body #breadcrumbs span {
     padding: 0 0.1rem;
