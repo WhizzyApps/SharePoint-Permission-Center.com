@@ -10,6 +10,11 @@
     background-color: #005AB4;
     color: white;
 }
+@media only screen and (max-width: 1150px) {
+    .imageTextContainer {
+      display: block;
+    }
+  }
 
 /* modal to open image */
     .myImg {
