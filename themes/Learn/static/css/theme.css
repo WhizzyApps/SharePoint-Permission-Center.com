@@ -1275,9 +1275,19 @@ pre .copy-to-clipboard:hover {
 option {
     color: initial;
 }
+img[src*='#right250'] {
+    float: right;
+    width:250px;
+    margin-bottom: 1rem;
+}
 img[src*='#right300'] {
     float: right;
     width:300px;
+    margin-bottom: 1rem;
+}
+img[src*='#right500'] {
+    float: right;
+    width:500px;
     margin-bottom: 1rem;
 }
 li {

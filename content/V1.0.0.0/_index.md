@@ -51,8 +51,8 @@ Samuel Gross, 10.02.2021
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
 4. ***Group card*** 
-<img src="/images/Featur04.png" style="width:300px; float:right"/>
-<div>Hallo</div>
+      ![](/V1.0.0.0/images/Feature04.png#right300)
+
       - Click on edit icon expands group card
       - Showing details
         - Name, Type
@@ -67,7 +67,7 @@ Samuel Gross, 10.02.2021
       
 
 5. ***User Card***
-<img src="/images/11 Description 5.png" style="width:300px; float:right"/>
+      ![](/V1.0.0.0/images/Feature05.png#right300)
 
       - Click on username opens user card.
       - Showing details
@@ -82,8 +82,9 @@ Samuel Gross, 10.02.2021
         - &quot;Change membership&quot; opens dialog to add or remove the user to/from a group. See section &quot;Change membership&quot;
         - &quot;Delete user from site&quot; removes user from all SharePoint groups of the site and deletes its SharePoint profile
         - &quot;Classic property page&quot; opens classic user property page
-<img src="/images/12 Description 6.png" style="width:400px; float:right"/>
-      - Change membership 
+
+      - Change membership
+        ![](/V1.0.0.0/images/Feature06.png#right500)
         - List of all Sharepoint groups of site, including hidden groups and &quot;Access given directly&quot;
         - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
         - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
@@ -91,7 +92,7 @@ Samuel Gross, 10.02.2021
         - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
 6. **SharePoint menu** 
-<img src="/images/13 Description 7.png" style="width:400px; float:right"/>
+      ![](/V1.0.0.0/images/Feature07.png#right300)
 
       - Access to 6 particular pages of classic admin center:
       - &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
@@ -102,12 +103,12 @@ Samuel Gross, 10.02.2021
       - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
 7. **Reload button** 
-<img src="/images/14 Description 8.png" style="width:300px; float:right"/>
+      ![](/V1.0.0.0/images/Feature08.png#right300)
 
       - Reloads webpart with updated data from the Api without reloading the web page
 
 ## Web part configuration 
-<img src="/images/15 Configuration 1.png" style="width:250px; float:right"/>
+      ![](/V1.0.0.0/images/Configuration01.png#right250)
 
 To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right.
 
@@ -130,7 +131,9 @@ Configuration based on permissions
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
 
-- Off: <img src="/images/16 Configuration 2.png" style="width:250px; float:right"/>
+- Off: 
+    ![](/V1.0.0.0/images/Configuration01.png#right250)
+
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
@@ -144,7 +147,9 @@ Configuration based on permissions
 
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
-Examples of hidden groups: <img src="/images/17 Special behaviors 1.png" style="width:300px; float:right"/>
+Examples of hidden groups: 
+      ![](/V1.0.0.0/images/Special01.png#right300)
+
 
 - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
 - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level &quot;Limited Access&quot;.
