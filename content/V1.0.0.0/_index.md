@@ -30,14 +30,14 @@ Samuel Gross, 10.02.2021
       
 
 2. **Users tab** 
-      ![](/images/8%20Description%202.png#right300)
+      ![](/V1.0.0.0/images/Feature02.png#right300)
 
       - Showing all users of site in Alphabetical order
       - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 3. **Hidden groups tab** 
-      ![](/images/9%20Description%203.png#right300)
+      ![](/V1.0.0.0/images/Feature03.png#right300)
 
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
@@ -51,7 +51,7 @@ Samuel Gross, 10.02.2021
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
 4. ***Group card*** 
-<img src="/images/10 Description 4.png" style="width:300px; float:right"/>
+<img src="/images/Featur04.png" style="width:300px; float:right"/>
 <div>Hallo</div>
       - Click on edit icon expands group card
       - Showing details
