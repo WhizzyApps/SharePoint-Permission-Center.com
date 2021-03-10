@@ -10,7 +10,7 @@ Samuel Gross, 10.02.2021
 ### Features
 
 1. **Groups tab** 
-      ![](/images/7%20Description%201.png#right300)
+      ![](/V1.0.0.0/images/Feature01.png#right300)
 
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
