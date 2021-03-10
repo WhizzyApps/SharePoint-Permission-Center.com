@@ -17,7 +17,7 @@ layout: list
         </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
-            <span class="close">&times;</span>
+            <span class="close">&#10006;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
         </div>
@@ -39,7 +39,7 @@ layout: list
         var span = document.getElementsByClassName("close")[0];
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() { 
-        modal.style.display = "none";
+            modal.style.display = "none";
         }
     </script>
     <hr>
