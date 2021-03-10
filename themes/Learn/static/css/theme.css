@@ -1300,6 +1300,6 @@ img[src*='#left600'] {
     width:600px!important;
     margin-bottom: 1rem;
 }
-li p {
+ol li p {
     clear:both;
 }
