@@ -14,23 +14,23 @@ Download the web part package file _permission-center-webpart.sppkg_ from [Githu
 
 Navigate to your App Catalog site. If you don&#39;t know the URL of your App Catalog site, follow these steps:
 
-Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center \&gt; Show all \&gt; SharePoint \&gt; Sites \&gt; Active sites or use this [link.](https://[YOUR\_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES) Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
+Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this [link.](https://[YOUR\_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL SITES) Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
 
 If you don’t have an App catalog, make sure to create one first.
 
-In the App Catalog Site click on &quot;Apps for SharePoint&quot; \&gt; New \&gt; Choose Files \&gt; select the downloaded _permission-center-webpart.sppkg_ file \&gt; OK \&gt; then click &quot;Deploy&quot;.
+In the App Catalog Site click on &quot;Apps for SharePoint&quot; > New > Choose Files > select the downloaded _permission-center-webpart.sppkg_ file > OK > then click &quot;Deploy&quot;.
 
 ![](/Deployment/images/02.png)
 
-After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file \&gt; … \&gt; Advanced \&gt; Check In \&gt; OK
+After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file > … > Advanced > Check In > OK
 
 ![](/Deployment/images/03.png)
 
 ## 3) Deployment to a site collection app catalog
 
-Navigate to the site collection you want to deploy the web part. Click on New \&gt; App
+Navigate to the site collection you want to deploy the web part. Click on New > App
 
 ![](/Deployment/images/04.png)
 
