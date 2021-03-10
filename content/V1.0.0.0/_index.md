@@ -5,7 +5,7 @@ draft: false
 ---
 Samuel Gross, 10.02.2021
 
-# Web part description
+## Web part description
 
 ### Features
 
@@ -131,9 +131,12 @@ Note: You need to be site owner or site admin to be able to configure the web pa
   - If you are site admin, the web part will not reflect the changes, because for admins, all features are enabled.
   - By default, the typical features are enabled.
 
-- Off: 
-    ![](/V1.0.0.0/images/Configuration02.png#right250)
+{{< rawhtml >}}
+  <br style="clear:both;"/>
+{{</ rawhtml >}}
 
+- Off: 
+  ![](/V1.0.0.0/images/Configuration02.png#right250clear)
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.

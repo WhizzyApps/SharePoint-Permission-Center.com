@@ -1277,23 +1277,29 @@ option {
 }
 img[src*='#right250'] {
     float: right;
-    width:250px;
+    width:250px!important;
+    margin-bottom: 1rem;
+}
+img[src*='#right250clear'] {
+    float: right;
+    clear: both;
+    width:250px!important;
     margin-bottom: 1rem;
 }
 img[src*='#right300'] {
     float: right;
-    width:300px;
+    width:300px!important;
     margin-bottom: 1rem;
 }
 img[src*='#right500'] {
     float: right;
-    width:500px;
+    width:500px!important;
     margin-bottom: 1rem;
 }
 img[src*='#left600'] {
-    width:600px;
+    width:600px!important;
     margin-bottom: 1rem;
 }
-li {
-    overflow: auto;
+li p {
+    clear:both;
 }
