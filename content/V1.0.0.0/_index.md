@@ -6,9 +6,7 @@ weight: 99
 ---
 Samuel Gross, 10.02.2021
 
-## Web part description
-
-### Features
+## Web part Features
 
 1. **Groups tab** 
 
