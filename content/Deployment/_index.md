@@ -14,7 +14,7 @@ Download the web part package file _permission-center-webpart.sppkg_ from [Githu
 
 Navigate to your App Catalog site. If you don&#39;t know the URL of your App Catalog site, follow these steps:
 
-Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this [link.](https://[YOUR\_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL SITES) Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
+Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL SITES Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
 
