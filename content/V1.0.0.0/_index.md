@@ -108,11 +108,12 @@ Samuel Gross, 10.02.2021
       - Reloads webpart with updated data from the Api without reloading the web page
 
 ## Web part configuration 
-      ![](/V1.0.0.0/images/Configuration01.png#right250)
 
-To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right.
+![](/V1.0.0.0/images/Configuration01.png#right250)
 
-About the web part
+To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right. 
+
+**About the web part**
 
 - Version number
 - Build time stamp
@@ -120,7 +121,7 @@ About the web part
 
 Note: You need to be site owner or site admin to be able to configure the web part, otherwise no options will be shown.
 
-Configuration based on permissions
+**Configuration based on permissions**
 
 - On (by default):
   - The web part checks the permission level of the current user based on typical permissions for the permission levels &quot;Full control&quot;, &quot;Edit&quot; or &quot;Read&quot; and categorizes the user to be Owner, Member or Visitor.
@@ -132,12 +133,12 @@ Configuration based on permissions
   - By default, the typical features are enabled.
 
 - Off: 
-    ![](/V1.0.0.0/images/Configuration01.png#right250)
+    ![](/V1.0.0.0/images/Configuration02.png#right250)
 
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
-
+  
 - Security Note
   - For both (&quot;Configuration based on permissions&quot; enabled or disabled), features that are restricted by SharePoint for the current user, will not be shown or will be empty.
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
