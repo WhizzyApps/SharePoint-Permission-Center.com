@@ -82,7 +82,6 @@ Samuel Gross, 10.02.2021
         - &quot;Change membership&quot; opens dialog to add or remove the user to/from a group. See section &quot;Change membership&quot;
         - &quot;Delete user from site&quot; removes user from all SharePoint groups of the site and deletes its SharePoint profile
         - &quot;Classic property page&quot; opens classic user property page
-
       - Change membership
         ![](/V1.0.0.0/images/Feature06.png#right500)
         - List of all Sharepoint groups of site, including hidden groups and &quot;Access given directly&quot;
@@ -138,7 +137,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
-  
+
 - Security Note
   - For both (&quot;Configuration based on permissions&quot; enabled or disabled), features that are restricted by SharePoint for the current user, will not be shown or will be empty.
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
