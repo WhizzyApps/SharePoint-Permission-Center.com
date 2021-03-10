@@ -22,28 +22,29 @@ Some tenants do not have
 
 In the App Catalog Site click on &quot;Apps for SharePoint&quot; \&gt; New \&gt; Choose Files \&gt; select the downloaded _permission-center-webpart.sppkg_ file \&gt; OK \&gt; then click &quot;Deploy&quot;.
 
-![](RackMultipart20210310-4-1cduyo6_html_ed8604a9141b4d6b.jpg)
+![](/Deployment/images/02.png)
 
 After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file \&gt; … \&gt; Advanced \&gt; Check In \&gt; OK
 
-![](RackMultipart20210310-4-1cduyo6_html_4f62aba7eb0ad87c.jpg)
+![](/Deployment/images/03.png)
 
 ## 3) Deployment to a site collection app catalog
 
 Navigate to the site collection you want to deploy the web part. Click on New \&gt; App
 
-![](RackMultipart20210310-4-1cduyo6_html_20cff814f3545012.png)
+![](/Deployment/images/04.png)
 
 Then &quot;From Your Organization&quot; and &quot;Permission Center web part.
 
-![](RackMultipart20210310-4-1cduyo6_html_35828a7bce155f23.png)
+![](/Deployment/images/05.png)
 
 Then in the upper right corner of the site, click on &quot;Edit&quot;.
 
-![](RackMultipart20210310-4-1cduyo6_html_5baf66b545c96422.png)
+![](/Deployment/images/06.png)
 
-Click on the &quot;plus&quot; of the section where you want to place the web part. Type &quot;perm&quot; and click on the Icon &quot;Permission Center&quot;. ![](RackMultipart20210310-4-1cduyo6_html_97a2aed1bbb1b24c.png)
+Click on the &quot;plus&quot; of the section where you want to place the web part. Type &quot;perm&quot; and click on the Icon &quot;Permission Center&quot;. 
+![](/Deployment/images/07.png)
 
 Then republish the page.
 
-![](RackMultipart20210310-4-1cduyo6_html_103dc336380a67b5.png)
+![](/Deployment/images/08.png)
