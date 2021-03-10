@@ -1290,6 +1290,11 @@ img[src*='#right500'] {
     width:500px;
     margin-bottom: 1rem;
 }
+img[src*='#left600'] {
+    float: left;
+    width:600px;
+    margin-bottom: 1rem;
+}
 li {
     overflow: auto;
 }

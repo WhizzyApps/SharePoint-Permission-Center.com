@@ -148,17 +148,16 @@ Configuration based on permissions
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
 Examples of hidden groups: 
-      ![](/V1.0.0.0/images/Special01.png#right300)
+  ![](/V1.0.0.0/images/Special01.png#right300)
 
-
-- **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
-- **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level &quot;Limited Access&quot;.
-- **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn&#39;t have a site permission level, it is a hidden group. The permission level shown in parentheses is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name &quot;Document1&quot; and in the tooltip the link type.
-- **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
-- **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
+  - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
+  - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level &quot;Limited Access&quot;.
+  - **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn&#39;t have a site permission level, it is a hidden group. The permission level shown in parentheses is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name &quot;Document1&quot; and in the tooltip the link type.
+  - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
+  - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
 ### Information about Sharing groups 
-<img src="/images/18 Special behaviors 2.png" style="width:250px; float:right"/>
+  ![](/V1.0.0.0/images/Special02.png#right250)
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
 
@@ -173,13 +172,14 @@ You can choose if user can read or edit the item.
 
 This option needs to be enabled in the Admin center. The name of the created group contains &quot;Anonymous&quot;, because anyone can access the item, and &quot;Edit&quot; for the edit permission.
 
-<img src="/images/19 Special behaviors 3.png" style="width:600;"/>
+  ![](/V1.0.0.0/images/Special03.png#left600)
+
 
 **People in your Organization with the link**
 
 The name of the created group contains &quot;Organization&quot;, because only people in your organization can access the item, and &quot;view&quot; for the read permission.
 
-<img src="/images/20 Special behaviors 4.png" style="width:600;"/>
+  ![](/V1.0.0.0/images/Special04.png#left600)
 
 **People with existing access**
 
@@ -189,7 +189,7 @@ This option is just to send a link to specified user. No SharePoint group is cre
 
 With this option, only invited people can access the item. The name of the created group contains &quot;Flexible&quot;, because you can change the permissions of this group to view or read.
 
-<img src="/images/21 Special behaviors 5.png" style="width:600;"/>
+  ![](/V1.0.0.0/images/Special05.png#left600)
 
 ## Where does the data come from?
 
