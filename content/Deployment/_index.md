@@ -18,7 +18,7 @@ Navigate to the SharePoint company app catalog go to the Microsoft 365 admin cen
 
 ![](/Deployment/images/01.png)
 
-Some tenants do not have
+If you don’t have an App catalog, make sure to create one first.
 
 In the App Catalog Site click on &quot;Apps for SharePoint&quot; \&gt; New \&gt; Choose Files \&gt; select the downloaded _permission-center-webpart.sppkg_ file \&gt; OK \&gt; then click &quot;Deploy&quot;.
 
