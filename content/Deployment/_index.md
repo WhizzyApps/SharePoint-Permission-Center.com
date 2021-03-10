@@ -2,6 +2,7 @@
 title: "Deployment"
 date: 2021-03-01T14:38:53-06:00
 draft: false
+weight: 01
 ---
 
 ## Deployment instructions

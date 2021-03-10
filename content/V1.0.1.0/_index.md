@@ -2,6 +2,7 @@
 title: "Version 1.0.1.0"
 date: 2021-03-01T14:39:08-06:00
 draft: false
+weight: 98
 ---
 Samuel Gross, 04.03.2021
 
