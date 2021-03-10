@@ -1291,7 +1291,6 @@ img[src*='#right500'] {
     margin-bottom: 1rem;
 }
 img[src*='#left600'] {
-    float: left;
     width:600px;
     margin-bottom: 1rem;
 }
