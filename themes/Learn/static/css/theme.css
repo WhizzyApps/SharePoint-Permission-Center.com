@@ -1275,29 +1275,30 @@ pre .copy-to-clipboard:hover {
 option {
     color: initial;
 }
-img[src*='#right250'] {
+
+.right250 {
     float: right;
-    width:250px!important;
+    max-width: 250px;
     margin: 0 0 1rem 1rem;
 }
-img[src*='#right250clear'] {
+.right250clear {
     float: right;
     clear: both;
-    width:250px!important;
+    max-width: 250px;
     margin: 0 0 1rem 1rem;
 }
-img[src*='#right300'] {
+.right300 {
     float: right;
-    width:390px!important;
+    max-width: 300px;
     margin: 0 0 1rem 1rem;
 }
-img[src*='#right500'] {
+.right500 {
     float: right;
-    width:500px!important;
+    max-width: 500px;
     margin: 0 0 1rem 1rem;
 }
-img[src*='#left600'] {
-    width:600px!important;
+.left600 {
+    max-width: 600px;
     margin-bottom: 1rem;
 }
 ol li p {

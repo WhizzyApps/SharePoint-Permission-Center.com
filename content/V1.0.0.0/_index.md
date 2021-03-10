@@ -10,8 +10,8 @@ Samuel Gross, 10.02.2021
 ### Features
 
 1. **Groups tab** 
-      ![](/V1.0.0.0/images/Feature01.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature01.png" class="right300" >}}
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
         - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
@@ -27,18 +27,16 @@ Samuel Gross, 10.02.2021
         - For SharePoint groups expand group card. See section &quot;Group card&quot;.
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
       
-      
-
 2. **Users tab** 
-      ![](/V1.0.0.0/images/Feature02.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature02.png" class="right300" >}}
       - Showing all users of site in Alphabetical order
       - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section &quot;User card&quot;.
 
 3. **Hidden groups tab** 
-      ![](/V1.0.0.0/images/Feature03.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature03.png" class="right300" >}}
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
       - Sharing groups
@@ -51,8 +49,8 @@ Samuel Gross, 10.02.2021
       - Manage users: Click on username opens user card. See section &quot;User card&quot;.
 
 4. ***Group card*** 
-      ![](/V1.0.0.0/images/Feature04.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature04.png" class="right300" >}}
       - Click on edit icon expands group card
       - Showing details
         - Name, Type
@@ -67,8 +65,8 @@ Samuel Gross, 10.02.2021
       
 
 5. ***User Card***
-      ![](/V1.0.0.0/images/Feature05.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature05.png" class="right300" >}}
       - Click on username opens user card.
       - Showing details
         - User photo
@@ -83,7 +81,7 @@ Samuel Gross, 10.02.2021
         - &quot;Delete user from site&quot; removes user from all SharePoint groups of the site and deletes its SharePoint profile
         - &quot;Classic property page&quot; opens classic user property page
       - Change membership
-        ![](/V1.0.0.0/images/Feature06.png#right500)
+        {{< figure src="/V1.0.0.0/images/Feature06.png" class="right500" >}}
         - List of all Sharepoint groups of site, including hidden groups and &quot;Access given directly&quot;
         - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
         - To add/remove user from groups, select/deselect group and click on button &quot;Change membership&quot;
@@ -91,8 +89,8 @@ Samuel Gross, 10.02.2021
         - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
 
 6. **SharePoint menu** 
-      ![](/V1.0.0.0/images/Feature07.png#right300)
-
+  
+      {{< figure src="/V1.0.0.0/images/Feature07.png" class="right300" >}}
       - Access to 6 particular pages of classic admin center:
       - &quot;Classic permissions page&quot; opens &quot;../user.aspx&quot;
       - &quot;Classic permissions level page&quot; opens page of all permission levels of site
@@ -102,15 +100,15 @@ Samuel Gross, 10.02.2021
       - &quot;Classic access request page&quot; opens &quot;../pendingreq.aspx&quot;
 
 7. **Reload button** 
-      ![](/V1.0.0.0/images/Feature08.png#right300)
 
+      {{< figure src="/V1.0.0.0/images/Feature08.png" class="right300" >}}
       - Reloads webpart with updated data from the Api without reloading the web page
 
 ## Web part configuration 
 
-![](/V1.0.0.0/images/Configuration01.png#right250)
+  {{< figure src="/V1.0.0.0/images/Configuration01.png" class="right250" >}}
 
-To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right. 
+  To configure the webpart, edit page, then edit web part. The web part &quot;property pane&quot; will blend in on the right. 
 
 **About the web part**
 
@@ -136,7 +134,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 {{</ rawhtml >}}
 
 - Off: 
-  ![](/V1.0.0.0/images/Configuration02.png#right250clear)
+  {{< figure src="/V1.0.0.0/images/Configuration02.png" class="right250clear" >}}
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is &quot;On&quot;.
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
@@ -151,7 +149,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
 Examples of hidden groups: 
-  ![](/V1.0.0.0/images/Special01.png#right300)
+  {{< figure src="/V1.0.0.0/images/Special01.png" class="right300" >}}
 
   - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
   - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level &quot;Limited Access&quot;.
@@ -160,7 +158,7 @@ Examples of hidden groups:
   - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
 ### Information about Sharing groups 
-  ![](/V1.0.0.0/images/Special02.png#right250)
+  {{< figure src="/V1.0.0.0/images/Special02.png" class="right250" >}}
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
 
@@ -175,14 +173,14 @@ You can choose if user can read or edit the item.
 
 This option needs to be enabled in the Admin center. The name of the created group contains &quot;Anonymous&quot;, because anyone can access the item, and &quot;Edit&quot; for the edit permission.
 
-  ![](/V1.0.0.0/images/Special03.png#left600)
+  {{< figure src="/V1.0.0.0/images/Special03.png" class="left600" >}}
 
 
 **People in your Organization with the link**
 
 The name of the created group contains &quot;Organization&quot;, because only people in your organization can access the item, and &quot;view&quot; for the read permission.
 
-  ![](/V1.0.0.0/images/Special04.png#left600)
+  {{< figure src="/V1.0.0.0/images/Special04.png" class="left600" >}}
 
 **People with existing access**
 
@@ -192,7 +190,7 @@ This option is just to send a link to specified user. No SharePoint group is cre
 
 With this option, only invited people can access the item. The name of the created group contains &quot;Flexible&quot;, because you can change the permissions of this group to view or read.
 
-  ![](/V1.0.0.0/images/Special05.png#left600)
+  {{< figure src="/V1.0.0.0/images/Special05.png" class="left600" >}}
 
 ## Where does the data come from?
 
