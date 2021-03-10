@@ -23,7 +23,7 @@ If you don’t have an App catalog, make sure to create one first.
 Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
-<br/>
+
 
 In the App Catalog Site click on &quot;Apps for SharePoint&quot; > New > Choose Files > select the downloaded _permission-center-webpart.sppkg_ file > OK > then click &quot;Deploy&quot;.
 
