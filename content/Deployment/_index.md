@@ -4,13 +4,13 @@ date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
 
-# Deployment instructions
+## Deployment instructions
 
-## 1) Download
+### 1) Download
 
 Download the web part package file _permission-center-webpart.sppkg_ from [Github](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases). Do not rename the file. The filename has to match the package name.
 
-## 2) Deployment to the global app catalog
+### 2) Deployment to the global app catalog
 
 Navigate to your App Catalog site. If you don&#39;t know the URL of your App Catalog site, follow these steps:
 
@@ -35,7 +35,7 @@ After the deployment, make sure the file is checked in. If you see an icon with 
 ![](/Deployment/images/03.png)
 
 
-## 3) Deployment to a site collection app catalog
+### 3) Deployment to a site collection app catalog
 
 Navigate to the site collection you want to deploy the web part. Click on New > App
 
