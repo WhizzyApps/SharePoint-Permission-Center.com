@@ -45,8 +45,8 @@ draft: false
     <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
         <div class="imageText">
-            <h2>Who has access to a site collection and with what permission level?</h2>
-            <h2>What are the members of a SharePoint group including members of nested Azure groups?</h2>
+            <p class="largeP">Who has access to a site collection and with what permission level?</p class="largeP">
+            <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
@@ -55,8 +55,8 @@ draft: false
     <hr>
     <div class="imageTextContainer">
         <div class="imageText">
-            <h2>Why is a person member of a particular group?</h2>
-            <h2>What is the group nesting hierarchy of SharePoint and Azure groups?</h2>
+            <p class="largeP">Why is a person member of a particular group?</p class="largeP">
+            <p class="largeP">What is the group nesting hierarchy of SharePoint and Azure groups?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/02.png" />
@@ -65,8 +65,8 @@ draft: false
     <hr>
     <div class="imageTextContainer">
         <div class="imageText">
-            <h2>What (hidden) groups do exist from shared documents and folders in the site?</h2>
-            <h2>What other (hidden) groups do exist without any assigned permission level?</h2>
+            <p class="largeP">What (hidden) groups do exist from shared documents and folders in the site?</p class="largeP">
+            <p class="largeP">What other (hidden) groups do exist without any assigned permission level?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
@@ -75,7 +75,7 @@ draft: false
     <hr>
     <div class="imageTextContainer">
         <div class="imageText">
-            <h2>How can I navigate to the classic SharePoint pages to manage groups and permissions?</h2>
+            <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
@@ -84,7 +84,7 @@ draft: false
     <hr>
     <div class="imageTextContainer">
         <div class="imageText">
-            <h2>How can I quickly change the group membership of users?</h2>
+            <p class="largeP">How can I quickly change the group membership of users?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
             <img class="myImg" onClick="openImage(event)" src="/images/05.png" style="max-width:600px"/>
