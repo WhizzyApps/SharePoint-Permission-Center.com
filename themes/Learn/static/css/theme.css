@@ -386,17 +386,12 @@ i.fa-home {
     border: 1px solid #ccc;
 }
 #body .padding {
-    padding: 0 4rem;
+    padding: 0;
+    margin: 0 3vw;
 }
 @media only all and (max-width: 59.938em) {
     #body .padding {
         position: static;
-        padding: 15px 3rem;
-    }
-}
-@media only all and (max-width: 47.938em) {
-    #body .padding {
-        padding: 0;
     }
 }
 #body h1 + hr {
