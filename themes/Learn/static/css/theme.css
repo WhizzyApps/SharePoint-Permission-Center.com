@@ -1239,3 +1239,6 @@ p.largeP {
     line-height: 1.2;
     margin: 0 0 2rem 0;
 }
+li {
+    overflow-wrap: normal;
+}
