@@ -119,6 +119,7 @@
             <i class="fas fa-check read-icon"></i>
           {{ end }}
       </a>
+      {{ .TableOfContents }}
       {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
       {{ if ne $numberOfPages 0 }}
         <ul>
