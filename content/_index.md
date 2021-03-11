@@ -4,26 +4,7 @@ menuTitle: "Overview"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
-<!-- header -->
 {{< rawhtml >}}
-    <div style="display:flex;">
-        <div style="text-align:center;">
-            <h3>Overview</h3>
-            <img class="myImg" onClick="openImage(event)" src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
-        </div>
-        <div style="text-align:center;">
-            <h3>Demo</h3>
-            <figure>
-                <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
-            </figure>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&#10006;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-    </div>
     <script>
         //add eventlistener to all images
         const openImage = (event) => {
@@ -44,7 +25,28 @@ draft: false
             modal.style.display = "none";
         }
     </script>
+    <!-- body -->
+    <!-- first section -->
+    <div style="display:flex;">
+        <div style="text-align:center;">
+            <h3>Overview</h3>
+            <img class="myImg" onClick="openImage(event)" src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
+        </div>
+        <div style="text-align:center;">
+            <h3>Demo</h3>
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
+            </figure>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&#10006;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
     <hr>
+    <!-- other sections -->
     <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
         <div class="imageText">
@@ -52,7 +54,7 @@ draft: false
             <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <figure>
+            <figure class="right300">
                 <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
             </figure>
         </div>
