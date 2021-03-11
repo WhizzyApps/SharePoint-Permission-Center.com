@@ -53,7 +53,7 @@ draft: false
             <p class="largeP">Who has access to a site collection and with what permission level?</p class="largeP">
             <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
         </div>
-        <figure class="right300">
+        <figure class="right500">
             <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
                 <img src="/images/01.png" />
             </a>
@@ -65,7 +65,7 @@ draft: false
             <p class="largeP">Why is a person member of a particular group?</p class="largeP">
             <p class="largeP">What is the group nesting hierarchy of SharePoint and Azure groups?</p class="largeP">
         </div>
-        <figure class="right300">
+        <figure class="right500">
             <a href="https://hugo-netlifycms-test-site.netlify.app/images/02.png" data-featherlight="image">
                 <img src="/images/02.png" />
             </a>
@@ -78,7 +78,7 @@ draft: false
             <p class="largeP">What other (hidden) groups do exist without any assigned permission level?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-        <figure class="right300">
+        <figure class="right500">
             <a href="https://hugo-netlifycms-test-site.netlify.app/images/03.png" data-featherlight="image">
                 <img src="/images/03.png" />
             </a>
@@ -90,7 +90,7 @@ draft: false
         <div class="imageText">
             <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
         </div>
-        <figure class="right300">
+        <figure class="right500">
             <a href="https://hugo-netlifycms-test-site.netlify.app/images/04.png" data-featherlight="image">
                 <img src="/images/04.png" />
             </a>
