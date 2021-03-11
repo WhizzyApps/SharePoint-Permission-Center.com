@@ -55,7 +55,7 @@ draft: false
         </div>
         <div style="flex-shrink:0;">
             <figure class="right300">
-                <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.gif" data-featherlight="image">
+                <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
                     <img src="/images/01.gif" />
                 </a>
             </figure>
