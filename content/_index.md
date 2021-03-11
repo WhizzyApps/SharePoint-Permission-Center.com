@@ -34,9 +34,7 @@ draft: false
         </div>
         <div style="text-align:center;">
             <h3>Demo</h3>
-            <figure>
-                <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
-            </figure>
+            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
         </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
