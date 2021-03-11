@@ -142,9 +142,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     display: flex;
     flex-direction: column;
     border-right: 4px solid #322A38;
-}
-#header {
-    margin: auto;
+    justify-content: space-around;
 }
 #header a {
     display: inline-block;
@@ -157,7 +155,6 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     fill: #fff;
 }
 .searchbox {
-    margin: auto;
     position: relative;
     border: 1px solid #3A9CFF;
     background: #005AB4;
