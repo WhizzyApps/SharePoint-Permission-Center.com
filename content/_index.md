@@ -45,7 +45,7 @@ draft: false
             </figure>
         </div>
     </div>
-    <hr>
+    <hr style="clear:both;">
     <!-- other sections -->
     <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div class="imageTextContainer">
@@ -59,7 +59,7 @@ draft: false
             </a>
         </figure>
     </div>
-    <hr>
+    <hr style="clear:both;">
     <div class="imageTextContainer">
         <div class="imageText">
             <p class="largeP">Why is a person member of a particular group?</p class="largeP">
@@ -71,7 +71,7 @@ draft: false
             </a>
         </figure>
     </div>
-    <hr>
+    <hr style="clear:both;">
     <div class="imageTextContainer">
         <div class="imageText">
             <p class="largeP">What (hidden) groups do exist from shared documents and folders in the site?</p class="largeP">
@@ -85,7 +85,7 @@ draft: false
         </figure>
         </div>
     </div>
-    <hr>
+    <hr style="clear:both;">
     <div class="imageTextContainer">
         <div class="imageText">
             <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
@@ -96,7 +96,7 @@ draft: false
             </a>
         </figure>
     </div>
-    <hr>
+    <hr style="clear:both;">
     <div class="imageTextContainer">
         <div class="imageText">
             <p class="largeP">How can I quickly change the group membership of users?</p class="largeP">
