@@ -78,9 +78,11 @@ draft: false
             <p class="largeP">What other (hidden) groups do exist without any assigned permission level?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <figure>
-                <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
-            </figure>
+        <figure class="right300">
+            <a href="https://hugo-netlifycms-test-site.netlify.app/images/03.png" data-featherlight="image">
+                <img src="/images/03.png" />
+            </a>
+        </figure>
         </div>
     </div>
     <hr>
@@ -88,21 +90,21 @@ draft: false
         <div class="imageText">
             <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
         </div>
-        <div style="flex-shrink:0;">
-            <figure>
-                <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
-            </figure>
-        </div>
+        <figure class="right300">
+            <a href="https://hugo-netlifycms-test-site.netlify.app/images/04.png" data-featherlight="image">
+                <img src="/images/04.png" />
+            </a>
+        </figure>
     </div>
     <hr>
     <div class="imageTextContainer">
         <div class="imageText">
             <p class="largeP">How can I quickly change the group membership of users?</p class="largeP">
         </div>
-        <div style="flex-shrink:0;">
-            <figure>
-                <img class="myImg" onClick="openImage(event)" src="/images/05.png" style="max-width:600px"/>
-            </figure>
-        </div>
+        <figure class="right500">
+            <a href="https://hugo-netlifycms-test-site.netlify.app/images/05.png" data-featherlight="image">
+                <img src="/images/05.png" />
+            </a>
+        </figure>
     </div>
 {{</rawhtml >}}
