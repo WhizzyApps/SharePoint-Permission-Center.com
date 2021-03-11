@@ -358,6 +358,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     display: inline;
 }
 #sidebar ul li li {
+    padding-left: .5rem;
     text-indent: 0.2rem;
 }
 i.fa-home {
