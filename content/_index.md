@@ -30,17 +30,19 @@ draft: false
     <div style="display:flex;">
         <div style="text-align:center;">
             <h3>Overview</h3>
-            <img class="myImg" onClick="openImage(event)" src="/images/Overview.png" style="flex-shrink:1;width:94%;"/>
+            <figure>
+                <a href="https://hugo-netlifycms-test-site.netlify.app/images/Overview.png" data-featherlight="image">
+                    <img src="/images/Overview.png" style="width:94%;"/>
+                </a>
+            </figure>
         </div>
         <div style="text-align:center;">
             <h3>Demo</h3>
-            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
-        </div>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&#10006;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
+            <figure>
+                <a href="https://hugo-netlifycms-test-site.netlify.app/images/Overview.gif" data-featherlight="image">
+                    <img src="/images/Overview.gif" />
+                </a>
+            </figure>
         </div>
     </div>
     <hr>
@@ -53,7 +55,9 @@ draft: false
         </div>
         <div style="flex-shrink:0;">
             <figure class="right300">
-                <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
+                <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.gif" data-featherlight="image">
+                    <img src="/images/01.gif" />
+                </a>
             </figure>
         </div>
     </div>
