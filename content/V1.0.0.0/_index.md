@@ -8,6 +8,10 @@ Samuel Gross, 10.02.2021
 
 ## Web part Features
 
+{{< rawhtml >}}
+<div style="word-break: break-all;">
+{{</ rawhtml >}}
+
 1. **Groups tab** 
 
       {{< figure src="/V1.0.0.0/images/Feature01.png" class="right300" >}}
@@ -191,13 +195,13 @@ With this option, only invited people can access the item. The name of the creat
 
   {{< figure src="/V1.0.0.0/images/Special05.png" class="left600" >}}
 
+{{< rawhtml >}}
+</div>
+{{</ rawhtml >}}
+
 ## Where does the data come from?
 
 ### SharePoint API endpoints:
-
-{{< rawhtml >}}
-<div style="word-break: break-all;">
-{{</ rawhtml >}}
 
 Get current user permissions
 
@@ -299,7 +303,3 @@ Get name of organization of tenant to display it in tooltip for sharing groups
 Get azure properties for user
 
 - /users/{userPrincipalName}
-
-{{< rawhtml >}}
-</div>
-{{</ rawhtml >}}
