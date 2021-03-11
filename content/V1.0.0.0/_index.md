@@ -195,6 +195,10 @@ With this option, only invited people can access the item. The name of the creat
 
 ### SharePoint API endpoints:
 
+{{< rawhtml >}}
+<div style="word-break: break-all;">
+{{</ rawhtml >}}
+
 Get current user permissions
 
 - {site url}/\_api/web/currentuser/isSiteAdmin
@@ -295,3 +299,7 @@ Get name of organization of tenant to display it in tooltip for sharing groups
 Get azure properties for user
 
 - /users/{userPrincipalName}
+
+{{< rawhtml >}}
+</div>
+{{</ rawhtml >}}
