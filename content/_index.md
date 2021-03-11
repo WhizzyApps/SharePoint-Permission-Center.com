@@ -53,13 +53,11 @@ draft: false
             <p class="largeP">Who has access to a site collection and with what permission level?</p class="largeP">
             <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
         </div>
-        <div style="flex-shrink:0;">
-            <figure class="right300">
-                <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
-                    <img src="/images/01.gif" />
-                </a>
-            </figure>
-        </div>
+        <figure class="right300">
+            <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
+                <img src="/images/01.png" />
+            </a>
+        </figure>
     </div>
     <hr>
     <div class="imageTextContainer">

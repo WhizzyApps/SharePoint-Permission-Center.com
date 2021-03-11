@@ -1286,22 +1286,26 @@ option {
     float: right;
     max-width: 250px;
     margin: 0 0 1rem 1rem;
+    flex-shrink:0;
 }
 .right250clear {
     float: right;
     clear: both;
     max-width: 250px;
     margin: 0 0 1rem 1rem;
+    flex-shrink:0;
 }
 .right300 {
     float: right;
     max-width: 300px;
     margin: 0 0 1rem 1rem;
+    flex-shrink:0;
 }
 .right500 {
     float: right;
     max-width: 500px;
     margin: 0 0 1rem 1rem;
+    flex-shrink:0;
 }
 .left600 {
     max-width: 600px;
