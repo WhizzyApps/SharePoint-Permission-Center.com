@@ -1,5 +1,6 @@
 ---
-title: "Overview"
+title: "Permission Center"
+menuTitle: "Overview"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 ---
@@ -12,7 +13,9 @@ draft: false
         </div>
         <div style="text-align:center;">
             <h3>Demo</h3>
-            <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/Overview.gif" class="imageText"/>
+            </figure>
         </div>
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -49,7 +52,9 @@ draft: false
             <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/01.png" />
+            </figure>
         </div>
     </div>
     <hr>
@@ -59,7 +64,9 @@ draft: false
             <p class="largeP">What is the group nesting hierarchy of SharePoint and Azure groups?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/02.png" />
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/02.png" />
+            </figure>
         </div>
     </div>
     <hr>
@@ -69,7 +76,9 @@ draft: false
             <p class="largeP">What other (hidden) groups do exist without any assigned permission level?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/03.png" />
+            </figure>
         </div>
     </div>
     <hr>
@@ -78,7 +87,9 @@ draft: false
             <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/04.png" />
+            </figure>
         </div>
     </div>
     <hr>
@@ -87,7 +98,9 @@ draft: false
             <p class="largeP">How can I quickly change the group membership of users?</p class="largeP">
         </div>
         <div style="flex-shrink:0;">
-            <img class="myImg" onClick="openImage(event)" src="/images/05.png" style="max-width:600px"/>
+            <figure>
+                <img class="myImg" onClick="openImage(event)" src="/images/05.png" style="max-width:600px"/>
+            </figure>
         </div>
     </div>
 {{</rawhtml >}}
