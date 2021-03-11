@@ -36,6 +36,11 @@
     color: white;
     height: 255px;
 }
+@media only screen and (max-width: 766px) {
+    .home-header {
+        height: auto;
+    }   
+}
 .imageTextContainer {
     display: flex;
   }
