@@ -9,7 +9,7 @@ Samuel Gross, 10.02.2021
 ## Web part Features
 
 {{< rawhtml >}}
-<div style="word-break: break-all;">
+<div style="overflow-wrap: normal;">
 {{</ rawhtml >}}
 
 1. **Groups tab** 
