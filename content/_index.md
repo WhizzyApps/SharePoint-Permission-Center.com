@@ -27,11 +27,9 @@ draft: false
     <hr style="clear:both;">
     <!-- other sections -->
     <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
-    <div class="imageTextContainer">
-        <div class="imageText">
+    <div class="imageTextContainer" style="display:block;">
             <p class="largeP">Who has access to a site collection and with what permission level?</p class="largeP">
             <p class="largeP">What are the members of a SharePoint group including members of nested Azure groups?</p class="largeP">
-        </div>
         <figure class="right500">
             <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
                 <img src="/images/01.png" />
