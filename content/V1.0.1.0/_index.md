@@ -6,7 +6,7 @@ weight: 98
 ---
 Samuel Gross, 04.03.2021
 
-## Release notes
+### Release notes
 
 - All SharePoint system groups are now shown in the web part. For example: SharePoint Administrator&quot;, SharePoint Service Administrator&quot;, Company Administrator&quot;, &quot;Everyone Except external users&quot;. They are listed as a user and can be managed via user card: &quot;change membership&quot; and &quot;delete user from site&quot;.
 - Usernames are sorted not just as a string:
@@ -14,7 +14,7 @@ Samuel Gross, 04.03.2021
   - numbers as numbers: 2 before 10
 - SharePoint Api call to get members of azure groups: get 500 users per request, instead of 1000.
 
-## Web part Features
+### Web part Features
 
 {{< rawhtml >}}
 <div style="overflow-wrap: normal;">
@@ -115,9 +115,9 @@ Samuel Gross, 04.03.2021
       {{< figure src="/V1.0.1.0/images/Feature08.png" class="right300" >}}
       - Reloads webpart with updated data from the Api without reloading the web page
 
-## Web part configuration 
+### Web part configuration 
 
-### Configuration page 1
+#### Configuration page 1
 
   {{< figure src="/V1.0.1.0/images/Configuration01.png" class="right250" >}}
 
@@ -157,7 +157,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
   - So the web part will only display information the user has access to based on the user permissions controlled through SharePoint itself.
 
-### Configuration page 2
+#### Configuration page 2
 
   {{< figure src="/V1.0.1.0/images/Configuration03.png" class="right250" >}}
 
@@ -170,7 +170,7 @@ The debug page is for developers to log the following to the developer console i
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
 - Use animate height for user card: Sometimes the user card doesn&#39;t expand. Disable it to try to expand it without animation.
 
-## Special behaviors: Hidden groups
+### Special behaviors: Hidden groups
 
 Groups that either have no permissions or just have the permission level &quot;Limited Access&quot; are considered in the web part as a hidden group.
 
@@ -183,7 +183,7 @@ Examples of hidden groups:
   - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
   - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
-### Information about Sharing groups 
+#### Information about Sharing groups 
   {{< figure src="/V1.0.1.0/images/Special02.png" class="right250" >}}
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
@@ -222,9 +222,9 @@ With this option, only invited people can access the item. The name of the creat
 </div>
 {{</ rawhtml >}}
 
-## Where does the data come from?
+### Where does the data come from?
 
-### SharePoint API endpoints:
+#### SharePoint API endpoints:
 
 Get current user permissions
 
@@ -305,7 +305,7 @@ Delete user from site: post with header: &#39;X-HTTP-Method&#39;: &#39;DELETE&#3
 
 - {site url}/\_api/web/GetUserById({userSpId})
 
-### Graph API endpoints:
+#### Graph API endpoints:
 
 Get members of Azure groups:
 
