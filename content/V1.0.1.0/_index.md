@@ -13,7 +13,6 @@ Samuel Gross, 04.03.2021
   - mutated vowel: oe is treated as o, etc.
   - numbers as numbers: 2 before 10
 - SharePoint Api call to get members of azure groups: get 500 users per request, instead of 1000.
-- User card expands without animation by default. Switch it on in debug mode.
 
 ## Web part Features
 
