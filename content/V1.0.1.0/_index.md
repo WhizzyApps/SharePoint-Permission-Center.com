@@ -118,7 +118,7 @@ Samuel Gross, 04.03.2021
 
 ## Web part configuration 
 
-### Configuration page 1/2
+### Configuration page 1
 
   {{< figure src="/V1.0.1.0/images/Configuration01.png" class="right250" >}}
 
@@ -158,7 +158,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
   - For example: Site members do not have permissions to see the site admins, so the site admins will not be shown in the web part, even if the feature &quot;Show Site Admins&quot; is enabled.
   - So the web part will only display information the user has access to based on the user permissions controlled through SharePoint itself.
 
-### Configuration page 2/2
+### Configuration page 2
 
   {{< figure src="/V1.0.1.0/images/Configuration03.png" class="right250" >}}
 
