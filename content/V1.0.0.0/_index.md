@@ -17,12 +17,12 @@ Samuel Gross, 10.02.2021
       {{< figure src="/V1.0.0.0/images/Feature01.png" class="right300" >}}
       - Showing groups
         - &quot;Site Admins&quot; (not a particular SharePoint group)
-        - default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
-        - custom SharePoint groups: &quot;Dolani special&quot;
+        - Default site groups: &quot;Site Owners&quot;, &quot;Site Members&quot;, &quot;Site Visitors&quot;
+        - Custom SharePoint groups: &quot;Dolani special&quot;
         - &quot;Access given directly&quot; (not a particular SharePoint group)
       - Showing permission levels in parentheses
-        - for groups. To manage permissions of a particular permission level, click to open classic page
-        - for each member with direct access
+        - For groups. To manage permissions of a particular permission level, click to open classic page
+        - For each member with direct access
       - Expand/Collapse group members: click on icon on the left
       - Manage groups
         - Icons on the right with tooltip
@@ -43,7 +43,7 @@ Samuel Gross, 10.02.2021
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - &quot;Limited Access System Group&quot;
       - Sharing groups
-        - are created when an item is shared
+        - Are created when an item is shared
         - Sharing: [Item name] [SharePoint group name]
         - Link to open item
         - Link to open classic permissions page of item
