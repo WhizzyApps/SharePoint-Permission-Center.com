@@ -18,7 +18,7 @@ Navigate to your App Catalog site. If you don't know the URL of your App Catalog
 **Navigate to the SharePoint company app catalog**
 
 Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
-https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES
+`https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES`
 
 If you don't have an App catalog, make sure to create one first.
 
