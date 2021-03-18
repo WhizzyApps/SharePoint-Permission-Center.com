@@ -9,7 +9,7 @@ weight: 01
 
 #### 1) Download
 
-Download the zipped web part package file _permission-center-webpart.sppkg_ from [Github](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases). Unzip the SPPKG file. Do not rename this file. The filename has to match the package name.
+Download the zipped web part package file **permission-center-webpart.sppkg** from [Github](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases). Unzip the SPPKG file. Do not rename this file. The filename has to match the package name.
 
 #### 2) Deployment to the global app catalog
 
@@ -26,7 +26,7 @@ Then in the "Template" column, filter by "App Catalog Site" and click on the App
 
 ![](/Deployment/images/01.png)
 
-In the App Catalog Site click on "Apps for SharePoint" > New > Choose Files > select the downloaded _permission-center-webpart.sppkg_ file > OK > then click "Deploy".
+In the App Catalog Site click on "Apps for SharePoint" > New > Choose Files > select the downloaded **permission-center-webpart.sppkg** file > OK > then click "Deploy".
 
 ![](/Deployment/images/02.png)
 
@@ -43,19 +43,18 @@ Navigate to the site collection you want to deploy the web part. Click on New > 
 ![](/Deployment/images/04.png)
 
 
-Then &quot;From Your Organization&quot; and &quot;Permission Center web part.
+Then "From Your Organization" > "Permission Center web part".
 
 ![](/Deployment/images/05.png)
 
 
-Then in the upper right corner of the site, click on &quot;Edit&quot;.
+Then in the upper right corner of the site, click on "Edit".
 
 ![](/Deployment/images/06.png)
 
 
-Click on the &quot;plus&quot; of the section where you want to place the web part. Type &quot;perm&quot; and click on the Icon &quot;Permission Center&quot;. 
+Click on the "plus" in the section where you want to place the web part. Type "perm" and click on the icon of the "Permission Center". 
 ![](/Deployment/images/07.png)
-
 
 Then republish the page.
 
