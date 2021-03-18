@@ -54,6 +54,7 @@ Then in the upper right corner of the site, click on "Edit".
 
 
 Click on the "plus" in the section where you want to place the web part. Type "perm" and click on the icon of the "Permission Center". 
+
 ![](/Deployment/images/07.png)
 
 Then republish the page.
