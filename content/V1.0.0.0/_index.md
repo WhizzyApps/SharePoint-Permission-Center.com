@@ -302,4 +302,4 @@ Get name of organization of tenant to display it in tooltip for sharing groups
 
 Get azure properties for user
 
-- /users/{userPrincipalName}
+- `/users/{userPrincipalName}`
