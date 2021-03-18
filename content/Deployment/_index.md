@@ -9,24 +9,23 @@ weight: 01
 
 #### 1) Download
 
-Download the web part package file _permission-center-webpart.sppkg_ from [Github](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases). Do not rename the file. The filename has to match the package name.
+Download the zipped web part package file _permission-center-webpart.sppkg_ from [Github](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases). Unzip the SPPKG file. Do not rename this file. The filename has to match the package name.
 
 #### 2) Deployment to the global app catalog
 
-Navigate to your App Catalog site. If you don&#39;t know the URL of your App Catalog site, follow these steps:
+Navigate to your App Catalog site. If you don't know the URL of your App Catalog site, follow these steps:
 
-Navigate to the SharePoint company app catalog go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
+*Navigate to the SharePoint company app catalog*
+Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
+https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES
 
-https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL SITES 
+If you don't have an App catalog, make sure to create one first.
 
-If you don’t have an App catalog, make sure to create one first.
-
-Then in the &quot;Template&quot; column filter by &quot;App Catalog Site&quot; and click on the App Catalog Site URL.
+Then in the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
 
-
-In the App Catalog Site click on &quot;Apps for SharePoint&quot; > New > Choose Files > select the downloaded _permission-center-webpart.sppkg_ file > OK > then click &quot;Deploy&quot;.
+In the App Catalog Site click on "Apps for SharePoint" > New > Choose Files > select the downloaded _permission-center-webpart.sppkg_ file > OK > then click "Deploy".
 
 ![](/Deployment/images/02.png)
 
