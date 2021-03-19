@@ -44,7 +44,7 @@
 .imageTextContainer {
     display: flex;
   }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 75em) {
     .imageTextContainer {
         display: block;
     }   
@@ -516,7 +516,7 @@ h1 {
 .home-header h1, h4 {
     margin: 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 75em) {
     .home-header h1 {
         font-size: calc(1rem + 2vw);
     }
@@ -1233,4 +1233,7 @@ p.largeP {
 }
 .home-section {
     max-width: 56em;
+}
+.hr {
+    clear:both;
 }

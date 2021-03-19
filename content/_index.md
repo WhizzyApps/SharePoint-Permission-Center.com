@@ -24,11 +24,11 @@ draft: false
             </figure>
         </div>
     </div>
-    <hr style="clear:both;">
+    <hr class="hr">
     <!-- other sections -->
+    <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
     <div style="display:flex;">
         <div class="home-section">
-            <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
             <div class="imageTextContainer">
                 <div class="imageText">
                     <p class="largeP">Who has access to the site?</p class="largeP">
@@ -40,7 +40,7 @@ draft: false
                     </a>
                 </figure>
             </div>
-            <hr style="clear:both;">
+            <hr class="hr">
         </div>
         <div class="home-section">
             <div class="imageTextContainer">
@@ -54,7 +54,7 @@ draft: false
                     </a>
                 </figure>
             </div>
-            <hr style="clear:both;">
+            <hr class="hr">
         </div>
         <div class="home-section">
             <div class="imageTextContainer">
@@ -68,7 +68,7 @@ draft: false
                     </a>
                 </figure>
             </div>
-            <hr style="clear:both;">
+            <hr class="hr">
         </div>
         <div class="home-section">
             <div class="imageTextContainer">
@@ -84,7 +84,7 @@ draft: false
                 </figure>
                 </div>
             </div>
-            <hr style="clear:both;">
+            <hr class="hr">
         </div>
         <div class="home-section">
             <div class="imageTextContainer">
@@ -97,7 +97,7 @@ draft: false
                     </a>
                 </figure>
             </div>
-            <hr style="clear:both;">
+            <hr class="hr">
         </div>
         <div class="home-section">
             <div class="imageTextContainer">
