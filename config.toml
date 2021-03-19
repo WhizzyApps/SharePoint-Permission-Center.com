@@ -72,6 +72,6 @@ theme = "Learn"
     style = "monokai"
     tabWidth = 4
   [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+    endLevel = 5
+    ordered = true
+    startLevel = 3
