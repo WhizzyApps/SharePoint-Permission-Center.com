@@ -683,7 +683,7 @@ code, kbd, pre, samp {
 }
 code {
     border-radius: 2px;
-    white-space: nowrap;
+    word-break: break-all;
     color: #5e5e5e;
     background: #FFF7DD;
     border: 1px solid #fbf0cb;
@@ -959,6 +959,7 @@ td {
     padding: 0;
     overflow: auto;
     position: relative;
+    max-width: 1200px;
 }
 .hljs::selection, .hljs span::selection {
     background: #b7b7b7;
@@ -1226,7 +1227,7 @@ ol li p {
     clear:both;
 }
 p.largeP {
-    font-size: calc(1rem + 2vw);
+    font-size: calc(2rem);
     line-height: 1.2;
     margin: 0 0 3vw 0;
 }
