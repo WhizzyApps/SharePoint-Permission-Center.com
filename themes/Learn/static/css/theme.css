@@ -959,7 +959,7 @@ td {
     padding: 0;
     overflow: auto;
     position: relative;
-    max-width: 1200px;
+    max-width: 75em;
 }
 .hljs::selection, .hljs span::selection {
     background: #b7b7b7;

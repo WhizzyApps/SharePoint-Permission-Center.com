@@ -26,7 +26,7 @@ draft: false
     </div>
     <hr style="clear:both;">
     <!-- other sections -->
-    <div style="max-width:900px">
+    <div style="max-width:56em">
         <h2 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h2>
         <div class="imageTextContainer">
             <div class="imageText">
@@ -42,7 +42,7 @@ draft: false
         <hr style="clear:both;">
         <div class="imageTextContainer">
             <div class="imageText">
-                <p class="largeP">Which custom groups are used ion the site?</p class="largeP">
+                <p class="largeP">Which custom groups are used on the site?</p class="largeP">
                 <p class="largeP">Which users have direct access to the site without being member of any group?</p class="largeP">
             </div>
             <figure class="right500">
