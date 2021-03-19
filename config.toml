@@ -11,7 +11,7 @@ theme = "Learn"
     home = [ "HTML", "RSS", "JSON"]
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
+  defaultMarkdownHandler = "blackFriday"
 
   [markup.asciidocExt]
     backend = "html5"
