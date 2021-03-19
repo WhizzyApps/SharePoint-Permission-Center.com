@@ -42,9 +42,9 @@
 }
 
 .imageTextContainer {
-    display: block;
+    display: flex;
   }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 1200px) {
     .imageTextContainer {
         display: block;
     }   
@@ -516,7 +516,7 @@ h1 {
 .home-header h1, h4 {
     margin: 0;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 1200px) {
     .home-header h1 {
         font-size: calc(1rem + 2vw);
     }
@@ -1230,10 +1230,4 @@ p.largeP {
     font-size: calc(2rem);
     line-height: 1.2;
     margin: 0 0 3vw 0;
-}
-.home-section {
-    max-width: 56em;
-}
-.hr {
-    clear:both;
 }
