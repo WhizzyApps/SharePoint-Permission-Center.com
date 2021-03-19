@@ -516,6 +516,11 @@ h1 {
 .home-header h1, h4 {
     margin: 0;
 }
+@media only all and (max-width: 40em) {
+    .home-header h1 {
+        margin: 0 16px;
+    }
+}
 blockquote {
     border-left: 10px solid #F0F2F4;
 }
