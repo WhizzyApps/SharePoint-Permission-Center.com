@@ -1231,3 +1231,6 @@ p.largeP {
     line-height: 1.2;
     margin: 0 0 3vw 0;
 }
+.home-section {
+    max-width: 56em;
+}
