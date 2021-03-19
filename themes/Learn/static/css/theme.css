@@ -1231,3 +1231,10 @@ p.largeP {
     line-height: 1.2;
     margin: 0 0 3vw 0;
 }
+.home-header button {
+    background-color:#3A9CFF; 
+    margin: 0.2rem; 
+    padding: 0.5rem 1rem; 
+    color: white;
+    font-size: 1.25rem;
+}
