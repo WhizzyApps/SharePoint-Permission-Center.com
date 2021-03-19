@@ -18,7 +18,12 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; 
 }
-@media only all and (max-width: 31em) {
+@media only all and (max-width: 62em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only all and (max-width: 38em) {
   html {
     font-size: 12px;
   }
