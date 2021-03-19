@@ -25,6 +25,7 @@ theme = "Learn"
     verbose = false
     workingFolderCurrent = false
     [markup.asciidocExt.attributes]
+
   [markup.blackFriday]
     angledQuotes = false
     footnoteAnchorPrefix = ""
@@ -40,6 +41,7 @@ theme = "Learn"
     smartypants = true
     smartypantsQuotesNBSP = false
     taskLists = true
+
   [markup.goldmark]
     [markup.goldmark.extensions]
       definitionList = true
@@ -57,8 +59,9 @@ theme = "Learn"
         title = true
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = false
+      unsafe = true
       xhtml = false
+
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
@@ -71,6 +74,7 @@ theme = "Learn"
     noClasses = true
     style = "monokai"
     tabWidth = 4
+
   [markup.tableOfContents]
     endLevel = 5
     ordered = true
