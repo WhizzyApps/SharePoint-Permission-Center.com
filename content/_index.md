@@ -34,7 +34,7 @@ draft: false
                 <p class="largeP">What are the members of the default SharePoint groups?</p class="largeP">
                 <p class="largeP">The web part shows all users in one view: SharePoint group members, M365 group members and members of nested Azure groups.</p class="largeP">           </div>
             <figure class="right500">
-                <a href="https://hugo-netlifycms-test-site.netlify.app/images/01.png" data-featherlight="image">
+                <a href="/images/01.png" data-featherlight="image">
                     <img src="/images/01.png" />
                 </a>
             </figure>

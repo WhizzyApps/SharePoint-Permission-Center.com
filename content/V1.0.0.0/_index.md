@@ -203,98 +203,117 @@ With this option, only invited people can access the item. The name of the creat
 
 #### SharePoint API endpoints:
 
+##### Example function for typescript-react *.tsx
+
+`
+export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
+  private async _spApiGet (url: string): Promise<object> {
+    const clientOptions: ISPHttpClientOptions = {
+      headers: new Headers(),
+      method: 'GET',
+      mode: 'cors'
+    };
+    const response = await this.props.spHttpClient.get(url, SPHttpClient.configurations.v1, clientOptions);
+    const responseJson = await response.json();
+    return responseJson;
+  } 
+}
+`
+
+##### Used endpoints
+
 Get current user permissions
 
-- `{site url}/\_api/web/currentuser/isSiteAdmin`
-- `{site url}/\_api/web/effectiveBasePermissions`
+- `[SITE_URL]/_api/web/currentuser/isSiteAdmin`
+- `[SITE_URL]/_api/web/effectiveBasePermissions`
 
 Get default site groups:
 
-- `{site url}/\_api/web/AssociatedOwnerGroup`
-- `{site url}/\_api/web/AssociatedMemberGroup`
-- `{site url}/\_api/web/AssociatedVisitorGroup`
+- `[SITE_URL]/_api/web/AssociatedOwnerGroup`
+- `[SITE_URL]/_api/web/AssociatedMemberGroup`
+- `[SITE_URL]/_api/web/AssociatedVisitorGroup`
 
 Get all site groups:
 
-- `{site url}/\_api/web/sitegroups`
+- `[SITE_URL]/_api/web/sitegroups`
 
 Get members with access given directly:
 
-- `{site url} /\_api/web/RoleAssignments? $expand=Member,RoleDefinitionBindings&amp;$filter=Member/PrincipalType ne 8`
+- `[SITE_URL]/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindings&amp;$filter=Member/PrincipalType%20ne%208`
 
 Get site admins:
 
-- `{site url}/\_api/web/siteusers?$filter=IsSiteAdmin eq true`
+- `[SITE_URL]/_api/web/siteusers?$filter=IsSiteAdmin%20eq%20true`
 
 Get group permissions:
 
-- `{site url}/\_api/Web/RoleAssignments/GetByPrincipalId({group id})/RoleDefinitionBindings`
+- `[SITE_URL]/_api/Web/RoleAssignments/GetByPrincipalId([GROUP_ID])/RoleDefinitionBindings`
 
 Get group members:
 
-- `{site url}/\_api/web/SiteGroups/GetById({group id})/users`
+- `[SITE_URL]/_api/web/SiteGroups/GetById([GROUP_ID])/users`
 
 Get all site permission levels:
 
-- `{site url}/\_api/web/roleDefinitions`
+- `[SITE_URL]/_api/web/roleDefinitions`
 
 Get properties of sharing groups:
 
-- `{site url}/\_api/search/query?querytext='{guid}'`
+- `[SITE_URL]/_api/search/query?querytext='[GUID]'`
 
 Get properties of sharing groups in case of link type "specific people"
 
-- `{site url} /\_api/web/Lists('{listId}')/GetItemByUniqueId('{guid}')/GetSharingInformation? $Expand=permissionsInformation`
+- `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation`
 
 Get all groups, that have permission levels:
 
-- `{site url}/\_api/Web/RoleAssignments`
+- `[SITE_URL]/_api/Web/RoleAssignments`
 
 Delete group
 
-- `{site url}/\_api/web/sitegroups/removebyid({group id})`
+- `[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])`
 
 Delete sharing group
 
-- `{site url}/\_api/web/Lists('{listId}')/GetItemByUniqueId('{itemId}')/UnshareLink`
+- `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[ITEM_ID]')/UnshareLink`
 
 Get id of shared item to open permissions page of item
 
-- `{site url}/\_api/web/Lists('{listId}')/GetItemByUniqueId('{guid}')`
+- `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')`
 
 Add/ remove user to/from admins: post user with attribute "isSiteAdmin" = true/false
 
-- `{site url}/\_api/web/GetUserById({userId})`
+- `[SITE_URL]/_api/web/GetUserById([USER_ID])`
 - In case SharePoint id not available: Get SharePoint id of user
-  - `{site url}/\_api/web/siteusers(@v)?@v='{userLoginName}'`
+  - `[SITE_URL]/_api/web/siteusers(@v)?@v='[USER_LOGIN_NAME]'`
 - To add: in case user has no profile in SharePoint: create profile via post
-  - `{site url}/\_api/web/ensureuser`
+  - `[SITE_URL]/_api/web/ensureuser`
 
 Add user to group: post with body 'loginName': userLoginName
 
-- `{site url}/\_api/web/sitegroups/getbyid({groupId})/users`
+- `[SITE_URL]/_api/web/sitegroups/getbyid([GROUP_ID])/users`
 
 Remove user from group: post with body 'loginName': userLoginName
 
-- `{site url}/removeByLoginName`
+- `[SITE_URL]/removeByLoginName`
 
 Delete user from site: post with header: 'X-HTTP-Method': 'DELETE'
 
-- `{site url}/\_api/web/GetUserById({userSpId})`
+- `[SITE_URL]/_api/web/GetUserById([USER_SP_ID])`
 
 #### Graph API endpoints:
 
 Get members of Azure groups:
 
-- `/groups/{azureGroupId}/members`
+- `/groups/[AZURE_GROUP_ID]/members`
 
 Get owners of Azure groups:
 
-- `/groups/{azureGroupId}/owners`
+- `/groups/[AZURE_GROUP_ID]/owners`
 
 Get properties of Azure groups:
 
-- `/groups/{azureGroupId}`
+- `/groups/[AZURE_GROUP_ID]`
 
 Get name of organization of tenant to display it in tooltip for sharing groups
 
@@ -302,4 +321,4 @@ Get name of organization of tenant to display it in tooltip for sharing groups
 
 Get azure properties for user
 
-- `/users/{userPrincipalName}`
+- `/users/[USER_PRINZIPAL_NAME]`
