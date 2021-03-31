@@ -203,9 +203,9 @@ With this option, only invited people can access the item. The name of the creat
 
 #### SharePoint API endpoints:
 
-##### Example function for typescript-react *.tsx
+Example function for Typescript-React *.tsx
 
-`
+```
 export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
   private async _spApiGet (url: string): Promise<object> {
     const clientOptions: ISPHttpClientOptions = {
@@ -218,9 +218,7 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
     return responseJson;
   } 
 }
-`
-
-##### Used endpoints
+```
 
 Get current user permissions
 
