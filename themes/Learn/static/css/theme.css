@@ -502,7 +502,7 @@ body {
     font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     line-height: 1.6;
-    font-size: 18px !important;
+    font-size: 20px !important;
 }
 h2, h3, h4, h5, h6 {
     font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -512,9 +512,6 @@ h2, h3, h4, h5, h6 {
 }
 h1 {
     font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-}
-.home-header h1, h4 {
-    margin: 0;
 }
 @media only all and (max-width: 40em) {
     .home-header h1 {
