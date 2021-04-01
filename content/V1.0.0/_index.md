@@ -85,26 +85,26 @@ Karsten Held, Samuel Gross, 10.02.2021
         - Username: Click opens user in Azure portal
       - Action buttons:
         - "Change membership" opens dialog to add or remove the user to/from a group. See section "Change membership"
-        - "Delete user from site" removes user from all SharePoint groups of the site and deletes its SharePoint profile
+        - "Delete user from site" removes user from all SharePoint groups of the site
         - "Classic property page" opens classic user property page
       - Change membership
         {{< figure src="/V1.0.0/images/Feature06.png" class="right500" >}}
         - List of all Sharepoint groups of site, including hidden groups and "Access given directly"
         - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
         - To add/remove user from groups, select/deselect group and click on button "Change membership"
-        - To manage members of "Access given directly", click to open classic permission page
-        - To manage members of Distribution List and Mail-enabled Security group, click to open group in Azure portal
+        - To change "Access given directly", click to open classic permission page
+        - To manage memberships of Distribution lists and Mail-enabled security groups, click the group to open it in the Azure portal
 
 6. **SharePoint menu** 
   
       {{< figure src="/V1.0.0/images/Feature07.png" class="right300" >}}
-      - Access to 6 pages of classic admin center:
-      - "Classic permissions page" opens "../user.aspx"
+      - Access to SharePoint classic site administration pages:
+      - "Classic permissions page" opens "[SITE_URL]/_layouts/15/user.aspx"
       - "Classic permissions level page" opens page of all permission levels of site
-      - "Classic groups page" opens "../groups.aspx"
-      - "Classic default groups page" opens "../permsetup.aspx"
-      - "Classic all site users page" opens "../people.aspx?MembershipGroupId=0"
-      - "Classic access request page" opens "../pendingreq.aspx"
+      - "Classic groups page" opens "[SITE_URL]/_layouts/15/groups.aspx"
+      - "Classic default groups page" opens "[SITE_URL]/_layouts/15/permsetup.aspx"
+      - "Classic all site users page" opens "[SITE_URL]/_layouts/15/people.aspx?MembershipGroupId=0"
+      - "Classic access request page" opens "[SITE_URL]/_layouts/15/pendingreq.aspx"
 
 7. **Reload button** 
 
@@ -129,7 +129,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
 - On (by default):
   - The web part checks the permission level of the current user based on typical permissions for the permission levels "Full control", "Edit" or "Read" and categorizes the user to be Owner, Member or Visitor.
-  - Based on that, the web part is displayed with a configuration. You can decide, which features are shown for which permission.
+  - Based on that, the web part is displayed with a particular configuration. You can decide, which features are shown for which permission.
   - Configure web part for "Site owners", "Site members" and "Site visitors" (Drop down menu)
   - Switch on/off the features listed below.
   - If you are Site owner, you will see the changes you make for the configuration of "Site owners" in the web part immediately.
