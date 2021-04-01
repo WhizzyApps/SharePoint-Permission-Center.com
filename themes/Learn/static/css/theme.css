@@ -504,6 +504,12 @@ body {
     line-height: 1.6;
     font-size: 20px !important;
 }
+@media only all and (max-width: 40em) {
+    .body {
+        line-height: 1;
+    }
+}
+
 h2, h3, h4, h5, h6 {
     font-family: "Aileron", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
