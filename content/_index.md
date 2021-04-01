@@ -66,8 +66,8 @@ draft: false
         <hr style="clear:both;">
         <div class="imageTextContainer">
             <div class="imageText">
-                <p class="largeP">What (hidden) groups do exist from shared documents and folders in the site?</p class="largeP">
-                <p class="largeP">What other (hidden) groups do exist without any assigned permission level?</p class="largeP">
+                <p class="largeP">What hidden groups do exist from shared documents and folders in the site?</p class="largeP">
+                <p class="largeP">What other hidden groups do exist without any assigned permission level?</p class="largeP">
             </div>
             <div style="flex-shrink:0;">
             <figure class="right500">

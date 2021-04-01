@@ -1,14 +1,18 @@
 ---
-title: "Version 1.0.2.0"
+title: "Version 1.0.1.0"
 date: 2021-03-01T14:39:08-06:00
 draft: false
-weight: 97
+weight: 98
 ---
-Samuel Gross, 05.03.2021
+Samuel Gross, 16.02.2021
 
 ### Release notes
 
-- Bug fixed: when the site had a SharePoint group without assigned permission levels, then the user card did not expand, because of an internal error “Permissions of the SharePoint group undefined”.
+- All SharePoint system groups are now shown in the web part. For example: SharePoint Administrator", SharePoint Service Administrator", Company Administrator", "Everyone Except external users". They are listed as a user and can be managed via user card: "change membership" and "delete user from site".
+- Usernames are sorted not just as a string:
+  - mutated vowel: oe is treated as o, etc.
+  - numbers as numbers: 2 before 10
+- SharePoint Api call to get members of azure groups: get 500 users per request, instead of 1000.
 
 ### Web part Features
 
@@ -18,7 +22,7 @@ Samuel Gross, 05.03.2021
 
 1. **Groups tab** 
 
-      {{< figure src="/V1.0.2.0/images/Feature01.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature01.png" class="right300" >}}
       - Showing groups
         - "Site Admins" (not a particular SharePoint group)
         - Default site groups: "Site Owners", "Site Members", "Site Visitors"
@@ -36,14 +40,14 @@ Samuel Gross, 05.03.2021
       
 2. **Users tab** 
 
-      {{< figure src="/V1.0.2.0/images/Feature02.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature02.png" class="right300" >}}
       - Showing all users of site in Alphabetical order
       - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section "User card".
 
 3. **Hidden groups tab** 
 
-      {{< figure src="/V1.0.2.0/images/Feature03.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature03.png" class="right300" >}}
       - Showing hidden SharePoint groups that are created by SharePoint and their members
       - "Limited Access System Group"
       - Sharing groups
@@ -57,7 +61,7 @@ Samuel Gross, 05.03.2021
 
 4. ***Group card*** 
 
-      {{< figure src="/V1.0.2.0/images/Feature04.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature04.png" class="right300" >}}
       - Click on edit icon expands group card
       - Showing details
         - Name, Type
@@ -73,7 +77,7 @@ Samuel Gross, 05.03.2021
 
 5. ***User Card***
 
-      {{< figure src="/V1.0.2.0/images/Feature05.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature05.png" class="right300" >}}
       - Click on username opens user card.
       - Showing details
         - User photo
@@ -88,7 +92,7 @@ Samuel Gross, 05.03.2021
         - "Delete user from site" removes user from all SharePoint groups of the site and deletes its SharePoint profile
         - "Classic property page" opens classic user property page
       - Change membership
-        {{< figure src="/V1.0.2.0/images/Feature06.png" class="right500" >}}
+        {{< figure src="/V1.0.1/images/Feature06.png" class="right500" >}}
         - List of all Sharepoint groups of site, including hidden groups and "Access given directly"
         - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
         - To add/remove user from groups, select/deselect group and click on button "Change membership"
@@ -97,7 +101,7 @@ Samuel Gross, 05.03.2021
 
 6. **SharePoint menu** 
   
-      {{< figure src="/V1.0.2.0/images/Feature07.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature07.png" class="right300" >}}
       - Access to 6 particular pages of classic admin center:
       - "Classic permissions page" opens "../user.aspx"
       - "Classic permissions level page" opens page of all permission levels of site
@@ -108,14 +112,14 @@ Samuel Gross, 05.03.2021
 
 7. **Reload button** 
 
-      {{< figure src="/V1.0.2.0/images/Feature08.png" class="right300" >}}
+      {{< figure src="/V1.0.1/images/Feature08.png" class="right300" >}}
       - Reloads webpart with updated data from the Api without reloading the web page
 
 ### Web part configuration 
 
 #### Configuration page 1
 
-  {{< figure src="/V1.0.2.0/images/Configuration01.png" class="right250" >}}
+  {{< figure src="/V1.0.1/images/Configuration01.png" class="right250" >}}
 
   To configure the webpart, edit page, then edit web part. The web part "property pane" will blend in on the right. 
 
@@ -143,7 +147,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 {{</ rawhtml >}}
 
 - Off: 
-  {{< figure src="/V1.0.2.0/images/Configuration02.png" class="right250clear" >}}
+  {{< figure src="/V1.0.1/images/Configuration02.png" class="right250clear" >}}
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is "On".
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
@@ -155,7 +159,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
 #### Configuration page 2
 
-  {{< figure src="/V1.0.2.0/images/Configuration03.png" class="right250" >}}
+  {{< figure src="/V1.0.1/images/Configuration03.png" class="right250" >}}
 
 The debug page is for developers to log the following to the developer console in case of bugs. By default it is switched off.
 
@@ -171,7 +175,7 @@ The debug page is for developers to log the following to the developer console i
 Groups that either have no permissions or just have the permission level "Limited Access" are considered in the web part as a hidden group.
 
 Examples of hidden groups: 
-  {{< figure src="/V1.0.2.0/images/Special01.png" class="right300" >}}
+  {{< figure src="/V1.0.1/images/Special01.png" class="right300" >}}
 
   - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
   - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level "Limited Access".
@@ -180,7 +184,7 @@ Examples of hidden groups:
   - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
 #### Information about Sharing groups 
-  {{< figure src="/V1.0.2.0/images/Special02.png" class="right250" >}}
+  {{< figure src="/V1.0.1/images/Special02.png" class="right250" >}}
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
 
@@ -195,14 +199,14 @@ You can choose if user can read or edit the item.
 
 This option needs to be enabled in the Admin center. The name of the created group contains "Anonymous", because anyone can access the item, and "View" for the read permission.
 
-  {{< figure src="/V1.0.2.0/images/Special03.png" class="left600" >}}
+  {{< figure src="/V1.0.1/images/Special03.png" class="left600" >}}
 
 
 **People in your Organization with the link**
 
 The name of the created group contains "Organization", because only people in your organization can access the item, and "Edit" for the edit permission.
 
-  {{< figure src="/V1.0.2.0/images/Special04.png" class="left600" >}}
+  {{< figure src="/V1.0.1/images/Special04.png" class="left600" >}}
 
 **People with existing access**
 
@@ -212,7 +216,7 @@ This option is just to send a link to specified user. No SharePoint group is cre
 
 With this option, only invited people can access the item. The name of the created group contains "Flexible", because you can change the permissions of this group to edit or read.
 
-  {{< figure src="/V1.0.2.0/images/Special05.png" class="left600" >}}
+  {{< figure src="/V1.0.1/images/Special05.png" class="left600" >}}
 
 {{< rawhtml >}}
 </div>
