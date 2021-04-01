@@ -1,10 +1,10 @@
 ---
-title: "Version 1.0.0.0"
+title: "Version 1.0.0"
 date: 2021-03-01T14:38:53-06:00
 draft: false
 weight: 99
 ---
-Samuel Gross, 10.02.2021
+Karsten Held, Samuel Gross, 10.02.2021
 
 ### Web part Features
 
@@ -16,12 +16,12 @@ Samuel Gross, 10.02.2021
 
       {{< figure src="/V1.0.0/images/Feature01.png" class="right300" >}}
       - Showing groups
-        - "Site Admins" (not a particular SharePoint group)
+        - "Site Admins" (not a SharePoint group)
         - Default site groups: "Site Owners", "Site Members", "Site Visitors"
         - Custom SharePoint groups: "Dolani special"
-        - "Access given directly" (not a particular SharePoint group)
+        - "Access given directly" (not a SharePoint group)
       - Showing permission levels in parentheses
-        - For groups. To manage permissions of a particular permission level, click to open classic page
+        - For groups. To manage permissions of a permission level, click to open classic page
         - For each member with direct access
       - Expand/Collapse group members: click on icon on the left
       - Manage groups
@@ -33,15 +33,19 @@ Samuel Gross, 10.02.2021
 2. **Users tab** 
 
       {{< figure src="/V1.0.0/images/Feature02.png" class="right300" >}}
-      - Showing all users of site in Alphabetical order
+      - Showing all users of site in alphabetical order
       - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section "User card".
 
 3. **Hidden groups tab** 
 
       {{< figure src="/V1.0.0/images/Feature03.png" class="right300" >}}
-      - Showing hidden SharePoint groups that are created by SharePoint and their members
+      - Showing hidden SharePoint groups that are used by SharePoint and created by individual sharing.
       - "Limited Access System Group"
+        - Contains all users who only have access to specific items of the site without being member of a SharePoint group
+        - Used by individual sharing, e.g. if you share folders / files / list items using the "Share" function
+        - Allows these users to browse to the item that was shared with them without seeing other items
+        - Also contains users who had access to a specific item previously and where the access was removed
       - Sharing groups
         - Are created when an item is shared
         - Sharing: [Item name] [SharePoint group name]
@@ -94,7 +98,7 @@ Samuel Gross, 10.02.2021
 6. **SharePoint menu** 
   
       {{< figure src="/V1.0.0/images/Feature07.png" class="right300" >}}
-      - Access to 6 particular pages of classic admin center:
+      - Access to 6 pages of classic admin center:
       - "Classic permissions page" opens "../user.aspx"
       - "Classic permissions level page" opens page of all permission levels of site
       - "Classic groups page" opens "../groups.aspx"
@@ -125,7 +129,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
 - On (by default):
   - The web part checks the permission level of the current user based on typical permissions for the permission levels "Full control", "Edit" or "Read" and categorizes the user to be Owner, Member or Visitor.
-  - Based on that, the web part is displayed with a particular configuration. You can decide, which features are shown for which permission.
+  - Based on that, the web part is displayed with a configuration. You can decide, which features are shown for which permission.
   - Configure web part for "Site owners", "Site members" and "Site visitors" (Drop down menu)
   - Switch on/off the features listed below.
   - If you are Site owner, you will see the changes you make for the configuration of "Site owners" in the web part immediately.
