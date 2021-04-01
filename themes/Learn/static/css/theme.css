@@ -1224,8 +1224,6 @@ ol li p {
     clear:both;
 }
 p.largeP {
-    font-size: calc(2rem);
-    line-height: 1.2;
     margin: 0 0 3vw 0;
 }
 .home-header button {
