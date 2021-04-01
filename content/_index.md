@@ -46,8 +46,8 @@ draft: false
                 <p class="largeP">Which users have direct access to the site without being member of any group?</p class="largeP">
             </div>
             <figure class="right500">
-                <a href="/images/01.png" data-featherlight="image">
-                    <img src="/images/01.png" />
+                <a href="/images/02.png" data-featherlight="image">
+                    <img src="/images/02.png" />
                 </a>
             </figure>
         </div>
@@ -58,8 +58,8 @@ draft: false
                 <p class="largeP">What is the group nesting hierarchy of SharePoint, M365 and other Azure groups?</p class="largeP">
             </div>
             <figure class="right500">
-                <a href="/images/02.png" data-featherlight="image">
-                    <img src="/images/02.png" />
+                <a href="/images/03.png" data-featherlight="image">
+                    <img src="/images/03.png" />
                 </a>
             </figure>
         </div>
@@ -71,8 +71,8 @@ draft: false
             </div>
             <div style="flex-shrink:0;">
             <figure class="right500">
-                <a href="/images/03.png" data-featherlight="image">
-                    <img src="/images/03.png" />
+                <a href="/images/04.png" data-featherlight="image">
+                    <img src="/images/04.png" />
                 </a>
             </figure>
             </div>
@@ -83,8 +83,8 @@ draft: false
                 <p class="largeP">How can I navigate to the classic SharePoint pages to manage groups and permissions?</p class="largeP">
             </div>
             <figure class="right500">
-                <a href="/images/04.png" data-featherlight="image">
-                    <img src="/images/04.png" />
+                <a href="/images/05.png" data-featherlight="image">
+                    <img src="/images/05.png" />
                 </a>
             </figure>
         </div>
@@ -94,8 +94,8 @@ draft: false
                 <p class="largeP">How can I change the group membership of users?</p class="largeP">
             </div>
             <figure class="right500">
-                <a href="/images/05.png" data-featherlight="image">
-                    <img src="/images/05.png" />
+                <a href="/images/06.png" data-featherlight="image">
+                    <img src="/images/06.png" />
                 </a>
             </figure>
         </div>
