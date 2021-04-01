@@ -27,7 +27,7 @@ draft: false
     <hr style="clear:both;">
     <!-- other sections -->
     <div style="max-width:56em">
-        <h4 style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</h4>
+        <p style="background-color:#F0F2F4;padding:1rem;">The web part makes it easier for site owners and users to answer the following questions:</p>
         <div class="imageTextContainer">
             <div class="imageText">
                 <p class="largeP">Who has access to the site?</p class="largeP">
