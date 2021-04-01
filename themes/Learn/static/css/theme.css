@@ -505,7 +505,7 @@ body {
     font-size: 20px;
 }
 @media only all and (max-width: 40em) {
-    .body {
+    body {
         line-height: 1.2;
     }
 }
@@ -1066,7 +1066,6 @@ td {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 70%;
     display: inline-block;
 }
 #body #breadcrumbs span {
