@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0 2vw;
+    
 }
 
 .imageTextContainer {
@@ -1239,12 +1239,12 @@ p.largeP {
     font-size: 1.25rem;
 }
 .home-header h2 {
-    margin: 0; 
+    margin: 0 1rem; 
     font-size: 2.5rem;
 }
 @media only screen and (max-width: 42em) {
     .home-header h2 {
-        margin: 16px 0 0 0;
+        margin: 16px 1rem 0 1rem;
         font-size: 2.5rem;
     }
 }
