@@ -1060,7 +1060,7 @@ td {
 }
 #body #breadcrumbs {
     height: auto;
-    margin: 0 10px 0 0;
+    margin: 0;
     padding-left: 0;
     line-height: 1.4;
     overflow: hidden;
@@ -1070,6 +1070,7 @@ td {
 }
 #body #breadcrumbs span {
     padding: 0 0.1rem;
+    margin: 0 10px 0 0;
 }
 @media only all and (max-width: 59.938em) {
     #sidebar {
