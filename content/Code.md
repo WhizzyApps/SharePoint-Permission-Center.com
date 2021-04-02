@@ -35,7 +35,10 @@ public async componentDidMount() {
   console.log(response);
 }
 ```
-Here are the endpoints (urls) used in web part, while [SITE_URL] = https://[YOUR_TENANT].sharepoint.com/sites/[YOUR_SITE]
+**Endpoints (urls) used in web part**
+with
+- [SITE_URL] = ```https://[YOUR_TENANT].sharepoint.com/sites/[YOUR_SITE]```
+- Example: ```https://myTenant.sharepoint.com/sites/mySite```
 
 Get current user permissions
 
@@ -63,12 +66,14 @@ Get site admins:
 Get group permissions:
 
 - `[SITE_URL]/_api/Web/RoleAssignments/GetByPrincipalId([GROUP_ID])/RoleDefinitionBindings`
-- GROUP_ID = id of SharePoint group in API. I.e.: GROUP_ID = 3
+- [GROUP_ID] = id of SharePoint group in API
+- `[SITE_URL]/_api/Web/RoleAssignments/GetByPrincipalId(3)/RoleDefinitionBindings`
 
 Get group members:
 
 - `[SITE_URL]/_api/web/SiteGroups/GetById([GROUP_ID])/users`
-- GROUP_ID = id of SharePoint group in API. I.e.: GROUP_ID = 3
+- [GROUP_ID] = id of SharePoint group in API
+- Example: ```[SITE_URL]/_api/web/SiteGroups/GetById(3)/users```
 
 Get all site permission levels:
 
@@ -77,7 +82,9 @@ Get all site permission levels:
 Get properties of sharing groups:
 
 - `[SITE_URL]/_api/search/query?querytext='[GUID]'`
-- GUID = guid of sharing group in API.
+- [GUID] = Globally Unique Identifier of sharing group in API
+- Example: `[SITE_URL]/_api/search/query?querytext='6B29FC40-CA47-1067-B31D-00DD010662DA'`
+
 
 Get all groups, that have permission levels:
 
@@ -88,6 +95,7 @@ Get all groups, that have permission levels:
 **Get properties of sharing groups in case of link type "specific people"**
 
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation`
+- Example: ```https://[YOUR_TENANT].sharepoint.com/sites/[YOUR_SITE]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('[F5B3CBF9-055A-41EC-9245-5F13D572BFC8]')/GetSharingInformation?$Expand=permissionsInformation```
 - Example function for Typescript-React in *.tsx file:
 
 ``` 
@@ -125,8 +133,9 @@ public async componentDidMount() {
 
 **Delete group**
 
-- `[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])`
-- GROUP_ID = id of SharePoint group in API. I.e.: GROUP_ID = 3
+- ```[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])```
+- [GROUP_ID] = id of SharePoint group in API
+- Example: ```[SITE_URL]/_api/web/sitegroups/removebyid([3])```
 - Example function for Typescript-React in *.tsx file:
 
 ``` 
