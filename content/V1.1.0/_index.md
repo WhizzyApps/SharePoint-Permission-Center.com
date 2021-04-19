@@ -1,14 +1,22 @@
 ---
-title: "Version 1.0.2"
+title: "Version 1.1.0"
 date: 2021-03-01T14:39:08-06:00
 draft: false
-weight: 97
+weight: 96
 ---
-Karsten Held, Samuel Gross, 05.03.2021
+Karsten Held, Samuel Gross, 16.04.2021
 
 ### Release notes
 
-- Bug fixed: when the site had a SharePoint group without assigned permission levels, then the user card did not expand, because of an internal error “Permissions of the SharePoint group undefined”.
+- Bugfix: M365 group is incorrectly shown as user instead of being resolved.
+- Bugfix: When "Use animate height" off: Click on any button of user card incorrectly closes user card instead of staying expanded.
+- Bugfix: Sharing groups: “Open Item” did not open documents properly.
+- Bugfix: Users tab: If current user has no access to view permissions of SharePoint groups, after user name there was shown empty parenthesis instead of nothing.
+- New feature for debug mode: Record API response. For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
+- Improved: Less graph API calls
+  - Calls for getting azure group type reduced by getting first 100 azure groups of tenant at one call.
+  - Web part configuration: If “Show Site Admins” or “Show Access given directly” = Off, don’t make API call.
+
 
 ### Web part Features
 
@@ -18,7 +26,7 @@ Karsten Held, Samuel Gross, 05.03.2021
 
 1. **Groups tab** 
 
-      {{< figure src="/V1.0.2/images/Feature01.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature01.png" class="right300" >}}
       - Showing groups
         - "Site Admins" (not a SharePoint group)
         - Default site groups: "Site Owners", "Site Members", "Site Visitors"
@@ -36,14 +44,14 @@ Karsten Held, Samuel Gross, 05.03.2021
       
 2. **Users tab** 
 
-      {{< figure src="/V1.0.2/images/Feature02.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature02.png" class="right300" >}}
       - Showing all users of site in alphabetical order
       - Showing permission levels in parentheses
       - Manage users: Click on username to open user card. See section "User card".
 
 3. **Hidden groups tab** 
 
-      {{< figure src="/V1.0.2/images/Feature03.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature03.png" class="right300" >}}
       - Showing hidden SharePoint groups that are used by SharePoint and created by individual sharing.
       - "Limited Access System Group"
         - Contains all users who only have access to specific items of the site without being member of a SharePoint group
@@ -61,7 +69,7 @@ Karsten Held, Samuel Gross, 05.03.2021
 
 4. ***Group card*** 
 
-      {{< figure src="/V1.0.2/images/Feature04.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature04.png" class="right300" >}}
       - Click on edit icon expands group card
       - Showing details
         - Name, Type
@@ -77,7 +85,7 @@ Karsten Held, Samuel Gross, 05.03.2021
 
 5. ***User Card***
 
-      {{< figure src="/V1.0.2/images/Feature05.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature05.png" class="right300" >}}
       - Click on username opens user card.
       - Showing details
         - User photo
@@ -92,7 +100,7 @@ Karsten Held, Samuel Gross, 05.03.2021
         - "Delete user from site" removes user from all SharePoint groups of the site and deletes its SharePoint profile
         - "Classic property page" opens classic user property page
       - Change membership
-        {{< figure src="/V1.0.2/images/Feature06.png" class="right500" >}}
+        {{< figure src="/V1.1.0/images/Feature06.png" class="right500" >}}
         - List of all Sharepoint groups of site, including hidden groups and "Access given directly"
         - List of all Azure groups of site, ordered by type: M365, Security, Distribution List, Mail-enabled Security
         - To add/remove user from groups, select/deselect group and click on button "Change membership"
@@ -101,7 +109,7 @@ Karsten Held, Samuel Gross, 05.03.2021
 
 6. **SharePoint menu** 
   
-      {{< figure src="/V1.0.2/images/Feature07.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature07.png" class="right300" >}}
       - Access to SharePoint classic site administration pages:
       - "Classic permissions page" opens "[SITE_URL]/_layouts/15/user.aspx"
       - "Classic permissions level page" opens page of all permission levels of site
@@ -112,14 +120,14 @@ Karsten Held, Samuel Gross, 05.03.2021
 
 7. **Reload button** 
 
-      {{< figure src="/V1.0.2/images/Feature08.png" class="right300" >}}
+      {{< figure src="/V1.1.0/images/Feature08.png" class="right300" >}}
       - Reloads webpart with updated data from the Api without reloading the web page
 
 ### Web part configuration 
 
 #### Configuration page 1
 
-  {{< figure src="/V1.0.2/images/Configuration01.png" class="right250" >}}
+  {{< figure src="/V1.1.0/images/Configuration01.png" class="right250" >}}
 
   To configure the webpart, edit page, then edit web part. The web part "property pane" will blend in on the right. 
 
@@ -147,7 +155,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 {{</ rawhtml >}}
 
 - Off: 
-  {{< figure src="/V1.0.2/images/Configuration02.png" class="right250clear" >}}
+  {{< figure src="/V1.1.0/images/Configuration02.png" class="right250clear" >}}
   - For all users you can switch on/off the features, despite their permissions. The same features are configurable as for the Configuration based on permissions is "On".
   - By default, all features are enabled.
   - Web part will reflect changes immediately.
@@ -159,7 +167,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
 #### Configuration page 2
 
-  {{< figure src="/V1.0.2/images/Configuration03.png" class="right250" >}}
+  {{< figure src="/V1.1.0/images/Configuration03.png" class="right250" >}}
 
 The debug page is for developers to log the following to the developer console in case of bugs. By default it is switched off.
 
@@ -169,13 +177,16 @@ The debug page is for developers to log the following to the developer console i
 - Log variables of PermissionCenter.tsx: This is the main react component in the source code. If enabled, the most important variables of most functions are logged.
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
 - Use animate height for user card: Sometimes the user card doesn't expand. Disable it to try to expand it without animation.
+- Export or import Api response: For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
+
+  {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
 
 ### Special behaviors: Hidden groups
 
 Groups that either have no permissions or just have the permission level "Limited Access" are considered in the web part as a hidden group.
 
 Examples of hidden groups: 
-  {{< figure src="/V1.0.2/images/Special01.png" class="right300" >}}
+  {{< figure src="/V1.1.0/images/Special01.png" class="right300" >}}
 
   - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
   - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don't have any permission level or the permission level "Limited Access".
@@ -184,7 +195,7 @@ Examples of hidden groups:
   - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
 #### Information about Sharing groups 
-  {{< figure src="/V1.0.2/images/Special02.png" class="right250" >}}
+  {{< figure src="/V1.1.0/images/Special02.png" class="right250" >}}
 
 If you share an item in a SharePoint list, you have 4 options how to share the item:
 
@@ -199,14 +210,14 @@ You can choose if user can read or edit the item.
 
 This option needs to be enabled in the Admin center. The name of the created group contains "Anonymous", because anyone can access the item, and "View" for the read permission.
 
-  {{< figure src="/V1.0.2/images/Special03.png" class="left600" >}}
+  {{< figure src="/V1.1.0/images/Special03.png" class="left600" >}}
 
 
 **People in your Organization with the link**
 
 The name of the created group contains "Organization", because only people in your organization can access the item, and "Edit" for the edit permission.
 
-  {{< figure src="/V1.0.2/images/Special04.png" class="left600" >}}
+  {{< figure src="/V1.1.0/images/Special04.png" class="left600" >}}
 
 **People with existing access**
 
@@ -216,7 +227,7 @@ This option is just to send a link to specified user. No SharePoint group is cre
 
 With this option, only invited people can access the item. The name of the created group contains "Flexible", because you can change the permissions of this group to edit or read.
 
-  {{< figure src="/V1.0.2/images/Special05.png" class="left600" >}}
+  {{< figure src="/V1.1.0/images/Special05.png" class="left600" >}}
 
 {{< rawhtml >}}
 </div>

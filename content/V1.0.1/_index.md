@@ -172,7 +172,7 @@ The debug page is for developers to log the following to the developer console i
 - Log errors. By default all errors are catched and not logged. Enable it to log them to the console.
 - Log variables of PermissionCenter.tsx: This is the main react component in the source code. If enabled, the most important variables of most functions are logged.
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
-- Use animate height for user card: Sometimes the user card doesn&#39;t expand. Disable it to try to expand it without animation.
+- Use animate height for user card: Sometimes the user card doesn't expand. Disable it to try to expand it without animation.
 
 ### Special behaviors: Hidden groups
 
@@ -182,8 +182,8 @@ Examples of hidden groups:
   {{< figure src="/V1.0.1/images/Special01.png" class="right300" >}}
 
   - **Custom groups without assigned permission level:** See picture group 1. You can create a SharePoint group without assigning it any permission level.
-  - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don&#39;t have any permission level or the permission level "Limited Access".
-  - **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn&#39;t have a site permission level, it is a hidden group. The permission level shown in parentheses is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name "Document1" and in the tooltip the link type.
+  - **SharePoint built-in groups without assigned permission level:** See picture group 2. There are groups, created by SharePoint, that don't have any permission level or the permission level "Limited Access".
+  - **Active sharing links:** See picture group 3. If you share an item (document, folder, page), a SharePoint group is created. Since it doesn't have a site permission level, it is a hidden group. The permission level shown in parentheses is on item level. If the sharing link is active, the group is assigned to the item. The web part shows information about the item like the name "Document1" and in the tooltip the link type.
   - **Inactive sharing links:** See picture group 4. If the sharing link is broken or the item is deleted, the group still exists, but it is not assigned to an item. The web part shows just the name of the SharePoint group. This is explained below.
   - **Limited Access System group** : See picture group 5. The Limited Access permission is assigned to a user automatically by SharePoint when you give permission to the user to access a specific content item. But the user does not have permission to open or edit any other items in the library. You cannot assign this permission level to users or SharePoint groups.
 
