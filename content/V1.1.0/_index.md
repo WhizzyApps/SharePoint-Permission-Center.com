@@ -13,6 +13,7 @@ Karsten Held, Samuel Gross, 16.04.2021
 - Bugfix: Sharing groups: “Open Item” did not open documents properly.
 - Bugfix: Users tab: If current user has no access to view permissions of SharePoint groups, after user name there was shown empty parenthesis instead of nothing.
 - New feature for debug mode: Record API response. For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
+- New feature for debug mode: 
 - Improved: Less graph API calls
   - Calls for getting azure group type reduced by getting first 100 azure groups of tenant at one call.
   - Web part configuration: If “Show Site Admins” or “Show Access given directly” = Off, don’t make API call.
@@ -169,6 +170,8 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
   {{< figure src="/V1.1.0/images/Configuration03.png" class="right250" >}}
 
+  {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
+
 The debug page is for developers to log the following to the developer console in case of bugs. By default it is switched off.
 
 - Log state: react has a variable called "state". When the web part has finished loading, the last state will be logged.
@@ -178,8 +181,6 @@ The debug page is for developers to log the following to the developer console i
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
 - Use animate height for user card: Sometimes the user card doesn't expand. Disable it to try to expand it without animation.
 - Export or import Api response: For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
-
-  {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
 
 ### Special behaviors: Hidden groups
 
