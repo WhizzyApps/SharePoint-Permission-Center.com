@@ -170,6 +170,8 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
   {{< figure src="/V1.1.0/images/Configuration03.png" class="right250" >}}
 
+  {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
+
 The debug page is for developers to log the following to the developer console in case of bugs. By default it is switched off.
 
 - Log state: react has a variable called "state". When the web part has finished loading, the last state will be logged.
@@ -179,8 +181,6 @@ The debug page is for developers to log the following to the developer console i
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
 - Use animate height for user card: Sometimes the user card doesn't expand. Disable it to try to expand it without animation.
 - Export or import Api response: For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
-
-  {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
 
 ### Special behaviors: Hidden groups
 
