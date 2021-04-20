@@ -42,20 +42,21 @@ Karsten Held, Samuel Gross, 10.02.2021
 ![](/Deployment/images/04.png)
 
 
-- Then "From Your Organization" > "Permission Center web part".
+- Go to "From Your Organization" > "Permission Center web part".
 
 ![](/Deployment/images/05.png)
 
 
-- Then in the upper right corner of the site, click on "Edit".
+- In the upper right corner of the site, click on "Edit".
 
 ![](/Deployment/images/06.png)
 
 
-- Click on the "plus" in the section where you want to place the web part. Type "perm" and click on the icon of the "Permission Center". 
+- Click on the "plus" in the section where you want to place the web part. 
+- Type "perm" and click on the icon of the "Permission Center". 
 
 ![](/Deployment/images/07.png)
 
-- Then republish the page.
+- Republish the page.
 
 ![](/Deployment/images/08.png)
