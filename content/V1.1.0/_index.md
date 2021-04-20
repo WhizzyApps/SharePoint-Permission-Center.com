@@ -168,7 +168,7 @@ Note: You need to be site owner or site admin to be able to configure the web pa
 
 #### Configuration page 2
 
-  {{< figure src="/V1.1.0/images/Configuration03.png" class="right250" >}}
+{{< figure src="/V1.1.0/images/Configuration03.png" class="right250" >}}
 
 The debug page is for developers to log the following to the developer console in case of bugs. By default it is switched off.
 
@@ -178,15 +178,15 @@ The debug page is for developers to log the following to the developer console i
 - Log variables of PermissionCenter.tsx: This is the main react component in the source code. If enabled, the most important variables of most functions are logged.
 - Log variables of other components: Enable to log most important variables of most functions of all other react components.
 - Use animate height for user card: Sometimes the user card doesn't expand. Disable it to try to expand it without animation.
-- Performance optimization beta: possibility to change performance. Also for testing.
-  - Preload azure groups: Depending on tenant, web part may load faster if 100/1000 azure groups are preloaded.
+- Performance optimization beta: Possibility to change performance. Also for testing.
+  - Preload azure groups: Depending on tenant, web part may load faster if azure groups are preloaded. Switch between maximum 100 and 1000 azure groups.
 
 {{< rawhtml >}}
   <br style="clear:both;"/>
 {{</ rawhtml >}}
 
   {{< figure src="/V1.1.0/images/Configuration04.png" class="right250" >}}
-
+  
 - Export or import Api response: For debugging of a clients bug, replicate the clients API responses. Record them and download as a JSON file.
 
 ### Special behaviors: Hidden groups
