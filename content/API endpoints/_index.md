@@ -6,26 +6,38 @@ weight: 02
 ---
 Karsten Held, Samuel Gross, 10.02.2021
 
-### Where does the data come from?
+**Where does the data come from?**
 
-#### SharePoint API **get** request:
+The web part interacts with two APIs: SharePoint REST API and MS Graph API. 
 
-**Prepare web part for SPHttpClient**
+This page explains all endpoints used with the following methods: 
+
+- SharePoint API get
+- SharePoint API post
+- MS Graph API get
+
+### SharePoint API **get** requests
+
+#### Preparing web part
 
 - To get access to the SharePoint API, SPFX needs the object spHttpClient from the web part context.
-- The context is is accessable in the main *.ts file "PermissionCenterWebPart.ts". 
-- Put the spHttpClient in the web part props: spHttpClient: this.context.spHttpClient, see below:
-
+  - I.e. the get method is accessable like this: `this.context.spHttpClient.get()`
+  - The context is accessible in the main *.ts file "PermissionCenterWebPart.ts". 
+  - Put the spHttpClient in the web part props: `spHttpClient: this.context.spHttpClient`, see below.
+- To get access to the URL of the site, SPFX needs the object pageContext from the web part context.
+  - Put the site URL in the web part props: `siteCollectionURL: this.context.pageContext.web.absoluteUrl`, see below.
+  
 Example in src/webparts/PermissionCenter/PermissionCenterWebPart.ts file:
 ```
 export default class PermissionCenterWebPart extends BaseClientSideWebPart<IPermissionCenterWebPartProps> {
 
   public render(): void {
     const element: React.ReactElement<IPermissionCenterProps> = React.createElement(
-      HelloWorld,
+      PermissionCenter,
       {
         description: this.properties.description,
-        spHttpClient: this.context.spHttpClient
+        spHttpClient: this.context.spHttpClient,
+        siteCollectionURL: this.context.pageContext.web.absoluteUrl
       }
     );
   }
@@ -41,13 +53,14 @@ import { SPHttpClient } from '@microsoft/sp-http';
 export interface IPermissionCenterProps {
   description: string;
   spHttpClient?: SPHttpClient;
+  siteCollectionURL?: string;
 }
 ```
-- Then you can access the spHttpClient in the *.tsx files within the web part props: this.props.spHttpClient, see below:
+- Then you can access the spHttpClient in the PermissionCenter.tsx file within the web part props: `this.props.spHttpClient`, see below:
 
-**Example for API calls**
+#### Example for API calls
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -69,26 +82,27 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
 }
 ```
 
-Call _spApiGet(url) from another funcion with the parameter "url":
+Call _spApiGet(url) from another function with the parameter "url":
 
+The site URL is accessible in the web part props: `this.props.siteCollectionURL`
 
 ```
 public async componentDidMount() {
-  const url = [SITE_URL]/_api/web/currentuser/isSiteAdmin
+  const url = this.props.siteCollectionURL + "/_api/web/currentuser/isSiteAdmin";
   const response = await this._spApiGet(url);
   console.log(response);
 }
 ```
 
-**Endpoints (urls) used in web part**
+#### Endpoints
 
-with
+Site url:
 
 - [SITE_URL] = ```https://[YOUR_TENANT].sharepoint.com/sites/[YOUR_SITE]```
 - Example: ```https://myTenant.sharepoint.com/sites/mySite```
 - For root site: ```https://myTenant.sharepoint.com```
 
-Get current user permissions
+Get current user permissions:
 
 - `[SITE_URL]/_api/web/currentuser/isSiteAdmin`
 - `[SITE_URL]/_api/web/effectiveBasePermissions`
@@ -105,7 +119,7 @@ Get all site groups:
 
 Get members with access given directly:
 
-- `[SITE_URL]/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindings&amp;$filter=Member/PrincipalType%20ne%208`
+- `[SITE_URL]/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindings`
 
 Get site admins:
 
@@ -146,10 +160,11 @@ Get id of shared item to open permissions page of shared item
 - `[SITE_URL]/_layouts/15/user.aspx?obj=%7B${[LIST_ID]}%7D,${[SharePoint_ID]},LISTITEM`
 - Example: `[SITE_URL]/_layouts/15/user.aspx?obj=%7B804fdfed-3b60-4f61-90b2-0a8f82b44395%7D,[17,LISTITEM`
 
-#### SharePoint API **post** request:
+### SharePoint API **post** requests
 
-**Get properties of sharing groups in case of link type "specific people"**
+#### Properties of sharing groups
 
+- Get properties of sharing groups via post
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation`
 - Example: ```[SITE_URL]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('[F5B3CBF9-055A-41EC-9245-5F13D572BFC8]')/GetSharingInformation?$Expand=permissionsInformation```
 
@@ -180,17 +195,17 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
 }
 ```
 
-Call _spApiGet(url) from another funcion with the parameter "url".
+Call _spApiGet(url) from another function with the parameter "url".
 
 ```
 public async componentDidMount() {
-  const url = [SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation
+  const url = this.props.siteCollectionURL + "/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation"
   const response = await this._spApiPost(url);
   console.log(response);
 }
 ```
 
-**Delete group**
+#### Delete group
 
 - `[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])`
 - [GROUP_ID] = id of SharePoint group in API
@@ -217,7 +232,7 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
   }
 }
 ```
-Call _spApiGet(url) i.e. from another funcion with the parameter "url".
+Call _spApiGet(url) i.e. from another function with the parameter "url".
 ```
 public async componentDidMount() {
   const url = [SITE_URL]/_api/web/sitegroups/removebyid(3);
@@ -226,7 +241,7 @@ public async componentDidMount() {
 }
 ```
 
-**Delete sharing group**
+#### Delete sharing group
 
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[ITEM_ID]')/UnshareLink`
   - [ITEM_ID] = GUID of item. Example: 00761165-1514-4A40-A4B9-32A0A9709069
@@ -283,8 +298,9 @@ public render(): React.ReactElement<IPermissionCenterProps> {
 }
 ```
 
-**Add/ remove user to/from admins: post user by setting attribute "isSiteAdmin" = true/false**
+#### Add/ remove admin
 
+- To Add/ remove user to/from admins, post user by setting attribute "isSiteAdmin" = true/false
 - `[SITE_URL]/_api/web/GetUserById([USER_ID])`
 - Example: `[SITE_URL]/_api/web/GetUserById(56)`
 - Get SharePoint id of user if not available: 
@@ -374,14 +390,16 @@ public render(): React.ReactElement<IPermissionCenterProps> {
 }
 ```
 
-**Add /remove user to/from group**
+#### Add /remove user
+
+Add /remove user to/from SharePoint group:
 
 - Add: `[SITE_URL]/_api/web/sitegroups/getbyid([GROUP_ID])/users`
-- Example: `[SITE_URL]/_api/web/sitegroups/getbyid(4)/users`
-- body: {'loginName': userLoginName}
-- Example: body: {'loginName': 'i:0#.f|membership|dagobert.duck@whizzytools.com'}
+  - Example: `[SITE_URL]/_api/web/sitegroups/getbyid(4)/users`
+  - body: {'loginName': userLoginName}
+  - Example: body: {'loginName': 'i:0#.f|membership|dagobert.duck@whizzytools.com'}
 - Remove: `[SITE_URL]/removeByLoginName`
-- body: {'loginName': userLoginName}
+  - body: {'loginName': userLoginName}
 
 Example function for Typescript-React in *.tsx file:
 
@@ -437,7 +455,7 @@ public render(): React.ReactElement<IPermissionCenterProps> {
 }
 ```
 
-**Delete user from site**
+#### Delete user from site
 
 - `[SITE_URL]/_api/web/GetUserById([USER_SP_ID])`
 - Example: [SITE_URL]/_api/web/GetUserById(15)
@@ -481,7 +499,7 @@ public render(): React.ReactElement<IPermissionCenterProps> {
 }
 ```
 
-#### Graph API endpoints:
+### Graph API get requests
 
 Get members of Azure groups:
 
