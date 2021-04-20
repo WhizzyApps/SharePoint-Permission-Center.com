@@ -10,6 +10,43 @@ Karsten Held, Samuel Gross, 10.02.2021
 
 #### SharePoint API **get** request:
 
+**Prepare web part for SPHttpClient**
+
+- To get access to the SharePoint API, SPFX needs the object spHttpClient from the web part context.
+- The context is is accessable in the main *.ts file "PermissionCenterWebPart.ts". 
+- Put the spHttpClient in the web part props: spHttpClient: this.context.spHttpClient, see below:
+
+Example in src/webparts/PermissionCenter/PermissionCenterWebPart.ts file:
+```
+export default class PermissionCenterWebPart extends BaseClientSideWebPart<IPermissionCenterWebPartProps> {
+
+  public render(): void {
+    const element: React.ReactElement<IPermissionCenterProps> = React.createElement(
+      HelloWorld,
+      {
+        description: this.properties.description,
+        spHttpClient: this.context.spHttpClient
+      }
+    );
+  }
+}
+```
+
+- The web part props need to be declared in the interface file "IPermissionCenterProps.ts", see below:
+
+Example in IPermissionCenterProps.ts
+```
+import { SPHttpClient } from '@microsoft/sp-http';
+
+export interface IPermissionCenterProps {
+  description: string;
+  spHttpClient?: SPHttpClient;
+}
+```
+- Then you can access the spHttpClient in the *.tsx files within the web part props: this.props.spHttpClient, see below:
+
+**Example for API calls**
+
 Example function for Typescript-React in *.tsx file:
 
 ``` 
