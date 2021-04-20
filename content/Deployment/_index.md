@@ -21,7 +21,7 @@ Karsten Held, Samuel Gross, 10.02.2021
 - Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
 `https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES`
 - If you don't have an App catalog, make sure to create one first.
-- Then in the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
+- In the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
 
