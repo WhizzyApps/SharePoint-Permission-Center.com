@@ -10,13 +10,13 @@ Karsten Held, Samuel Gross, 10.02.2021
 
 The web part interacts with two APIs: SharePoint REST API and MS Graph API. 
 
-This page explains all endpoints used with the following methods: 
+This page explains all endpoints used by the following methods: 
 
-- SharePoint API get
-- SharePoint API post
-- MS Graph API get
+- A) SharePoint API get
+- B) SharePoint API post
+- C) MS Graph API get
 
-### SharePoint API **get** requests
+### A) SharePoint API **get** requests
 
 #### Preparing web part
 
@@ -96,59 +96,59 @@ public async componentDidMount() {
 
 #### Endpoints
 
-Site url:
+All endpoints (URLs) use the site URL
 
 - [SITE_URL] = ```https://[YOUR_TENANT].sharepoint.com/sites/[YOUR_SITE]```
 - Example: ```https://myTenant.sharepoint.com/sites/mySite```
 - For root site: ```https://myTenant.sharepoint.com```
 
-Get current user permissions:
+Get current user permissions
 
 - `[SITE_URL]/_api/web/currentuser/isSiteAdmin`
 - `[SITE_URL]/_api/web/effectiveBasePermissions`
 
-Get default site groups:
+Get default site groups
 
 - `[SITE_URL]/_api/web/AssociatedOwnerGroup`
 - `[SITE_URL]/_api/web/AssociatedMemberGroup`
 - `[SITE_URL]/_api/web/AssociatedVisitorGroup`
 
-Get all site groups:
+Get all site groups
 
 - `[SITE_URL]/_api/web/sitegroups`
 
-Get members with access given directly:
+Get members with access given directly
 
 - `[SITE_URL]/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindings`
 
-Get site admins:
+Get site admins
 
 - `[SITE_URL]/_api/web/siteusers?$filter=IsSiteAdmin%20eq%20true`
 
-Get group permissions:
+Get group permissions
 
 - `[SITE_URL]/_api/Web/RoleAssignments/GetByPrincipalId([GROUP_ID])/RoleDefinitionBindings`
 - [GROUP_ID] = id of SharePoint group in API
 - `[SITE_URL]/_api/Web/RoleAssignments/GetByPrincipalId(3)/RoleDefinitionBindings`
 
-Get group members:
+Get group members
 
 - `[SITE_URL]/_api/web/SiteGroups/GetById([GROUP_ID])/users`
 - [GROUP_ID] = id of SharePoint group in API
 - Example: ```[SITE_URL]/_api/web/SiteGroups/GetById(3)/users```
 
-Get all site permission levels:
+Get all site permission levels
 
 - `[SITE_URL]/_api/web/roleDefinitions`
 
-Get properties of sharing groups:
+Get properties of sharing groups
 
 - `[SITE_URL]/_api/search/query?querytext='[GUID]'`
 - [GUID] = Globally Unique Identifier of sharing group in API
 - Example: `[SITE_URL]/_api/search/query?querytext='6B29FC40-CA47-1067-B31D-00DD010662DA'`
 
 
-Get all groups, that have permission levels:
+Get all groups, that have permission levels
 
 - `[SITE_URL]/_api/Web/RoleAssignments`
 
@@ -160,7 +160,12 @@ Get id of shared item to open permissions page of shared item
 - `[SITE_URL]/_layouts/15/user.aspx?obj=%7B${[LIST_ID]}%7D,${[SharePoint_ID]},LISTITEM`
 - Example: `[SITE_URL]/_layouts/15/user.aspx?obj=%7B804fdfed-3b60-4f61-90b2-0a8f82b44395%7D,[17,LISTITEM`
 
-### SharePoint API **post** requests
+Get user by loginName
+
+- `[SITE_URL]/_api/web/siteusers(@v)?@v='${encodeURIComponent([USER_LOGINNAME])}'`
+- Example: `[SITE_URL]/_api/web/siteusers(@v)?@v='${encodeURIComponent('i:0#.f|membership|donald.duck@myTenant.com')}'`
+
+### B) SharePoint API **post** requests
 
 #### Properties of sharing groups
 
@@ -168,7 +173,7 @@ Get id of shared item to open permissions page of shared item
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation`
 - Example: ```[SITE_URL]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('[F5B3CBF9-055A-41EC-9245-5F13D572BFC8]')/GetSharingInformation?$Expand=permissionsInformation```
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -209,9 +214,9 @@ public async componentDidMount() {
 
 - `[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])`
 - [GROUP_ID] = id of SharePoint group in API
-- Example: `[SITE_URL]/_api/web/sitegroups/removebyid([3])`
+- Example: `[SITE_URL]/_api/web/sitegroups/removebyid([14])`
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -227,15 +232,14 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
         mode: 'cors'
       };
     const response = await this.props.spHttpClient.post(url, SPHttpClient.configurations.v1, clientOptions);
-    const responseJson = await response.json();
-    return responseJson;
+    return response;
   }
 }
 ```
 Call _spApiGet(url) i.e. from another function with the parameter "url".
 ```
 public async componentDidMount() {
-  const url = [SITE_URL]/_api/web/sitegroups/removebyid(3);
+  const url = this.props.siteCollectionURL + "/_api/web/sitegroups/removebyid(14)";
   const response = await this._spApiPost(url);
   console.log(response);
 }
@@ -251,7 +255,7 @@ public async componentDidMount() {
   - Example loginName: SharingLinks.00761165-1514-4a40-a4b9-32a0a9709069.OrganizationEdit.dcdfc2bc-fb41-4f93-9770-61a49c560c59
   - Example [SHARE_ID] dcdfc2bc-fb41-4f93-9770-61a49c560c59
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -262,10 +266,10 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
   // function for API call
   private async _deleteSharingGroup (): Promise<object> {
 
-    const listId = 804fdfed-3b60-4f61-90b2-0a8f82b44395;
-    const itemId = 00761165-1514-4A40-A4B9-32A0A9709069;
-    const shareId = dcdfc2bc-fb41-4f93-9770-61a49c560c59;
-    const url = `[SITE_URL]/_api/web/Lists('${listId}')/GetItemByUniqueId('${itemId}')/UnshareLink`;
+    const listId = '804fdfed-3b60-4f61-90b2-0a8f82b44395';
+    const itemId = '00761165-1514-4A40-A4B9-32A0A9709069';
+    const shareId = 'dcdfc2bc-fb41-4f93-9770-61a49c560c59';
+    const url = this.props.siteCollectionURL + `/_api/web/Lists('${listId}')/GetItemByUniqueId('${itemId}')/UnshareLink`;
 
     const requestHeaders: Headers = new Headers();  
     requestHeaders.append('Content-type', 'application/json'); 
@@ -283,88 +287,93 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
       body: body
     };
     const response = await this.props.spHttpClient.post(url, SPHttpClient.configurations.v1, clientOptions);
-    const responseJson = await response.json();
-    return responseJson;
+    return response;
   }
 }
 ```
 
-Call _deleteSharingGroup i.e. from a button:
+Call _deleteSharingGroup() i.e. from another function.
 ```
-public render(): React.ReactElement<IPermissionCenterProps> {
-  return (
-    <button onClick={ this._deleteSharingGroup }> Delete sharing group </button>
-  )
-}
+  public async componentDidMount() {
+    const response = await this._deleteSharingGroup();
+    console.log(response);
+  }
 ```
 
-#### Add/ remove admin
+#### Ensure user
 
-- To Add/ remove user to/from admins, post user by setting attribute "isSiteAdmin" = true/false
-- `[SITE_URL]/_api/web/GetUserById([USER_ID])`
-- Example: `[SITE_URL]/_api/web/GetUserById(56)`
-- Get SharePoint id of user if not available: 
-  - `[SITE_URL]/_api/web/siteusers(@v)?@v='[USER_LOGIN_NAME]'`
-  - Example: `[SITE_URL]/_api/web/siteusers(@v)?@v='i:0#.f|membership|dagobert.duck@whizzytools.com'`
-- To add: in case user has no profile in SharePoint: create profile via post
+- To ensure that user has a profile in SharePoint. If not, a profile will be created
   - `[SITE_URL]/_api/web/ensureuser`
   - body: {'logonName': userLoginName)
-  - Example: body: {'logonName': 'i:0#.f|membership|dagobert.duck@whizzytools.com')
+  - Example: body: {'logonName': 'i:0#.f|membership|dagobert.duck@myTenant.com')
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
 
 // main class in PermissionCenter.tsx file
 export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
-  /* 
-  function for API call with parameters 
-  userLoginName: loginName of user
-  userId: SharePoint ID of user
-  isRemove: if remove user from admins isRemove=true, if add isRemove=false
-  */
-  private async _addOrRemoveAdmin (userLoginName, userId, isRemove) {
-      
-    // to add or remove user from admins, SharePoint Id needed
-    // for add admin, if no userId, get SharePoint Id
-    if (!userId && !isRemove) {
-      // for add admin also: if not in site collection, add user to site collection via ensureuser and get SharePoint Id
-      
-      // parameter
-      let ensureAdminUrl = props.siteCollectionURL + `/_api/web/ensureuser`;
-      const ensureAdminOpts = {
-        headers: {
-          'Accept': 'application/json;odata=nometadata',
-          'Content-type': 'application/json;odata=verbose',
-          'odata-version': '',
-        },
-        body: JSON.stringify({
-          'logonName': userLoginName
-        }),
-        mode: 'cors'
-      };
-
-      // http request
-      // call ensureuser
-      await props.spHttpClient.post(ensureAdminUrl, SPHttpClient.configurations.v1, ensureAdminOpts);
-      // get his user id
-      const responseGetUserId = await _spApiGet (`${props.siteCollectionURL}/_api/web/siteusers(@v)?@v='${encodeURIComponent(userLoginName)}'&$select=Id`);
-      // if response has id, add Id to state.users
-      userId = responseGetUserId["Id"];
-      if (userId) {
-        state.users[userEntry].spId = userId;
-      }
-    }
+  
+  private async _ensureUser (userLoginName) {
     
-    // add or remove admin
     // parameter
-    let requestUrl = props.siteCollectionURL + `/_api/web/GetUserById(${userId})`;
+    let ensureAdminUrl = this.props.siteCollectionURL + `/_api/web/ensureuser`;
+    const ensureAdminOpts: ISPHttpClientOptions = {
+      headers: {
+        'Accept': 'application/json;odata=nometadata',
+        'Content-type': 'application/json;odata=verbose',
+        'odata-version': '',
+      },
+      body: JSON.stringify({
+        'logonName': userLoginName
+      }),
+      mode: 'cors'
+    };
+
+    // http request
+    return await this.props.spHttpClient.post(ensureAdminUrl, SPHttpClient.configurations.v1, ensureAdminOpts);
+  }
+}
+```
+
+Call _ensureUser(userLoginName) i.e. from another function.
+```
+  public async componentDidMount() {
+    const userLoginName = 'i:0#.f|membership|donald.duck@myTenant.com';
+    const response = await this._ensureUser(userLoginName);
+    console.log(response);
+  }
+```
+
+#### Add/ remove admin
+
+- To Add/ remove user to/from admins, post user by setting attribute "isSiteAdmin" = true/false
+- `[SITE_URL]/_api/web/GetUserById([USER_ID])`
+- Example: `[SITE_URL]/_api/web/GetUserById(22)`
+
+Example function for Typescript-React in PermissionCenter.tsx file:
+
+``` 
+import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
+
+// main class in PermissionCenter.tsx file
+export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
+
+  /* 
+    function for API call with parameters 
+    userId: SharePoint ID of user
+    isRemove: if remove user from admins isRemove=true, if add isRemove=false
+  */
+  private async _addOrRemoveAdmin (userId, isRemove) {
+    
+    // parameter
+    let requestUrl = this.props.siteCollectionURL + `/_api/web/GetUserById(${userId})`;
     let dataToPost = JSON.stringify({
       '__metadata': { 'type': 'SP.User' },
       'IsSiteAdmin': isRemove ? 'false' : 'true',
     });
-    const spOpts = {
+    const spOpts: ISPHttpClientOptions = {
       headers: {
         'Accept': 'application/json;odata=nometadata',
         'Content-type': 'application/json;odata=verbose',
@@ -376,18 +385,20 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
     };
 
     // http request
-    const response = await props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
-    return response.status;
-  };
+    const response = await this.props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
+    return response;
+  }
+}
 ```
 
-Call _addOrRemoveAdmin i.e. from a button:
+Call _addOrRemoveAdmin(userId, isRemove) i.e. from another function.
 ```
-public render(): React.ReactElement<IPermissionCenterProps> {
-  return (
-    <button onClick={ this._addOrRemoveAdmin(userLoginName, userId, isRemove) }> Delete sharing group </button>
-  )
-}
+  public async componentDidMount() {
+    const userId = 22;
+    const isRemove = false;
+    const response = await this._addOrRemoveAdmin(userId, isRemove);
+    console.log(response);
+  }
 ```
 
 #### Add /remove user
@@ -397,11 +408,11 @@ Add /remove user to/from SharePoint group:
 - Add: `[SITE_URL]/_api/web/sitegroups/getbyid([GROUP_ID])/users`
   - Example: `[SITE_URL]/_api/web/sitegroups/getbyid(4)/users`
   - body: {'loginName': userLoginName}
-  - Example: body: {'loginName': 'i:0#.f|membership|dagobert.duck@whizzytools.com'}
+  - Example: body: {'loginName': 'i:0#.f|membership|dagobert.duck@myTenant.com'}
 - Remove: `[SITE_URL]/removeByLoginName`
   - body: {'loginName': userLoginName}
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -417,7 +428,7 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
   private async _addOrRemoveUserFromSpGroup (userLoginName, groupId, isRemove) {
     // parameter
     // for add user
-    let requestUrl = props.siteCollectionURL + `/_api/web/sitegroups/getbyid(${groupId})/users`;
+    let requestUrl = this.props.siteCollectionURL + `/_api/web/sitegroups/getbyid(${groupId})/users`;
     let dataToPost = JSON.stringify({
       '__metadata': { 'type': 'SP.User' },
       'LoginName': userLoginName
@@ -430,7 +441,7 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
       });
     }
     // general
-    const spOpts = {
+    const spOpts: ISPHttpClientOptions = {
       headers: {
         'Accept': 'application/json;odata=nometadata',
         'Content-type': 'application/json;odata=verbose',
@@ -441,18 +452,21 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
     };
   
     // http request
-    const response = await props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
-    return response.status;
-  };
+    const response = await this.props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
+    return response;
+  }
+}
 ```
 
-Call _addOrRemoveUserFromSpGroup i.e. from a button:
+Call _addOrRemoveUserFromSpGroup(userLoginName, groupId, isRemove) i.e. from another function.
 ```
-public render(): React.ReactElement<IPermissionCenterProps> {
-  return (
-    <button onClick={ this._addOrRemoveUserFromSpGroup(userLoginName, groupId, isRemove) }> Remove user from SharePoint group </button>
-  )
-}
+  public async componentDidMount() {
+    const userLoginName = 'i:0#.f|membership|donald.duck@myTenant.com';
+    const groupId = 22;
+    const isRemove = false;
+    const response = await this._addOrRemoveUserFromSpGroup(userLoginName, groupId, isRemove);
+    console.log(response);
+  }
 ```
 
 #### Delete user from site
@@ -461,7 +475,7 @@ public render(): React.ReactElement<IPermissionCenterProps> {
 - Example: [SITE_URL]/_api/web/GetUserById(15)
 - header: 'X-HTTP-Method': 'DELETE'
 
-Example function for Typescript-React in *.tsx file:
+Example function for Typescript-React in PermissionCenter.tsx file:
 
 ``` 
 import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
@@ -470,10 +484,10 @@ import { SPHttpClient, ISPHttpClientOptions} from '@microsoft/sp-http';
 export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
 
   // function for API call with parameters 
-  private async _deleteUserFromSite (userSpId) {
+  private async _deleteUserFromSite (userId) {
 
     // parameter
-    const spOpts = {
+    const spOpts: ISPHttpClientOptions = {
       headers: {
         'Accept': 'application/json;odata=nometadata',
         'Content-type': 'application/json;odata=verbose',
@@ -482,24 +496,24 @@ export default class PermissionCenter extends React.Component<IPermissionCenterP
       },
       mode: 'cors'
     };
-    const requestUrl = props.siteCollectionURL + `/_api/web/GetUserById(${userSpId})`;
+    const requestUrl = this.props.siteCollectionURL + `/_api/web/GetUserById(${userId})`;
     // http request
-    const response = await props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
-    console.log(response);
+    const response = await this.props.spHttpClient.post(requestUrl, SPHttpClient.configurations.v1, spOpts);
+    return response;
   }
 }
 ```
 
-Call _deleteUserFromSite i.e. from a button:
+Call _deleteUserFromSite (userId) i.e. from another function.
 ```
-public render(): React.ReactElement<IPermissionCenterProps> {
-  return (
-    <button onClick={ this._deleteUserFromSite([USER_SP_ID]) }> Remove user from site </button>
-  )
-}
+  public async componentDidMount() {
+    const userId = 114;
+    const response = await this._deleteUserFromSite (userId);
+    console.log(response);
+  }
 ```
 
-### Graph API get requests
+### C) Graph API get requests
 
 Get members of Azure groups:
 
