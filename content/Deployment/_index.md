@@ -6,12 +6,14 @@ weight: 01
 ---
 Karsten Held, Samuel Gross, 10.02.2021
 
+
 ### 1) Download
 
 - Download the zipped web part package file **permission-center-webpart.sppkg** from GitHub:
 [Latest release](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.0.2.0/SharePoint-Package_sppkg.zip) / 
 [All releases](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases).
 - Unzip the SPPKG file. Do not rename this file. The file name has to match the package name.
+
 
 ### 2) Deployment to the global app catalog
 
@@ -34,7 +36,23 @@ Karsten Held, Samuel Gross, 10.02.2021
 ![](/Deployment/images/03.png)
 
 
-### 3) Deployment to a site collection app catalog
+### 3) Grant permissions
+
+The web part needs access to the Microsoft Graph API. To get access a SharePoint administrator needs to give the permissions.
+The permissions needed are called "Directory.AccessAsUser.All". It allows the app to have the same access to information in the directory as the signed-in user. See Microsoft [documentation](https://docs.microsoft.com/en-us/graph/permissions-reference).
+
+To grant access, follow the steps shown in the picture below:
+
+1. Go to the SharePoint admin center > Advanced > API access
+2. Click under "Pending requests" on the Package "Permission Center web part" with the permission "Directory.AccessAsUser.All"
+3. Click Approve, then Approve, then find it under "Approved requests"
+
+Wait a couple of seconds to take effect.
+
+![](/Deployment/images/09.png)
+ 
+
+### 4) Deployment to a site collection app catalog
 
 - Navigate to the site collection you want to deploy the web part. Click on New > App
 
@@ -59,18 +77,3 @@ Karsten Held, Samuel Gross, 10.02.2021
 - Republish the page.
 
 ![](/Deployment/images/08.png)
-
-### 4) Grant permissions
-
-The web part need access to the Microsoft Graph API. To get access a SharePoint administrator need to give the permissions.
-The permissions needed are called "Directory.AccessAsUser.All". It allows the app to have the same access to information in the directory as the signed-in user. See Microsoft [documentation](https://docs.microsoft.com/en-us/graph/permissions-reference).
-
-To grant access, follow the steps shown in the picture below:
-
-1. Go to the SharePoint admin center > Advanced > API access
-2. Click under "Pending requests" on the Package "Permission Center web part" with the permission "Directory.AccessAsUser.All"
-3. Click Approve, then Approve, then find it under "Approved requests"
-
-Wait a couple of seconds to take effect.
-
-![](/Deployment/images/09.png)
