@@ -618,7 +618,7 @@ Get owners of Azure groups
 - `/groups/[AZURE_GROUP_ID]/owners`
 - Example: `/groups/d2d7dbb8-3e81-4783-b863-0706748b93c4/owners`
 
-Get azure properties for user
+Get Azure properties for user
 
 - `/users/[USER_PRINZIPAL_NAME]`
 - Example: `/users/donald.duck@myTenant.com`

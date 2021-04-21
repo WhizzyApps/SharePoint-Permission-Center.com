@@ -11,15 +11,15 @@ Karsten Held, Samuel Gross, 10.02.2021
 - Download the zipped web part package file **permission-center-webpart.sppkg** from GitHub:
 [Latest release](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.1.0.0/SharePoint-Package_sppkg.zip) / 
 [All releases](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases).
-- Unzip the SPPKG file. Do not rename this file. The filename has to match the package name.
+- Unzip the SPPKG file. Do not rename this file. The file name has to match the package name.
 
 ### 2) Deployment to the global app catalog
 
 - Navigate to your App Catalog site. If you don't know the URL of your App Catalog site, follow these steps:
-- Navigate to the SharePoint company app catalog
+- Navigate to the SharePoint company App Catalog
 - Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
 `https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES`
-- If you don't have an App catalog, make sure to create one first.
+- If you don't have an App Catalog, make sure to create one first.
 - In the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
 
 ![](/Deployment/images/01.png)
