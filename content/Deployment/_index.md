@@ -47,8 +47,6 @@ To grant access, follow the steps shown in the picture below:
 2. Click under "Pending requests" on the Package "Permission Center web part" with the permission "Directory.AccessAsUser.All"
 3. Click Approve, then Approve, then find it under "Approved requests"
 
-Wait a couple of seconds to take effect.
-
 ![](/Deployment/images/09.png)
  
 
