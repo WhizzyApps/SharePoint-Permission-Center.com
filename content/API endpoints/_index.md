@@ -515,22 +515,111 @@ Call _deleteUserFromSite (userId) i.e. from another function.
 
 ### C) Graph API get requests
 
-Get members of Azure groups:
+#### Preparing web part
 
-- `/groups/[AZURE_GROUP_ID]/members`
+- To get access to the Graph API, SPFX needs the object msGraphClientFactory from the web part context.
+- I.e. the getClient method is accessable like this: `this.props.context.msGraphClientFactory.getClient()`
+- The context is accessible in the main *.ts file "PermissionCenterWebPart.ts". 
+- Put the context in the web part props: `context: this.context`, see below.
+  
+Example in src/webparts/PermissionCenter/PermissionCenterWebPart.ts file:
+```
+export default class PermissionCenterWebPart extends BaseClientSideWebPart<IPermissionCenterWebPartProps> {
 
-Get owners of Azure groups:
+  public render(): void {
+    const element: React.ReactElement<IPermissionCenterProps> = React.createElement(
+      PermissionCenter,
+      {
+        description: this.properties.description,
+        context: this.context,
+      }
+    );
+  }
+}
+```
 
-- `/groups/[AZURE_GROUP_ID]/owners`
+- The web part props need to be declared in the interface file "IPermissionCenterProps.ts", see below:
 
-Get properties of Azure groups:
+Example in IPermissionCenterProps.ts
+```
+import { WebPartContext } from '@microsoft/sp-webpart-base';
 
-- `/groups/[AZURE_GROUP_ID]`
+export interface IPermissionCenterProps {
+  description: string;
+  context?: WebPartContext;
+}
+```
+- Then you can access the context in the PermissionCenter.tsx file within the web part props: `this.props.context`, see below:
 
-Get name of organization of tenant to display it in tooltip for sharing groups
+#### Example for API calls
+
+Example function for Typescript-React in PermissionCenter.tsx file:
+
+``` 
+import { MSGraphClient } from '@microsoft/sp-http';
+
+// main class in PermissionCenter.tsx file
+export default class PermissionCenter extends React.Component<IPermissionCenterProps, {}> {
+
+  // get data from Microsoft Graph API
+  private _graphApiGet (url: string): Promise<any> {
+
+    return new Promise<any> (
+      (resolve, reject) => {
+        this.props.context.msGraphClientFactory.getClient()
+        .then(
+          (client: MSGraphClient): any => {
+            client.api(url).get(
+              async (error, response: any) => {
+                if (response) {
+                  resolve(response);
+                } 
+                else if (error) {
+                  reject(error);
+                }
+              }
+            );
+          }
+        )
+      }
+    )
+  }
+}
+```
+
+Call _graphApiGet(url) from another function with the parameter "url":
+
+```
+public async componentDidMount() {
+  const url = "/organization";
+  const response = await this._graphApiGet(url);
+  console.log(response);
+}
+```
+
+#### Endpoints
+
+Get name of organization of tenant
 
 - `/organization`
+
+Get properties of Azure groups
+
+- `/groups/[AZURE_GROUP_ID]`
+- Example: `/groups/d2d7dbb8-3e81-4783-b863-0706748b93c4`
+
+Get members of Azure groups
+
+- `/groups/[AZURE_GROUP_ID]/members`
+- Example: `/groups/d2d7dbb8-3e81-4783-b863-0706748b93c4/members`
+
+Get owners of Azure groups
+
+- `/groups/[AZURE_GROUP_ID]/owners`
+- Example: `/groups/d2d7dbb8-3e81-4783-b863-0706748b93c4/owners`
 
 Get azure properties for user
 
 - `/users/[USER_PRINZIPAL_NAME]`
+- Example: `/users/donald.duck@myTenant.com`
+
