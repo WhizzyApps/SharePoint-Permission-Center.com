@@ -9,7 +9,7 @@ Karsten Held, Samuel Gross, 10.02.2021
 ### 1) Download
 
 - Download the zipped web part package file **permission-center-webpart.sppkg** from GitHub:
-[Latest release](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.1.0.0/SharePoint-Package_sppkg.zip) / 
+[Latest release](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.0.2.0/SharePoint-Package_sppkg.zip) / 
 [All releases](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases).
 - Unzip the SPPKG file. Do not rename this file. The file name has to match the package name.
 
