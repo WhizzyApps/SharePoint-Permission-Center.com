@@ -38,7 +38,7 @@ Karsten Held, Samuel Gross, 10.02.2021
 
 ### 3) Grant permissions
 
-The web part needs access to the Microsoft Graph API. To get access a SharePoint administrator needs to give the permissions.
+The web part must have access to the Microsoft Graph API. To get access a SharePoint administrator has to give the permissions.
 The permissions needed are called "Directory.AccessAsUser.All". It allows the app to have the same access to information in the directory as the signed-in user. See Microsoft [documentation](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
 To grant access, follow the steps shown in the picture below:
