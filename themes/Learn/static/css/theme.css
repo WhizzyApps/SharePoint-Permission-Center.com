@@ -69,6 +69,10 @@
 .button:active, .button-secondary:active {
     margin: 2px 0 -2px 0;
 }
+#sidebar button {
+    background-color: transparent;
+    padding: 4px 0;
+}
 
 body {
     background: #fff;

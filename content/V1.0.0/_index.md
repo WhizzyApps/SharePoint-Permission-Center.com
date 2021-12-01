@@ -1,8 +1,9 @@
 ---
 title: "Version 1.0.0"
-date: 2021-03-01T14:38:53-06:00
+date: 2021-02-10
 draft: false
 weight: 99
+year: 2021
 ---
 Karsten Held, Samuel Gross, 10.02.2021
 

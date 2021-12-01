@@ -1,39 +1,65 @@
 ---
 title: "Deployment instructions"
-date: 2021-03-01T14:38:53-06:00
+date: 2021-12-01
 draft: false
 weight: 01
 ---
-Karsten Held, Samuel Gross, 10.02.2021
+Karsten Held, Samuel Gross, 01.12.2021
 
 
 ### 1) Download
 
 - Download the zipped web part package file **permission-center-webpart.sppkg** from GitHub:
-[Latest release](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.0.2.0/SharePoint-Package_sppkg.zip) / 
-[All releases](https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases).
+{{< rawhtml >}}
+    <a style="align-self: flex-start;" href="https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases/download/V1.1.0/SharePoint-Package_sppkg.zip">Latest release/</a>
+    <a style="align-self: flex-start;" href="https://github.com/WhizzyApps/SPO-Permission-Center-Web-Part/releases" target="_blank">All releases</a>
+{{</ rawhtml >}}
 - Unzip the SPPKG file. Do not rename this file. The filename has to match the package name.
 
 
 ### 2) Deployment to the global app catalog
 
-- Navigate to your App Catalog site. If you don't know the URL of your App Catalog site, follow these steps:
-- Navigate to the SharePoint company App Catalog
-- Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites or use this link: 
+#### A) Go to your App Catalog site
+
+- Check if you have an App Catalog site by navigating to it. If you don't know the URL of your App Catalog site, follow one of these steps:
+- Option a) Use this link: 
 `https://[YOUR_TENANT]-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement/view/ALL%20SITES`
-- If you don't have an App Catalog, make sure to create one first.
-- In the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
+
+- Option b) Navigate to the SharePoint company App Catalog: 
+  - Go to the Microsoft 365 admin center > Show all > SharePoint > Sites > Active sites
+  - In the "Template" column, filter by "App Catalog Site" and click on the App Catalog Site URL.
+
+![](/Deployment/images/04.png)
+
+- If you don't have an App Catalog, make sure to create one first under point B). Else, go to point C).
+
+#### B) Create an App Catalog site - optional
+
+
+- In the SharePoint admin center, navigate through More features > Apps > open
 
 ![](/Deployment/images/01.png)
 
-- In the App Catalog Site click on "Apps for SharePoint" > New > Choose Files > select the downloaded **permission-center-webpart.sppkg** file > OK > then click "Deploy".
+- Go to App Catalog:
 
 ![](/Deployment/images/02.png)
+
+- Create a new app catalog site > OK:
+
+![](/Deployment/images/03.png)
+
+- On the next site, fill out the data > OK
+
+#### C) Deploy the webpart to the global app catalog 
+
+- In the App Catalog Site click on "Apps for SharePoint" > New > Choose Files > select the downloaded **permission-center-webpart.sppkg** file > OK > then click "Deploy".
+
+![](/Deployment/images/05.png)
 
 
 - After the deployment, make sure the file is checked in. If you see an icon with a small green arrow you need to manually check the file in: Click the ellipsis (…) icon of the file > … > Advanced > Check In > OK
 
-![](/Deployment/images/03.png)
+![](/Deployment/images/06.png)
 
 
 ### 3) Grant permissions
@@ -47,31 +73,33 @@ To grant access, follow the steps shown in the picture below:
 2. Click under "Pending requests" on the Package "Permission Center web part" with the permission "Directory.AccessAsUser.All"
 3. Click Approve, then Approve, then find it under "Approved requests"
 
-![](/Deployment/images/09.png)
+![](/Deployment/images/07.png)
  
 
 ### 4) Deployment to a site collection app catalog
 
 - Navigate to the site collection you want to deploy the web part. Click on New > App
 
-![](/Deployment/images/04.png)
+![](/Deployment/images/08.png)
 
 
 - Go to "From Your Organization" > "Permission Center web part".
 
-![](/Deployment/images/05.png)
+![](/Deployment/images/09.png)
 
 
-- In the upper right corner of the site, click on "Edit".
+### 5) Add webpart to your site
 
-![](/Deployment/images/06.png)
+- On your site, in the upper right corner, click on "Edit".
+
+![](/Deployment/images/10.png)
 
 
 - Click on the "plus" in the section where you want to place the web part. 
 - Type "perm" and click on the icon of the "Permission Center". 
 
-![](/Deployment/images/07.png)
+![](/Deployment/images/11.png)
 
 - Republish the page.
 
-![](/Deployment/images/08.png)
+![](/Deployment/images/12.png)
