@@ -27,7 +27,7 @@ This page explains all endpoints used by the following methods:
 - To get access to the URL of the site, SPFX needs the object pageContext from the web part context.
   - Put the site URL in the web part props: `siteCollectionURL: this.context.pageContext.web.absoluteUrl`, see below.
   
-Example in src/webparts/PermissionCenter/PermissionCenterWebPart.ts file:
+Example in ../src/webparts/PermissionCenter/PermissionCenterWebPart.ts file:
 ```
 export default class PermissionCenterWebPart extends BaseClientSideWebPart<IPermissionCenterWebPartProps> {
 
@@ -157,8 +157,8 @@ Get id of shared item to open permissions page of shared item
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')`
 - Example: `[SITE_URL]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('00761165-1514-4A40-A4B9-32A0A9709069')`
 - link to open the permissions page of a shared item:
-- `[SITE_URL]/_layouts/15/user.aspx?obj=%7B${[LIST_ID]}%7D,${[SharePoint_ID]},LISTITEM`
-- Example: `[SITE_URL]/_layouts/15/user.aspx?obj=%7B804fdfed-3b60-4f61-90b2-0a8f82b44395%7D,[17,LISTITEM`
+- `[SITE_URL]/_layouts/15/user.aspx?obj=%7B[LIST_ID]%7D,[SharePoint_ID],LISTITEM`
+- Example: `[SITE_URL]/_layouts/15/user.aspx?obj=%7B804fdfed-3b60-4f61-90b2-0a8f82b44395%7D,17,LISTITEM`
 
 Get user by loginName
 
@@ -171,7 +171,7 @@ Get user by loginName
 
 - Get properties of sharing groups via post
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[GUID]')/GetSharingInformation?$Expand=permissionsInformation`
-- Example: ```[SITE_URL]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('[F5B3CBF9-055A-41EC-9245-5F13D572BFC8]')/GetSharingInformation?$Expand=permissionsInformation```
+- Example: ```[SITE_URL]/_api/web/Lists('804fdfed-3b60-4f61-90b2-0a8f82b44395')/GetItemByUniqueId('F5B3CBF9-055A-41EC-9245-5F13D572BFC8')/GetSharingInformation?$Expand=permissionsInformation```
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
@@ -214,7 +214,7 @@ public async componentDidMount() {
 
 - `[SITE_URL]/_api/web/sitegroups/removebyid([GROUP_ID])`
 - [GROUP_ID] = id of SharePoint group in API
-- Example: `[SITE_URL]/_api/web/sitegroups/removebyid([14])`
+- Example: `[SITE_URL]/_api/web/sitegroups/removebyid(14)`
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
@@ -248,12 +248,12 @@ public async componentDidMount() {
 #### Delete sharing group
 
 - `[SITE_URL]/_api/web/Lists('[LIST_ID]')/GetItemByUniqueId('[ITEM_ID]')/UnshareLink`
-  - [ITEM_ID] = GUID of item. Example: 00761165-1514-4A40-A4B9-32A0A9709069
-  - [LIST_ID] = ID of list (folder) the item is in. Example: 804fdfed-3b60-4f61-90b2-0a8f82b44395
-- body = { shareId: [SHARE_ID] }
+  - [ITEM_ID] = GUID of item. Example: `00761165-1514-4A40-A4B9-32A0A9709069`
+  - [LIST_ID] = ID of list (folder) the item is in. Example: `804fdfed-3b60-4f61-90b2-0a8f82b44395`
+- `body = { shareId: [SHARE_ID] }`
   - [SHARE_ID] = last GUID of loginName of SharePoint group 
-  - Example loginName: SharingLinks.00761165-1514-4a40-a4b9-32a0a9709069.OrganizationEdit.dcdfc2bc-fb41-4f93-9770-61a49c560c59
-  - Example [SHARE_ID] dcdfc2bc-fb41-4f93-9770-61a49c560c59
+  - Example loginName: `SharingLinks.00761165-1514-4a40-a4b9-32a0a9709069.OrganizationEdit.dcdfc2bc-fb41-4f93-9770-61a49c560c59`
+  - Example [SHARE_ID]: `dcdfc2bc-fb41-4f93-9770-61a49c560c59`
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
@@ -304,8 +304,8 @@ Call _deleteSharingGroup() i.e. from another function.
 
 - To ensure that user has a profile in SharePoint. If not, a profile will be created
   - `[SITE_URL]/_api/web/ensureuser`
-  - body: {'logonName': userLoginName)
-  - Example: body: {'logonName': 'i:0#.f|membership|dagobert.duck@myTenant.com')
+  - `body: {'logonName': userLoginName}`
+  - Example: `body: {'logonName': 'i:0#.f|membership|dagobert.duck@myTenant.com'}`
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
@@ -407,10 +407,10 @@ Add /remove user to/from SharePoint group:
 
 - Add: `[SITE_URL]/_api/web/sitegroups/getbyid([GROUP_ID])/users`
   - Example: `[SITE_URL]/_api/web/sitegroups/getbyid(4)/users`
-  - body: {'loginName': userLoginName}
-  - Example: body: {'loginName': 'i:0#.f|membership|dagobert.duck@myTenant.com'}
+  - `body: {'loginName': userLoginName}`
+  - Example: `body: {'loginName': 'i:0#.f|membership|dagobert.duck@myTenant.com'}`
 - Remove: `[SITE_URL]/removeByLoginName`
-  - body: {'loginName': userLoginName}
+  - `body: {'loginName': userLoginName}`
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
@@ -472,8 +472,8 @@ Call _addOrRemoveUserFromSpGroup(userLoginName, groupId, isRemove) i.e. from ano
 #### Delete user from site
 
 - `[SITE_URL]/_api/web/GetUserById([USER_SP_ID])`
-- Example: [SITE_URL]/_api/web/GetUserById(15)
-- header: 'X-HTTP-Method': 'DELETE'
+- Example: `[SITE_URL]/_api/web/GetUserById(15)`
+- header: `'X-HTTP-Method': 'DELETE'`
 
 Example function for Typescript-React in PermissionCenter.tsx file:
 
